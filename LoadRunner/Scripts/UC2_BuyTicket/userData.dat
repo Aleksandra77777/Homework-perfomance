@@ -1,0 +1,11 @@
+login,password,firstName,lastName,address1,address2,creditCard,expDate
+alex,zoomaster,Alex,Lion,326 Central Park West,10023,4111111111111111,12%2F25
+marty,zebrastripes,Marty,Zebra,1234 Savanna Lane,12345,4111111111111111,06%2F27
+gloria,hippopower,Gloria,Hippopotamus,5678 Watering Hole Rd,67890,4111111111111111,09%2F28
+melman,giraffe123,Melman,Giraffe,9012 Tall Trees Blvd,54321,4111111111111111,03%2F29
+mort,kinglemur,Mort,Lemur,3456 Baobab Tree Ave,98765,4111111111111111,12%2F30
+kingjulien,danceparty,Julien,Lemur,7890 Lemur Kingdom Ln,56789,4111111111111111,06%2F31
+private,pinguaction,Private,Penguin,2468 Iceberg Way,43210,4111111111111111,09%2F32
+kowalski,scienceguy,Kowalski,Penguin,1357 Tuxedo Terrace,09876,4111111111111111,03%2F33
+rico,boomexplosion,Rico,Penguin,9876 Dynamite Drive,78901,4111111111111111,12%2F34
+skipper,commandopenguin,Skipper,Penguin,5432 Flightless Bird Blvd,65432,4111111111111111,06%2F35

@@ -1,0 +1,60 @@
+[
+    {
+        "actionName": "Action",
+        "steps": [
+            {
+                "stepId": "STEP31",
+                "stepName": "Custom Request: WebTours",
+                "infFile": "t1.inf",
+                "time": 1715886118338
+            },
+            {
+                "stepId": "STEP32",
+                "stepName": "Custom Request: sign up now",
+                "infFile": "t6.inf",
+                "time": 1715886119497
+            },
+            {
+                "stepId": "STEP33",
+                "stepName": "Custom Request: login.pl",
+                "infFile": "t7.inf",
+                "time": 1715886120076
+            },
+            {
+                "stepId": "STEP34",
+                "stepName": "Custom Request: button_next.gif_2",
+                "infFile": "t8.inf",
+                "time": 1715886120347
+            },
+            {
+                "stepId": "STEP35",
+                "stepName": "Custom Request: SignOff Button",
+                "infFile": "t11.inf",
+                "time": 1715886121170
+            }
+        ],
+        "transactions": [
+            {
+                "transactionName": "sign up",
+                "rawStartTime": 1715886119223,
+                "rawEndTime": 1715886120926,
+                "thinkTime": 0.0,
+                "wastedTime": 0.25339388847351076
+            },
+            {
+                "transactionName": "sign off",
+                "rawStartTime": 1715886120956,
+                "rawEndTime": 1715886121567,
+                "thinkTime": 0.0,
+                "wastedTime": 0.09084320068359375
+            },
+            {
+                "transactionName": "UC5_SignUp",
+                "rawStartTime": 1715886118064,
+                "rawEndTime": 1715886121576,
+                "thinkTime": 0.0,
+                "wastedTime": 0.5228700637817383
+            }
+        ]
+    }
+]

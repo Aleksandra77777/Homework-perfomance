@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-IC:\Users\trifo\Documents\VuGen\Scripts\UC4_DeleteTickets
+-IC:\Program Files (x86)\Micro Focus\LoadRunner\include
+-ec:\users\trifo\documents\vugen\scripts\uc4_deletetickets\\logfile.log
+c:\users\trifo\documents\vugen\scripts\uc4_deletetickets\\combined_UC4_DeleteTickets.c
+c:\users\trifo\documents\vugen\scripts\uc4_deletetickets\\pre_cci.c

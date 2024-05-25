@@ -1,0 +1,12 @@
+HTTP/1.1 200 OK
+Im: x-bm
+X-Content-Type-Options: nosniff
+X-Country: ru
+X-Frame-Options: SAMEORIGIN
+X-Seed-Signature: MEUCIQDIm4PnGkxFVeWrd7HnrElCXOZpXyx74PudDipVygpgMgIgCJm74KRwLyZh2dWNRGBI5pkMVK5BO86/yCE25hsu4yk=
+X-Xss-Protection: 0
+Date: Tue, 23 Apr 2024 19:27:11 GMT
+Content-Length: 326
+Content-Type: application/octet-stream
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+

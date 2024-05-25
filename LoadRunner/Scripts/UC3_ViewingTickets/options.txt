@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-IC:\Users\trifo\Documents\VuGen\Scripts\UC3_ViewingTickets
+-IC:\Program Files (x86)\Micro Focus\LoadRunner\include
+-ec:\users\trifo\documents\vugen\scripts\uc3_viewingtickets\\logfile.log
+c:\users\trifo\documents\vugen\scripts\uc3_viewingtickets\\combined_UC3_ViewingTickets.c
+c:\users\trifo\documents\vugen\scripts\uc3_viewingtickets\\pre_cci.c

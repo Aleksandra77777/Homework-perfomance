@@ -1,0 +1,182 @@
+[API Trapper      (1644:5d0c)] Recording in 64-bit mode: C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+[API Trapper      (47d4:28dc)] Recording in 64-bit mode: C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+[API Trapper      (2fa0:17c4)] Recording in 64-bit mode: C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+[Network Analyzer (2fa0:2540)] ------------------------------------------------------------------------------------------
+[Network Analyzer (2fa0:2540)] Load Network Traffic Analyzers:
+[Network Analyzer (2fa0:2540)]     Analyzer Module: WPLUS (value=)
+[Network Analyzer (2fa0:2540)]     Analyzer Module: WebBase (value=GetHttpProtocolAnalyzer:api_http_filter_x64.dll)
+[Network Analyzer (2fa0:2540)]     + Network Analyzer: api_http_filter_x64.dll @ GetHttpProtocolAnalyzer Loaded!
+[Network Analyzer (2fa0:2540)]     + Interception Auditors: WinInetWplusInterceptionAudit:api_http_filter_x64.dll
+[Network Analyzer (2fa0:2540)]     Analyzer Module: QTWeb (value=GetWebSocketProtocolAnalyzer:WebSocketAnalyzer_x64.dll)
+[Network Analyzer (2fa0:2540)]     + Network Analyzer: WebSocketAnalyzer_x64.dll @ GetWebSocketProtocolAnalyzer Loaded!
+[Network Analyzer (2fa0:2540)]     Analyzer Module: local_server (value=)
+[Network Analyzer (2fa0:2540)] ------------------------------------------------------------------------------------------
+[Network Analyzer (2fa0:24ac)] Address lookup for DESKTOP-OKHND5U = 192.168.0.128
+[API Trapper      (3488:435c)] Recording in 64-bit mode: C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+[Net An. Warning  (2fa0:2540)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (2fa0:2540)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (2fa0:2540)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #3. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Error    (2fa0:2540)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080  (Service=)  NOT PROXIED! (REASON: Unable to connect to remote server: rc = -1 , le = 10061)
+[Network Analyzer (2fa0:2540)] Address lookup for DESKTOP-OKHND5U = 192.168.0.128
+[Network Analyzer (2fa0:2540)] Request Connection: Remote Server @ 192.168.0.181:7678   (Service=)  (Sid=  1)  PROXIED!
+[Network Analyzer (2fa0:2540)] Address lookup for DESKTOP-OKHND5U = 192.168.0.128
+[Net An. Warning  (2fa0:2540)] Request Connection: Remote Server @ 127.0.0.1:1080 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (2fa0:2540)] Request Connection: Remote Server @ 127.0.0.1:1080 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (2fa0:2540)] Request Connection: Remote Server @ 127.0.0.1:1080 (Service=) Failed attempt #3. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Error    (2fa0:2540)] Request Connection: Remote Server @ 127.0.0.1:1080   (Service=)  NOT PROXIED! (REASON: Unable to connect to remote server: rc = -1 , le = 10061)
+[Web Request      (2fa0:24ac)] "GET /nservice/"   
+[Network Analyzer (2fa0:24ac)]   (Sid:  1) Client -> Server @ : 234 bytes (Service=HTTP)
+[Network Analyzer (2fa0:24ac)]   (Sid:  1) Server -> Client : 1460 bytes  (Service=HTTP)
+[Network Analyzer (2fa0:24ac)]   (Sid:  1) Server -> Client : 241 bytes  (Service=HTTP)
+[Network Analyzer (2fa0:24ac)]   (Sid:  1) Connection Terminated (by Server)
+[Net An. Warning  (2fa0:2540)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (2fa0:2540)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (2fa0:2540)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #3. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Error    (2fa0:2540)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080  (Service=)  NOT PROXIED! (REASON: Unable to connect to remote server: rc = -1 , le = 10061)
+[API Trapper      (50d0:2038)] Recording in 64-bit mode: C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+[API Trapper      (231c:3afc)] Recording in 64-bit mode: C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+[Net An. Warning  (2fa0:2540)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (2fa0:2540)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (2fa0:2540)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #3. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Error    (2fa0:2540)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080  (Service=)  NOT PROXIED! (REASON: Unable to connect to remote server: rc = -1 , le = 10061)
+[Network Analyzer (2fa0:2540)] Address lookup for DESKTOP-OKHND5U = 192.168.0.128
+[Network Analyzer (2fa0:2540)] Request Connection: Remote Server @ 64.233.163.94:443   (Service=)  (Sid=  2)  PROXIED!
+[Network Analyzer (2fa0:2540)] Address lookup for DESKTOP-OKHND5U = 192.168.0.128
+[Network Analyzer (2fa0:2540)] Request Connection: Remote Server @ 173.194.222.95:443   (Service=)  (Sid=  3)  PROXIED!
+[Network Analyzer (2fa0:2540)] Address lookup for DESKTOP-OKHND5U = 192.168.0.128
+[Network Analyzer (2fa0:2540)] Request Connection: Remote Server @ 127.0.0.1:1080   (Service=)  (Sid=  4)  PROXIED!
+[Network Analyzer (2fa0:5420)]   (Sid:  3) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.3, ciphers:TLS_AES_256_GCM_SHA384)
+[Network Analyzer (2fa0:4f8c)]   (Sid:  2) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.3, ciphers:TLS_AES_256_GCM_SHA384)
+[Net An. Error    (2fa0:5420)] SSLAccept(ssl_id = 1947450054288 = 000001C56D119690) Failed, ctx = 000001C568D9CEA0, err = "error", err code = 1, err msg= "error:00000001:lib(0):func(0):reason(1)
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown
+" 
+[Net An. Error    (2fa0:5420)]   (Sid:  3) Negotiate Client -> Proxy SSL Handshake Failed!!!
+[Network Analyzer (2fa0:4f8c)]   (Sid:  2) Negotiate Client -> Proxy SSL Handshake (ssl:TLSv1.3, ciphers:TLS_AES_128_GCM_SHA256)
+[Web Request      (2fa0:24ac)] "GET /chrome-variations/seed?osname=win&channel=stable&milestone=124"   
+[Network Analyzer (2fa0:24ac)]   (Sid:  2) Client -> Server @ : 475 bytes (SSL)(Service=HTTP)
+[Web Request      (2fa0:24ac)] "GET /WebTours"   
+[Network Analyzer (2fa0:24ac)]   (Sid:  4) Client -> Server @ : 672 bytes (Service=HTTP)
+[Network Analyzer (2fa0:24ac)]   (Sid:  4) Server -> Client : 506 bytes  (Service=HTTP)
+[Web Request      (2fa0:24ac)] "GET /WebTours/"   
+[Network Analyzer (2fa0:24ac)]   (Sid:  4) Client -> Server @ : 673 bytes (Service=HTTP)
+[Network Analyzer (2fa0:24ac)]   (Sid:  2) Server -> Client : 724 bytes (SSL) (Service=HTTP)
+[Network Analyzer (2fa0:24ac)]   (Sid:  4) Server -> Client : 663 bytes  (Service=HTTP)
+[Web Request      (2fa0:24ac)] "GET /WebTours/header.html"   
+[Network Analyzer (2fa0:24ac)]   (Sid:  4) Client -> Server @ : 710 bytes (Service=HTTP)
+[Network Analyzer (2fa0:24ac)]   (Sid:  4) Server -> Client : 1007 bytes  (Service=HTTP)
+[Network Analyzer (2fa0:24ac)]   (Sid:  3) Connection Terminated (by Client)
+[Net An. Warning  (2fa0:2540)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (2fa0:2540)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10061)
+[Network Analyzer (2fa0:24ac)]   (Sid:  4) Connection Terminated (by Server)
+[Net An. Warning  (2fa0:2540)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #3. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Error    (2fa0:2540)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080  (Service=)  NOT PROXIED! (REASON: Unable to connect to remote server: rc = -1 , le = 10061)
+[Network Analyzer (2fa0:2540)] Address lookup for DESKTOP-OKHND5U = 192.168.0.128
+[Net An. Warning  (2fa0:2540)] Request Connection: Remote Server @ 192.168.0.181:8009 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (2fa0:2540)] Request Connection: Remote Server @ 192.168.0.181:8009 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (2fa0:2540)] Request Connection: Remote Server @ 192.168.0.181:8009 (Service=) Failed attempt #3. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Error    (2fa0:2540)] Request Connection: Remote Server @ 192.168.0.181:8009   (Service=)  NOT PROXIED! (REASON: Unable to connect to remote server: rc = -1 , le = 10061)
+[Network Analyzer (2fa0:2540)] Address lookup for DESKTOP-OKHND5U = 192.168.0.128
+[Network Analyzer (2fa0:2540)] Request Connection: Remote Server @ 127.0.0.1:1080   (Service=)  (Sid=  5)  PROXIED!
+[Network Analyzer (2fa0:2540)] Address lookup for DESKTOP-OKHND5U = 192.168.0.128
+[Net An. Warning  (2fa0:2540)] Request Connection: Remote Server @ 192.168.0.181:8009 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (2fa0:2540)] Request Connection: Remote Server @ 192.168.0.181:8009 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (2fa0:2540)] Request Connection: Remote Server @ 192.168.0.181:8009 (Service=) Failed attempt #3. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Error    (2fa0:2540)] Request Connection: Remote Server @ 192.168.0.181:8009   (Service=)  NOT PROXIED! (REASON: Unable to connect to remote server: rc = -1 , le = 10061)
+[Web Request      (2fa0:24ac)] "GET /cgi-bin/welcome.pl?signOff=true"   
+[Network Analyzer (2fa0:24ac)]   (Sid:  5) Client -> Server @ : 721 bytes (Service=HTTP)
+[Network Analyzer (2fa0:24ac)]   (Sid:  5) Server -> Client : 1021 bytes  (Service=HTTP)
+[Network Analyzer (2fa0:24ac)]   (Sid:  5) Server -> Client : 5 bytes  (Service=HTTP)
+[Network Analyzer (2fa0:24ac)]   (Sid:  2) Connection Terminated (by Client)
+[Net An. Warning  (2fa0:2540)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (2fa0:2540)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10061)
+[Network Analyzer (2fa0:24ac)]   (Sid:  5) Connection Terminated (by Server)
+[Net An. Warning  (2fa0:2540)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #3. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Error    (2fa0:2540)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080  (Service=)  NOT PROXIED! (REASON: Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (2fa0:2540)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (2fa0:2540)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (2fa0:2540)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #3. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Error    (2fa0:2540)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080  (Service=)  NOT PROXIED! (REASON: Unable to connect to remote server: rc = -1 , le = 10061)
+[Network Analyzer (2fa0:2540)] Address lookup for DESKTOP-OKHND5U = 192.168.0.128
+[Network Analyzer (2fa0:2540)] Request Connection: Remote Server @ 127.0.0.1:1080   (Service=)  (Sid=  6)  PROXIED!
+[Net An. Warning  (2fa0:2540)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (2fa0:2540)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (2fa0:2540)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #3. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Error    (2fa0:2540)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080  (Service=)  NOT PROXIED! (REASON: Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (2fa0:2540)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (2fa0:2540)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (2fa0:2540)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #3. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Error    (2fa0:2540)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080  (Service=)  NOT PROXIED! (REASON: Unable to connect to remote server: rc = -1 , le = 10061)
+[Network Analyzer (2fa0:2540)] Address lookup for DESKTOP-OKHND5U = 192.168.0.128
+[Net An. Warning  (2fa0:2540)] Request Connection: Remote Server @ 192.168.0.181:8009 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (2fa0:2540)] Request Connection: Remote Server @ 192.168.0.181:8009 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (2fa0:2540)] Request Connection: Remote Server @ 192.168.0.181:8009 (Service=) Failed attempt #3. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Error    (2fa0:2540)] Request Connection: Remote Server @ 192.168.0.181:8009   (Service=)  NOT PROXIED! (REASON: Unable to connect to remote server: rc = -1 , le = 10061)
+[Network Analyzer (2fa0:2540)] Address lookup for DESKTOP-OKHND5U = 192.168.0.128
+[Network Analyzer (2fa0:2540)] Request Connection: Remote Server @ 127.0.0.1:1080   (Service=)  (Sid=  7)  PROXIED!
+[Web Request      (2fa0:24ac)] "GET /WebTours/images/hp_logo.png"   
+[Network Analyzer (2fa0:24ac)]   (Sid:  6) Client -> Server @ : 626 bytes (Service=HTTP)
+[Network Analyzer (2fa0:2540)] Address lookup for DESKTOP-OKHND5U = 192.168.0.128
+[Network Analyzer (2fa0:24ac)]   (Sid:  6) Server -> Client : 899 bytes  (Service=HTTP)
+[Network Analyzer (2fa0:2540)] Request Connection: Remote Server @ 127.0.0.1:1080   (Service=)  (Sid=  8)  PROXIED!
+[Network Analyzer (2fa0:2540)] Address lookup for DESKTOP-OKHND5U = 192.168.0.128
+[Network Analyzer (2fa0:2540)] Request Connection: Remote Server @ 127.0.0.1:1080   (Service=)  (Sid=  9)  PROXIED!
+[Network Analyzer (2fa0:2540)] Address lookup for DESKTOP-OKHND5U = 192.168.0.128
+[Network Analyzer (2fa0:2540)] Request Connection: Remote Server @ 216.58.211.227:443   (Service=)  (Sid= 10)  PROXIED!
+[Network Analyzer (2fa0:2540)] Address lookup for DESKTOP-OKHND5U = 192.168.0.128
+[Network Analyzer (2fa0:2540)] Request Connection: Remote Server @ 216.58.211.227:443   (Service=)  (Sid= 11)  PROXIED!
+[Network Analyzer (2fa0:2540)] Address lookup for DESKTOP-OKHND5U = 192.168.0.128
+[Network Analyzer (2fa0:57f4)]   (Sid: 10) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.3, ciphers:TLS_AES_256_GCM_SHA384)
+[Network Analyzer (2fa0:2540)] Request Connection: Remote Server @ 142.250.150.94:443   (Service=)  (Sid= 12)  PROXIED!
+[Web Request      (2fa0:24ac)] "GET /cgi-bin/nav.pl?in=home"   
+[Network Analyzer (2fa0:24ac)]   (Sid:  7) Client -> Server @ : 762 bytes (Service=HTTP)
+[Web Request      (2fa0:24ac)] "GET /WebTours/home.html"   
+[Network Analyzer (2fa0:24ac)]   (Sid:  8) Client -> Server @ : 758 bytes (Service=HTTP)
+[Web Request      (2fa0:24ac)] "GET /WebTours/images/webtours.png"   
+[Network Analyzer (2fa0:24ac)]   (Sid:  9) Client -> Server @ : 655 bytes (Service=HTTP)
+[Network Analyzer (2fa0:24ac)]   (Sid:  8) Server -> Client : 1660 bytes  (Service=HTTP)
+[Network Analyzer (2fa0:24ac)]   (Sid:  9) Server -> Client : 4487 bytes  (Service=HTTP)
+[Net An. Error    (2fa0:57f4)] SSLAccept(ssl_id = 1947450012496 = 000001C56D10F350) Failed, ctx = 000001C568D9CEA0, err = "error", err code = 1, err msg= "error:00000001:lib(0):func(0):reason(1)
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown
+" 
+[Network Analyzer (2fa0:3610)]   (Sid: 11) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.3, ciphers:TLS_AES_256_GCM_SHA384)
+[Net An. Error    (2fa0:57f4)]   (Sid: 10) Negotiate Client -> Proxy SSL Handshake Failed!!!
+[Net An. Error    (2fa0:3610)] SSLAccept(ssl_id = 1947450060304 = 000001C56D11AE10) Failed, ctx = 000001C568D9CEA0, err = "error", err code = 1, err msg= "error:00000001:lib(0):func(0):reason(1)
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown
+" 
+[Net An. Error    (2fa0:3610)]   (Sid: 11) Negotiate Client -> Proxy SSL Handshake Failed!!!
+[Network Analyzer (2fa0:4ce0)]   (Sid: 12) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.3, ciphers:TLS_AES_256_GCM_SHA384)
+[Network Analyzer (2fa0:4ce0)]   (Sid: 12) Negotiate Client -> Proxy SSL Handshake (ssl:TLSv1.3, ciphers:TLS_AES_128_GCM_SHA256)
+[Network Analyzer (2fa0:24ac)]   (Sid:  7) Server -> Client : 1751 bytes  (Service=HTTP)
+[Network Analyzer (2fa0:24ac)]   (Sid:  7) Server -> Client : 5 bytes  (Service=HTTP)
+[Web Request      (2fa0:24ac)] "POST /service/update2/json?cup2key=14:bM0MB25Nrsnc04mWTiQdGJ6tgnLKwT0paXXN1K59Bpc&cup2hreq=556c6a452a1994cd430c3235eec807121a38ae72db78cf727e11215751580b18"
+[Network Analyzer (2fa0:24ac)]   (Sid: 12) Client -> Server @ : 1338 bytes (SSL)(Service=HTTP)
+[Network Analyzer (2fa0:24ac)]   (Sid: 12) Client -> Server @ : 8667 bytes (SSL)(Service=HTTP)
+[Web Request      (2fa0:24ac)] "GET /WebTours/images/mer_login.gif"   
+[Network Analyzer (2fa0:24ac)]   (Sid:  7) Client -> Server @ : 658 bytes (Service=HTTP)
+[Network Analyzer (2fa0:24ac)]   (Sid:  7) Server -> Client : 976 bytes  (Service=HTTP)
+[Network Analyzer (2fa0:24ac)]   (Sid: 12) Server -> Client : 1145 bytes (SSL) (Service=HTTP)
+[Network Analyzer (2fa0:24ac)]   (Sid: 12) Server -> Client : 1129 bytes (SSL) (Service=HTTP)
+[Network Analyzer (2fa0:24ac)]   (Sid: 12) Server -> Client : 5 bytes (SSL) (Service=HTTP)
+[Web Request      (2fa0:24ac)] "GET /favicon.ico"   
+[Network Analyzer (2fa0:24ac)]   (Sid:  7) Client -> Server @ : 627 bytes (Service=HTTP)
+[Network Analyzer (2fa0:24ac)]   (Sid:  7) Server -> Client : 424 bytes  (Service=HTTP)
+[Network Analyzer (2fa0:2540)] Address lookup for DESKTOP-OKHND5U = 192.168.0.128
+[Network Analyzer (2fa0:2540)] Request Connection: Remote Server @ 209.85.233.95:443   (Service=)  (Sid= 13)  PROXIED!
+[Network Analyzer (2fa0:5124)]   (Sid: 13) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.3, ciphers:TLS_AES_256_GCM_SHA384)
+[Network Analyzer (2fa0:5124)]   (Sid: 13) Negotiate Client -> Proxy SSL Handshake (ssl:TLSv1.3, ciphers:TLS_AES_128_GCM_SHA256)
+[Web Request      (2fa0:24ac)] "GET /v1/pages/ChRDaHJvbWUvMTI0LjAuNjM2Ny42MRIgCU35IjnBRbgwEgUN541ADhIFDc5BTHohSeE1wfpE8PA=?alt=proto"   
+[Network Analyzer (2fa0:24ac)]   (Sid: 13) Client -> Server @ : 549 bytes (SSL)(Service=HTTP)
+[Network Analyzer (2fa0:24ac)]   (Sid: 13) Server -> Client : 491 bytes (SSL) (Service=HTTP)
+[Network Analyzer (2fa0:24ac)]   (Sid:  6) Connection Terminated (by Client)
+[Network Analyzer (2fa0:24ac)]   (Sid:  8) Connection Terminated (by Client)
+[Network Analyzer (2fa0:24ac)]   (Sid:  9) Connection Terminated (by Client)
+[Network Analyzer (2fa0:24ac)]   (Sid:  7) Connection Terminated (by Client)
+[Network Analyzer (2fa0:24ac)]   (Sid: 10) Connection Terminated (by Client)
+[Network Analyzer (2fa0:24ac)]   (Sid: 11) Connection Terminated (by Client)
+[Network Analyzer (2fa0:24ac)]   (Sid: 12) Connection Terminated (by Client)
+[Network Analyzer (2fa0:24ac)]   (Sid: 13) Connection Terminated (by Client)
+[Network Analyzer (2fa0:2540)] Address lookup for DESKTOP-OKHND5U = 192.168.0.128
+[Net An. Warning  (2fa0:2540)] Request Connection: Remote Server @ 192.168.0.181:8009 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (2fa0:2540)] Request Connection: Remote Server @ 192.168.0.181:8009 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (2fa0:2540)] Request Connection: Remote Server @ 192.168.0.181:8009 (Service=) Failed attempt #3. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Error    (2fa0:2540)] Request Connection: Remote Server @ 192.168.0.181:8009   (Service=)  NOT PROXIED! (REASON: Unable to connect to remote server: rc = -1 , le = 10061)

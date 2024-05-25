@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-IC:\Users\trifo\Documents\VuGen\Scripts\UC5_SignUp
+-IC:\Program Files (x86)\Micro Focus\LoadRunner\include
+-ec:\users\trifo\documents\vugen\scripts\uc5_signup\\logfile.log
+c:\users\trifo\documents\vugen\scripts\uc5_signup\\combined_UC5_SignUp.c
+c:\users\trifo\documents\vugen\scripts\uc5_signup\\pre_cci.c

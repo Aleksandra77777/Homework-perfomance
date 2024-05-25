@@ -1,0 +1,6 @@
+[Network Analyzer (179c:8900)]   (Sid: 54) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.3, ciphers:TLS_AES_256_GCM_SHA384)
+[Net An. Error    (179c:8900)] SSLAccept(ssl_id = 2541310182608 = 0000024FB1E404D0) Failed, ctx = 0000024FB1D49200, err = "error", err code = 1, err msg= "error:00000001:lib(0):func(0):reason(1)
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown
+" 
+[Net An. Error    (179c:8900)]   (Sid: 54) Negotiate Client -> Proxy SSL Handshake Failed!!!
+[Network Analyzer (179c:430c)]   (Sid: 54) Connection Terminated (by Client)
