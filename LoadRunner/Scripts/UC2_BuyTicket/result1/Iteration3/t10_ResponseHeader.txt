@@ -1,7 +1,0 @@
-HTTP/1.1 500 Internal Server Error
-Date: Thu, 23 May 2024 19:18:01 GMT
-Server: Apache/2.2.21 (Win32)
-Content-Length: 535
-Connection: close
-Content-Type: text/html; charset=iso-8859-1
-

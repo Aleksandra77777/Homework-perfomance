@@ -344,7 +344,7 @@ Action()
 	web_reg_find("Text/IC=from <B>{depart}</B> to <B>{arrive}</B>",
 		LAST);
 	
-/*Correlation comment - Do not change!  Original value='020;338;04/26/2024' Name ='CorrelationParameter' Type ='RecordReplay'*/
+/*Correlation comment - Do not change!  Original value='020;338;04/26/2024' Name ='outboundFlight' Type ='RecordReplay'*/
 	web_reg_save_param_attrib(
 		"ParamName=outboundFlight",
 		"TagName=input",
@@ -353,8 +353,13 @@ Action()
 		"Type=radio",
 		LAST);
 		
+//		web_reg_save_param("outboundFlight",
+//		"LB=outboundFlight\" value=\"",
+//		"RB=\"",
+//		LAST);
 		
 
+		
 	web_custom_request("reservations.pl_2", 
 		"URL=http://localhost:1080/cgi-bin/reservations.pl", 
 		"Method=POST", 
@@ -366,16 +371,11 @@ Action()
 		"Body=advanceDiscount=0&depart={depart}&departDate={departDate}&arrive={arrive}&returnDate={returnDate}&numPassengers=1&seatPref={seatPref}&seatType={seatType}&findFlights.x=67&findFlights.y=13&.cgifields=roundtrip&.cgifields=seatType&.cgifields=seatPref", 
 		LAST);
 
-//	web_reg_save_param("outboundFlight",
-//		"LB=outboundFlight\" value=\"",
-//		"RB=\"",
-//		LAST);
-
-//	web_convert_param("CorrelationParameter_URL2",
-//		"SourceString={CorrelationParameter}",
-//		"SourceEncoding=HTML",
-//		"TargetEncoding=URL",
-//		LAST);
+web_convert_param("CorrelationParameter_URL2",
+		"SourceString={outboundFlight}",
+		"SourceEncoding=HTML",
+		"TargetEncoding=URL",
+		LAST);
 
 	lr_end_transaction("find_flight",LR_AUTO);
 
@@ -391,7 +391,7 @@ Action()
 		"Referer=http://localhost:1080/cgi-bin/reservations.pl",
 		"Snapshot=t23.inf",
 		"Mode=HTTP",
-		"Body=outboundFlight={outboundFlight}&numPassengers=1&advanceDiscount=0&seatType={seatType}&seatPref={seatPref}&reserveFlights.x=49&reserveFlights.y=7",
+		"Body=outboundFlight={CorrelationParameter_URL2}&numPassengers=1&advanceDiscount=0&seatType={seatType}&seatPref={seatPref}&reserveFlights.x=49&reserveFlights.y=7",
 		LAST);
 
 	lr_end_transaction("choose_flight",LR_AUTO);
@@ -400,8 +400,8 @@ Action()
 
 	lr_start_transaction("payment_details");
 	
-	web_reg_find("Text/IC=from {depart} to {arrive}",
-		LAST);
+//	web_reg_find("Text/IC=from {depart} to {arrive}",
+//		LAST);
 
 	web_custom_request("reservations.pl_4",
 		"URL=http://localhost:1080/cgi-bin/reservations.pl",
@@ -411,7 +411,7 @@ Action()
 		"Referer=http://localhost:1080/cgi-bin/reservations.pl",
 		"Snapshot=t24.inf",
 		"Mode=HTTP",
-		"Body=firstName={firstName}&lastName={lastName}&address1={address1}&address2={address2}&pass1={firstName}+{lastName}&creditCard={creditCard}&expDate={expDate}&saveCC=on&oldCCOption=on&numPassengers=1&seatType={seatType}&seatPref={seatPref}&outboundFlight={outboundFlight}&advanceDiscount=0&returnFlight=&JSFormSubmit=off&buyFlights.x=43&buyFlights.y=6&.cgifields=saveCC",
+		"Body=firstName={firstName}&lastName={lastName}&address1={address1}&address2={address2}&pass1={firstName}+{lastName}&creditCard={creditCard}&expDate={expDate}&saveCC=on&oldCCOption=on&numPassengers=1&seatType={seatType}&seatPref={seatPref}&outboundFlight={CorrelationParameter_URL2}&advanceDiscount=0&returnFlight=&JSFormSubmit=off&buyFlights.x=43&buyFlights.y=6&.cgifields=saveCC",
 		LAST);
 
 	web_custom_request("bookanother.gif", 

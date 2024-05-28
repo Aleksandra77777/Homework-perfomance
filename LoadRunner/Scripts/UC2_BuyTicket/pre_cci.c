@@ -1,4 +1,4 @@
-# 1 "c:\\users\\trifo\\documents\\vugen\\scripts\\uc2_buyticket\\\\combined_UC2_BuyTicket.c"
+# 1 "c:\\users\\trifo\\documents\\homework\\loadrunner\\scripts\\uc2_buyticket\\\\combined_UC2_BuyTicket.c"
 # 1 "C:\\Program Files (x86)\\Micro Focus\\LoadRunner\\include/lrun.h" 1
  
  
@@ -968,7 +968,7 @@ int lr_db_getvalue(char * pFirstArg, ...);
 
 
 
-# 1 "c:\\users\\trifo\\documents\\vugen\\scripts\\uc2_buyticket\\\\combined_UC2_BuyTicket.c" 2
+# 1 "c:\\users\\trifo\\documents\\homework\\loadrunner\\scripts\\uc2_buyticket\\\\combined_UC2_BuyTicket.c" 2
 
 # 1 "C:\\Program Files (x86)\\Micro Focus\\LoadRunner\\include/SharedParameter.h" 1
 
@@ -1136,7 +1136,7 @@ extern VTCERR2  lrvtc_noop();
 
 
 
-# 2 "c:\\users\\trifo\\documents\\vugen\\scripts\\uc2_buyticket\\\\combined_UC2_BuyTicket.c" 2
+# 2 "c:\\users\\trifo\\documents\\homework\\loadrunner\\scripts\\uc2_buyticket\\\\combined_UC2_BuyTicket.c" 2
 
 # 1 "globals.h" 1
 
@@ -2593,14 +2593,14 @@ void
  
 
 
-# 3 "c:\\users\\trifo\\documents\\vugen\\scripts\\uc2_buyticket\\\\combined_UC2_BuyTicket.c" 2
+# 3 "c:\\users\\trifo\\documents\\homework\\loadrunner\\scripts\\uc2_buyticket\\\\combined_UC2_BuyTicket.c" 2
 
 # 1 "vuser_init.c" 1
 vuser_init()
 {
 	return 0;
 }
-# 4 "c:\\users\\trifo\\documents\\vugen\\scripts\\uc2_buyticket\\\\combined_UC2_BuyTicket.c" 2
+# 4 "c:\\users\\trifo\\documents\\homework\\loadrunner\\scripts\\uc2_buyticket\\\\combined_UC2_BuyTicket.c" 2
 
 # 1 "Action.c" 1
 Action()
@@ -2958,8 +2958,13 @@ Action()
 		"Type=radio",
 		"LAST");
 		
+ 
+ 
+ 
+ 
 		
 
+		
 	web_custom_request("reservations.pl_2", 
 		"URL=http://localhost:1080/cgi-bin/reservations.pl", 
 		"Method=POST", 
@@ -2971,16 +2976,11 @@ Action()
 		"Body=advanceDiscount=0&depart={depart}&departDate={departDate}&arrive={arrive}&returnDate={returnDate}&numPassengers=1&seatPref={seatPref}&seatType={seatType}&findFlights.x=67&findFlights.y=13&.cgifields=roundtrip&.cgifields=seatType&.cgifields=seatPref", 
 		"LAST");
 
- 
- 
- 
- 
-
- 
- 
- 
- 
- 
+web_convert_param("CorrelationParameter_URL2",
+		"SourceString={outboundFlight}",
+		"SourceEncoding=HTML",
+		"TargetEncoding=URL",
+		"LAST");
 
 	lr_end_transaction("find_flight",2);
 
@@ -2996,7 +2996,7 @@ Action()
 		"Referer=http://localhost:1080/cgi-bin/reservations.pl",
 		"Snapshot=t23.inf",
 		"Mode=HTTP",
-		"Body=outboundFlight={outboundFlight}&numPassengers=1&advanceDiscount=0&seatType={seatType}&seatPref={seatPref}&reserveFlights.x=49&reserveFlights.y=7",
+		"Body=outboundFlight={CorrelationParameter_URL2}&numPassengers=1&advanceDiscount=0&seatType={seatType}&seatPref={seatPref}&reserveFlights.x=49&reserveFlights.y=7",
 		"LAST");
 
 	lr_end_transaction("choose_flight",2);
@@ -3005,8 +3005,8 @@ Action()
 
 	lr_start_transaction("payment_details");
 	
-	web_reg_find("Text/IC=from {depart} to {arrive}",
-		"LAST");
+ 
+ 
 
 	web_custom_request("reservations.pl_4",
 		"URL=http://localhost:1080/cgi-bin/reservations.pl",
@@ -3016,7 +3016,7 @@ Action()
 		"Referer=http://localhost:1080/cgi-bin/reservations.pl",
 		"Snapshot=t24.inf",
 		"Mode=HTTP",
-		"Body=firstName={firstName}&lastName={lastName}&address1={address1}&address2={address2}&pass1={firstName}+{lastName}&creditCard={creditCard}&expDate={expDate}&saveCC=on&oldCCOption=on&numPassengers=1&seatType={seatType}&seatPref={seatPref}&outboundFlight={outboundFlight}&advanceDiscount=0&returnFlight=&JSFormSubmit=off&buyFlights.x=43&buyFlights.y=6&.cgifields=saveCC",
+		"Body=firstName={firstName}&lastName={lastName}&address1={address1}&address2={address2}&pass1={firstName}+{lastName}&creditCard={creditCard}&expDate={expDate}&saveCC=on&oldCCOption=on&numPassengers=1&seatType={seatType}&seatPref={seatPref}&outboundFlight={CorrelationParameter_URL2}&advanceDiscount=0&returnFlight=&JSFormSubmit=off&buyFlights.x=43&buyFlights.y=6&.cgifields=saveCC",
 		"LAST");
 
 	web_custom_request("bookanother.gif", 
@@ -3076,12 +3076,12 @@ Action()
 
 	return 0;
 }
-# 5 "c:\\users\\trifo\\documents\\vugen\\scripts\\uc2_buyticket\\\\combined_UC2_BuyTicket.c" 2
+# 5 "c:\\users\\trifo\\documents\\homework\\loadrunner\\scripts\\uc2_buyticket\\\\combined_UC2_BuyTicket.c" 2
 
 # 1 "vuser_end.c" 1
 vuser_end()
 {
 	return 0;
 }
-# 6 "c:\\users\\trifo\\documents\\vugen\\scripts\\uc2_buyticket\\\\combined_UC2_BuyTicket.c" 2
+# 6 "c:\\users\\trifo\\documents\\homework\\loadrunner\\scripts\\uc2_buyticket\\\\combined_UC2_BuyTicket.c" 2
 
