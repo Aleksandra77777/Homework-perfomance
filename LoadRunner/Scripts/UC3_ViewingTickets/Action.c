@@ -30,6 +30,10 @@ Action()
 	web_add_auto_header("Sec-Fetch-User", 
 		"?1");
 
+	
+	web_reg_find("Text=301 Moved Permanently",
+		LAST);
+
 	web_custom_request("WebTours", 
 		"URL=http://localhost:1080/WebTours", 
 		"Method=GET", 
@@ -117,6 +121,9 @@ Action()
 		"frame");
 
 	web_concurrent_start(NULL);
+	
+	web_reg_find("Text=Welcome to the Web Tours site",
+		LAST);
 
 	web_custom_request("home.html", 
 		"URL=http://localhost:1080/WebTours/home.html", 
@@ -182,6 +189,9 @@ Action()
 		"http://localhost:1080");
 
 	lr_think_time(37);
+	
+	web_reg_find("Text=User password was correct",
+		LAST);
 
 	web_custom_request("login.pl", 
 		"URL=http://localhost:1080/cgi-bin/login.pl", 
@@ -263,6 +273,9 @@ Action()
 	lr_think_time(71);
 
 	lr_start_transaction("itinerary");
+	
+	web_reg_find("Text=User wants the intineraries",
+		LAST);
 
 	web_custom_request("Itinerary Button", 
 		"URL=http://localhost:1080/cgi-bin/welcome.pl?page=itinerary", 

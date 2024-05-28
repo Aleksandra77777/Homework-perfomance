@@ -1,2 +1,0 @@
-"username=alex&password=zoomaster&passwordConfirm=zoomaster&firstName=Alex&lastName=Lion&addres"
-"s1=326 Central Park West&address2=10023&register.x=19&register.y=14"

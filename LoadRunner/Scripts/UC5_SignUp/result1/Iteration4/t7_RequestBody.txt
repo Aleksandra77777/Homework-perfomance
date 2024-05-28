@@ -1,2 +1,0 @@
-"username=melman&password=giraffe123&passwordConfirm=giraffe123&firstName=Melman&lastName=Giraf"
-"fe&address1=9012 Tall Trees Blvd&address2=54321&register.x=19&register.y=14"

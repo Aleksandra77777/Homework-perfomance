@@ -1,4 +1,4 @@
-# 1 "c:\\users\\trifo\\documents\\vugen\\scripts\\uc3_viewingtickets\\\\combined_UC3_ViewingTickets.c"
+# 1 "c:\\users\\trifo\\documents\\homework\\loadrunner\\scripts\\uc3_viewingtickets\\\\combined_UC3_ViewingTickets.c"
 # 1 "C:\\Program Files (x86)\\Micro Focus\\LoadRunner\\include/lrun.h" 1
  
  
@@ -968,7 +968,7 @@ int lr_db_getvalue(char * pFirstArg, ...);
 
 
 
-# 1 "c:\\users\\trifo\\documents\\vugen\\scripts\\uc3_viewingtickets\\\\combined_UC3_ViewingTickets.c" 2
+# 1 "c:\\users\\trifo\\documents\\homework\\loadrunner\\scripts\\uc3_viewingtickets\\\\combined_UC3_ViewingTickets.c" 2
 
 # 1 "C:\\Program Files (x86)\\Micro Focus\\LoadRunner\\include/SharedParameter.h" 1
 
@@ -1136,7 +1136,7 @@ extern VTCERR2  lrvtc_noop();
 
 
 
-# 2 "c:\\users\\trifo\\documents\\vugen\\scripts\\uc3_viewingtickets\\\\combined_UC3_ViewingTickets.c" 2
+# 2 "c:\\users\\trifo\\documents\\homework\\loadrunner\\scripts\\uc3_viewingtickets\\\\combined_UC3_ViewingTickets.c" 2
 
 # 1 "globals.h" 1
 
@@ -2594,14 +2594,14 @@ void
  
 
 
-# 3 "c:\\users\\trifo\\documents\\vugen\\scripts\\uc3_viewingtickets\\\\combined_UC3_ViewingTickets.c" 2
+# 3 "c:\\users\\trifo\\documents\\homework\\loadrunner\\scripts\\uc3_viewingtickets\\\\combined_UC3_ViewingTickets.c" 2
 
 # 1 "vuser_init.c" 1
 vuser_init()
 {
 	return 0;
 }
-# 4 "c:\\users\\trifo\\documents\\vugen\\scripts\\uc3_viewingtickets\\\\combined_UC3_ViewingTickets.c" 2
+# 4 "c:\\users\\trifo\\documents\\homework\\loadrunner\\scripts\\uc3_viewingtickets\\\\combined_UC3_ViewingTickets.c" 2
 
 # 1 "Action.c" 1
 Action()
@@ -2635,6 +2635,10 @@ Action()
 
 	web_add_auto_header("Sec-Fetch-User", 
 		"?1");
+
+	
+	web_reg_find("Text=301 Moved Permanently",
+		"LAST");
 
 	web_custom_request("WebTours", 
 		"URL=http://localhost:1080/WebTours", 
@@ -2723,6 +2727,9 @@ Action()
 		"frame");
 
 	web_concurrent_start(0);
+	
+	web_reg_find("Text=Welcome to the Web Tours site",
+		"LAST");
 
 	web_custom_request("home.html", 
 		"URL=http://localhost:1080/WebTours/home.html", 
@@ -2788,6 +2795,9 @@ Action()
 		"http://localhost:1080");
 
 	lr_think_time(37);
+	
+	web_reg_find("Text=User password was correct",
+		"LAST");
 
 	web_custom_request("login.pl", 
 		"URL=http://localhost:1080/cgi-bin/login.pl", 
@@ -2869,6 +2879,9 @@ Action()
 	lr_think_time(71);
 
 	lr_start_transaction("itinerary");
+	
+	web_reg_find("Text=User wants the intineraries",
+		"LAST");
 
 	web_custom_request("Itinerary Button", 
 		"URL=http://localhost:1080/cgi-bin/welcome.pl?page=itinerary", 
@@ -3016,12 +3029,12 @@ Action()
 
 	return 0;
 }
-# 5 "c:\\users\\trifo\\documents\\vugen\\scripts\\uc3_viewingtickets\\\\combined_UC3_ViewingTickets.c" 2
+# 5 "c:\\users\\trifo\\documents\\homework\\loadrunner\\scripts\\uc3_viewingtickets\\\\combined_UC3_ViewingTickets.c" 2
 
 # 1 "vuser_end.c" 1
 vuser_end()
 {
 	return 0;
 }
-# 6 "c:\\users\\trifo\\documents\\vugen\\scripts\\uc3_viewingtickets\\\\combined_UC3_ViewingTickets.c" 2
+# 6 "c:\\users\\trifo\\documents\\homework\\loadrunner\\scripts\\uc3_viewingtickets\\\\combined_UC3_ViewingTickets.c" 2
 

@@ -35,6 +35,9 @@ Action()
 
 	web_add_auto_header("Sec-Fetch-User", 
 		"?1");
+	
+	web_reg_find("Text=Moved Permanently",
+		LAST);
 
 	web_custom_request("WebTours", 
 		"URL=http://localhost:1080/WebTours", 
@@ -204,6 +207,9 @@ Action()
 		"Referer=http://localhost:1080/cgi-bin/login.pl", 
 		"Snapshot=t10.inf", 
 		"Mode=HTTP", 
+		LAST);
+	
+	web_reg_find("Text=Welcome to Web Tours",
 		LAST);
 
 	web_custom_request("login.pl_2", 
@@ -400,8 +406,8 @@ web_convert_param("CorrelationParameter_URL2",
 
 	lr_start_transaction("payment_details");
 	
-//	web_reg_find("Text/IC=from {depart} to {arrive}",
-//		LAST);
+	web_reg_find("Text/IC=from {depart} to {arrive}",
+		LAST);
 
 	web_custom_request("reservations.pl_4",
 		"URL=http://localhost:1080/cgi-bin/reservations.pl",

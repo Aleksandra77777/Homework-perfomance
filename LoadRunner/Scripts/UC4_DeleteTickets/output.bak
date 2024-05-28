@@ -1,4 +1,4 @@
-Virtual User Script started at: 23.05.2024 22:54:49
+Virtual User Script started at: 23.05.2024 22:56:32
 Starting action vuser_init.
 Web Turbo Replay of LoadRunner 2021.0.0 for Windows 10; build 430 (џэт 05 2021 19:27:22)  	[MsgId: MMSG-26983]
 Run mode: HTML  	[MsgId: MMSG-26993]
@@ -117,7 +117,7 @@ Action.c(257): web_custom_request("signoff.gif") started  	[MsgId: MMSG-26355]
 Action.c(257): Registering web_custom_request("signoff.gif") was successful  	[MsgId: MMSG-26390]
 Action.c(266): web_concurrent_end started  	[MsgId: MMSG-26355]
 Action.c(266): web_concurrent_end was successful, 2898 body bytes, 1190 header bytes  	[MsgId: MMSG-26386]
-Action.c(268): Notify: Transaction "login" ended with a "Pass" status (Duration: 1,0935 Wasted Time: 0,0720).
+Action.c(268): Notify: Transaction "login" ended with a "Pass" status (Duration: 0,7256 Wasted Time: 0,0550).
 Action.c(272): Notify: Transaction "itinerary" started.
 Action.c(274): web_add_auto_header("sec-ch-ua") started  	[MsgId: MMSG-26355]
 Action.c(274): web_add_auto_header("sec-ch-ua") was successful  	[MsgId: MMSG-26392]
@@ -144,7 +144,7 @@ Action.c(327): Registering web_reg_save_param was successful  	[MsgId: MMSG-2639
 Action.c(335): web_reg_save_param started  	[MsgId: MMSG-26355]
 Action.c(335): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
 Action.c(345): web_custom_request("itinerary.pl") started  	[MsgId: MMSG-26355]
-Action.c(345): web_custom_request("itinerary.pl") was successful, 10529 body bytes, 255 header bytes, 27 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(345): web_custom_request("itinerary.pl") was successful, 9519 body bytes, 255 header bytes, 27 chunking overhead bytes  	[MsgId: MMSG-26385]
 Action.c(355): web_concurrent_start started  	[MsgId: MMSG-26355]
 Action.c(355): web_concurrent_start was successful  	[MsgId: MMSG-26392]
 Action.c(357): web_custom_request("home.gif") started  	[MsgId: MMSG-26355]
@@ -162,28 +162,35 @@ Action.c(388): Registering web_custom_request("cancelallreservations.gif") was s
 Action.c(397): web_concurrent_end started  	[MsgId: MMSG-26355]
 Action.c(397): web_concurrent_end was successful, 1573 body bytes, 594 header bytes  	[MsgId: MMSG-26386]
 Action.c(399): {FlightID_count}
-Action.c(400): 8
-Action.c(417): 1=on&flightID=41164-0-MZ&flightID=41150-1-MG&flightID=41163-2-ML&flightID=41150-3-JL&flightID=41164-3-PP&flightID=41150-4-KP&flightID=41164-5-RP&flightID=41148-6-SP&
-Action.c(418): &cgifields=6&cgifields=3&cgifields=7&cgifields=2&cgifields=8&cgifields=1&cgifields=4&cgifields=5
-Action.c(421): 1=on&flightID=41164-0-MZ&flightID=41150-1-MG&flightID=41163-2-ML&flightID=41150-3-JL&flightID=41164-3-PP&flightID=41150-4-KP&flightID=41164-5-RP&flightID=41148-6-SP&removeFlights.x=36&removeFlights.y=4&cgifields=6&cgifields=3&cgifields=7&cgifields=2&cgifields=8&cgifields=1&cgifields=4&cgifields=5
-Action.c(431): Notify: Transaction "itinerary" ended with a "Pass" status (Duration: 1,1820 Wasted Time: 0,0683).
+Action.c(400): 7
+Action.c(417): 1=on&flightID=41150-0-MG&flightID=0-2145-3&flightID=91-26400-5&flightID=16-31623-10&flightID=4115-3932193-1F&flightID=0-4-R&flightID=0-5-0&
+Action.c(418): &cgifields=6&cgifields=4&cgifields=1&cgifields=3&cgifields=7&cgifields=2&cgifields=5
+Action.c(421): 1=on&flightID=41150-0-MG&flightID=0-2145-3&flightID=91-26400-5&flightID=16-31623-10&flightID=4115-3932193-1F&flightID=0-4-R&flightID=0-5-0&removeFlights.x=36&removeFlights.y=4&cgifields=6&cgifields=4&cgifields=1&cgifields=3&cgifields=7&cgifields=2&cgifields=5
+Action.c(431): Notify: Transaction "itinerary" ended with a "Pass" status (Duration: 1,0623 Wasted Time: 0,0755).
 Action.c(433): Notify: Transaction "delete Ticket" started.
 Action.c(435): web_add_header("Origin") started  	[MsgId: MMSG-26355]
 Action.c(435): web_add_header("Origin") was successful  	[MsgId: MMSG-26392]
 Action.c(440): web_reg_find started  	[MsgId: MMSG-26355]
 Action.c(440): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
-Action.c(444): web_reg_find started  	[MsgId: MMSG-26355]
-Action.c(444): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
 Action.c(448): web_custom_request("itinerary.pl_2") started  	[MsgId: MMSG-26355]
-Action.c(448): Registered web_reg_find successful for "Text=41164-0-MZ"  	[MsgId: MMSG-26362]
-Action.c(448): Error -26366: "Text=database synchronization error" not found for web_reg_find  	[MsgId: MERR-26366]
-Action.c(448): web_custom_request("itinerary.pl_2") highest severity level was "ERROR", 9519 body bytes, 255 header bytes, 27 chunking overhead bytes  	[MsgId: MMSG-26387]
-Action.c(448): Notify: Transaction "delete Ticket" ended with a "Fail" status (Duration: 0,3429 Wasted Time: 0,0247).
-Action.c(448): Notify: Transaction "delete Ticket" has 1 error message(s).
-Action.c(448): Notify: The 1st error message associated with transaction "delete Ticket" is "Error -26366: "Text=database synchronization error" not found for web_reg_find"
-Action.c(448): Notify: Transaction "UC4_DeleteTickets" ended with a "Fail" status (Duration: 5,2157 Wasted Time: 1,0634).
-Action.c(448): Notify: Transaction "UC4_DeleteTickets" has 1 error message(s).
-Action.c(448): Notify: The 1st error message associated with transaction "UC4_DeleteTickets" is "Error -26366: "Text=database synchronization error" not found for web_reg_find"
+Action.c(448): Registered web_reg_find successful for "Text=41150-0-MG"  	[MsgId: MMSG-26362]
+Action.c(448): web_custom_request("itinerary.pl_2") was successful, 7313 body bytes, 255 header bytes, 19 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(459): (FlightID_count)
+Action.c(461): Notify: Transaction "delete Ticket" ended with a "Pass" status (Duration: 0,3016 Wasted Time: 0,0135).
+Action.c(465): Notify: Transaction "sign off" started.
+Action.c(467): web_custom_request("SignOff Button") started  	[MsgId: MMSG-26355]
+Action.c(467): web_custom_request("SignOff Button") was successful, 686 body bytes, 327 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(477): web_concurrent_start started  	[MsgId: MMSG-26355]
+Action.c(477): web_concurrent_start was successful  	[MsgId: MMSG-26392]
+Action.c(479): web_custom_request("home.html_2") started  	[MsgId: MMSG-26355]
+Action.c(479): Retrieving data from cache for "http://localhost:1080/WebTours/home.html"  	[MsgId: MMSG-26558]
+Action.c(479): Registering web_custom_request("home.html_2") was successful  	[MsgId: MMSG-26390]
+Action.c(488): web_custom_request("nav.pl_4") started  	[MsgId: MMSG-26355]
+Action.c(488): Registering web_custom_request("nav.pl_4") was successful  	[MsgId: MMSG-26390]
+Action.c(498): web_concurrent_end started  	[MsgId: MMSG-26355]
+Action.c(498): web_concurrent_end was successful, 1481 body bytes, 255 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(500): Notify: Transaction "sign off" ended with a "Pass" status (Duration: 0,4994 Wasted Time: 0,0222).
+Action.c(502): Notify: Transaction "UC4_DeleteTickets" ended with a "Pass" status (Duration: 4,2214 Wasted Time: 0,7023).
 Ending action Action.
 Ending iteration 1.
 Ending Vuser...

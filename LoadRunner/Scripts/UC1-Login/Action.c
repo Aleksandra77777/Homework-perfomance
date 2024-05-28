@@ -26,6 +26,10 @@ lr_start_transaction("home_page");
 	web_add_auto_header("Sec-Fetch-User", 
 		"?1");
 
+
+	web_reg_find("Text=Moved Permanently",
+		LAST);
+
 	web_custom_request("WebTours", 
 		"URL=http://localhost:1080/WebTours", 
 		"Method=GET", 
@@ -115,6 +119,9 @@ lr_start_transaction("home_page");
 		"frame");
 
 	web_concurrent_start(NULL);
+	
+	web_reg_find("Text=Welcome to the Web Tours site",
+		LAST);
 
 	web_custom_request("home.html", 
 		"URL=http://localhost:1080/WebTours/home.html", 
@@ -208,6 +215,10 @@ lr_end_transaction("home_page", LR_AUTO);
 		"Referer=http://localhost:1080/cgi-bin/login.pl", 
 		"Snapshot=t10.inf", 
 		"Mode=HTTP", 
+		LAST);
+
+	
+	web_reg_find("Text=Welcome to Web Tours",
 		LAST);
 
 	web_custom_request("login.pl_2", 

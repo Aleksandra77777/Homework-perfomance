@@ -1,2 +1,0 @@
-"username=skipper&password=commandopenguin&passwordConfirm=commandopenguin&firstName=Skipper&la"
-"stName=Penguin&address1=5432 Flightless Bird Blvd&address2=65432&register.x=19&register.y=14"

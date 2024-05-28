@@ -1,2 +1,0 @@
-"username=private&password=pinguaction&passwordConfirm=pinguaction&firstName=Private&lastName=P"
-"enguin&address1=2468 Iceberg Way&address2=43210&register.x=19&register.y=14"

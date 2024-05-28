@@ -1,4 +1,4 @@
-# 1 "c:\\users\\trifo\\documents\\vugen\\scripts\\uc4_deletetickets\\\\combined_UC4_DeleteTickets.c"
+# 1 "c:\\users\\trifo\\documents\\homework\\loadrunner\\scripts\\uc4_deletetickets\\\\combined_UC4_DeleteTickets.c"
 # 1 "C:\\Program Files (x86)\\Micro Focus\\LoadRunner\\include/lrun.h" 1
  
  
@@ -968,7 +968,7 @@ int lr_db_getvalue(char * pFirstArg, ...);
 
 
 
-# 1 "c:\\users\\trifo\\documents\\vugen\\scripts\\uc4_deletetickets\\\\combined_UC4_DeleteTickets.c" 2
+# 1 "c:\\users\\trifo\\documents\\homework\\loadrunner\\scripts\\uc4_deletetickets\\\\combined_UC4_DeleteTickets.c" 2
 
 # 1 "C:\\Program Files (x86)\\Micro Focus\\LoadRunner\\include/SharedParameter.h" 1
 
@@ -1136,7 +1136,7 @@ extern VTCERR2  lrvtc_noop();
 
 
 
-# 2 "c:\\users\\trifo\\documents\\vugen\\scripts\\uc4_deletetickets\\\\combined_UC4_DeleteTickets.c" 2
+# 2 "c:\\users\\trifo\\documents\\homework\\loadrunner\\scripts\\uc4_deletetickets\\\\combined_UC4_DeleteTickets.c" 2
 
 # 1 "globals.h" 1
 
@@ -2598,14 +2598,14 @@ void
 
 
 
-# 3 "c:\\users\\trifo\\documents\\vugen\\scripts\\uc4_deletetickets\\\\combined_UC4_DeleteTickets.c" 2
+# 3 "c:\\users\\trifo\\documents\\homework\\loadrunner\\scripts\\uc4_deletetickets\\\\combined_UC4_DeleteTickets.c" 2
 
 # 1 "vuser_init.c" 1
 vuser_init()
 {
 	return 0;
 }
-# 4 "c:\\users\\trifo\\documents\\vugen\\scripts\\uc4_deletetickets\\\\combined_UC4_DeleteTickets.c" 2
+# 4 "c:\\users\\trifo\\documents\\homework\\loadrunner\\scripts\\uc4_deletetickets\\\\combined_UC4_DeleteTickets.c" 2
 
 # 1 "Action.c" 1
 Action()
@@ -2643,6 +2643,10 @@ Action()
 	web_add_auto_header("Sec-Fetch-User", 
 		"?1");
 
+	web_reg_find("Text=301 Moved Permanently",
+		"LAST");
+
+	
 	web_custom_request("WebTours", 
 		"URL=http://localhost:1080/WebTours", 
 		"Method=GET", 
@@ -2678,6 +2682,10 @@ Action()
 
 	web_add_header("Sec-Fetch-Dest", 
 		"frame");
+
+	web_reg_find("Text=A Session ID has been created and loaded into a cookie called MSO",
+		"LAST");
+
 
 	web_custom_request("welcome.pl", 
 		"URL=http://localhost:1080/cgi-bin/welcome.pl?signOff=true", 
@@ -2732,6 +2740,9 @@ Action()
 		"frame");
 
 	web_concurrent_start(0);
+	
+	web_reg_find("Text=Welcome to the Web Tours site",
+		"LAST");
 
 	web_custom_request("home.html", 
 		"URL=http://localhost:1080/WebTours/home.html", 
@@ -2823,6 +2834,10 @@ Action()
 		"Mode=HTTP", 
 		"LAST");
 
+	
+	web_reg_find("Text=Welcome to Web Tours",
+		"LAST");
+
 	web_custom_request("login.pl_2", 
 		"URL=http://localhost:1080/cgi-bin/login.pl?intro=true", 
 		"Method=GET", 
@@ -2906,6 +2921,9 @@ Action()
 		"?1");
 
 	lr_think_time(47);
+	
+	web_reg_find("Text=User wants the intineraries",
+		"LAST");
 
 	web_custom_request("welcome.pl_2", 
 		"URL=http://localhost:1080/cgi-bin/welcome.pl?page=itinerary", 
@@ -3114,7 +3132,7 @@ Action()
 
 	return 0;
 }
-# 5 "c:\\users\\trifo\\documents\\vugen\\scripts\\uc4_deletetickets\\\\combined_UC4_DeleteTickets.c" 2
+# 5 "c:\\users\\trifo\\documents\\homework\\loadrunner\\scripts\\uc4_deletetickets\\\\combined_UC4_DeleteTickets.c" 2
 
 # 1 "Action1.c" 1
 Action1()
@@ -3251,12 +3269,12 @@ Action1()
 
 	return 0;
 }
-# 6 "c:\\users\\trifo\\documents\\vugen\\scripts\\uc4_deletetickets\\\\combined_UC4_DeleteTickets.c" 2
+# 6 "c:\\users\\trifo\\documents\\homework\\loadrunner\\scripts\\uc4_deletetickets\\\\combined_UC4_DeleteTickets.c" 2
 
 # 1 "vuser_end.c" 1
 vuser_end()
 {
 	return 0;
 }
-# 7 "c:\\users\\trifo\\documents\\vugen\\scripts\\uc4_deletetickets\\\\combined_UC4_DeleteTickets.c" 2
+# 7 "c:\\users\\trifo\\documents\\homework\\loadrunner\\scripts\\uc4_deletetickets\\\\combined_UC4_DeleteTickets.c" 2
 

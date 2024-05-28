@@ -94,7 +94,6 @@
     <FileEntry Name="mdrv_cmd.txt" Filter="1" />
     <FileEntry Name="options.txt" Filter="1" />
     <FileEntry Name="output.bak" Filter="1" />
-    <FileEntry Name="output.txt" Filter="1" />
     <FileEntry Name="OutputColoringDatabase.json" Filter="1" />
     <FileEntry Name="password.dat" Filter="1" />
     <FileEntry Name="ReplaySummaryReport.xml" Filter="1" />
@@ -105,6 +104,5 @@
     <FileEntry Name="UC5_SignUp.prm.bak" Filter="1" />
     <FileEntry Name="UserTasks.xml" Filter="1" />
     <FileEntry Name="data\" Filter="1" />
-    <FileEntry Name="result1\" Filter="1" />
   </GeneralFiles>
 </VugenScriptMetadata>

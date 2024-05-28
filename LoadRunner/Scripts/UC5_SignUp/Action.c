@@ -30,6 +30,10 @@ Action()
 	web_add_auto_header("Sec-Fetch-User", 
 		"?1");
 
+	web_reg_find("Text=301 Moved Permanently",
+		LAST);
+
+	
 	web_custom_request("WebTours", 
 		"URL=http://localhost:1080/WebTours", 
 		"Method=GET", 
@@ -63,6 +67,9 @@ Action()
 
 	web_add_header("Sec-Fetch-Dest", 
 		"frame");
+	
+	web_reg_find("Text=A Session ID has been created and loaded into a cookie called MSO",
+		LAST);
 
 	web_custom_request("welcome.pl", 
 		"URL=http://localhost:1080/cgi-bin/welcome.pl?signOff=true", 
@@ -117,6 +124,9 @@ Action()
 		"frame");
 
 	web_concurrent_start(NULL);
+	
+	web_reg_find("Text=Welcome to the Web Tours site",
+		LAST);
 
 	web_custom_request("home.html", 
 		"URL=http://localhost:1080/WebTours/home.html", 
@@ -243,6 +253,9 @@ Action()
 		LAST);
 
 	web_concurrent_start(NULL);
+	
+	web_reg_find("Text=Welcome to Web Tours",
+		LAST);
 
 	web_custom_request("login.pl_2", 
 		"URL=http://localhost:1080/cgi-bin/login.pl?intro=true", 
