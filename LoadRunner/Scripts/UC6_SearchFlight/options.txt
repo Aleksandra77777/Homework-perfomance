@@ -2,8 +2,8 @@
 -DCCI
 -D_IDA_XL
 -DWINNT
--IC:\Users\trifo\Documents\VuGen\Scripts\UC6_SearchFlight
+-IC:\Users\trifo\Documents\Homework\LoadRunner\Scripts\UC6_SearchFlight
 -IC:\Program Files (x86)\Micro Focus\LoadRunner\include
--ec:\users\trifo\documents\vugen\scripts\uc6_searchflight\\logfile.log
-c:\users\trifo\documents\vugen\scripts\uc6_searchflight\\combined_UC6_SearchFlight.c
-c:\users\trifo\documents\vugen\scripts\uc6_searchflight\\pre_cci.c
+-ec:\users\trifo\documents\homework\loadrunner\scripts\uc6_searchflight\\logfile.log
+c:\users\trifo\documents\homework\loadrunner\scripts\uc6_searchflight\\combined_UC6_SearchFlight.c
+c:\users\trifo\documents\homework\loadrunner\scripts\uc6_searchflight\\pre_cci.c

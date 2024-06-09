@@ -1,4 +1,4 @@
-# 1 "c:\\users\\trifo\\documents\\vugen\\scripts\\uc1-login\\\\combined_UC1-Login.c"
+# 1 "c:\\users\\trifo\\documents\\homework\\loadrunner\\scripts\\uc1-login\\\\combined_UC1-Login.c"
 # 1 "C:\\Program Files (x86)\\Micro Focus\\LoadRunner\\include/lrun.h" 1
  
  
@@ -968,7 +968,7 @@ int lr_db_getvalue(char * pFirstArg, ...);
 
 
 
-# 1 "c:\\users\\trifo\\documents\\vugen\\scripts\\uc1-login\\\\combined_UC1-Login.c" 2
+# 1 "c:\\users\\trifo\\documents\\homework\\loadrunner\\scripts\\uc1-login\\\\combined_UC1-Login.c" 2
 
 # 1 "C:\\Program Files (x86)\\Micro Focus\\LoadRunner\\include/SharedParameter.h" 1
 
@@ -1136,7 +1136,7 @@ extern VTCERR2  lrvtc_noop();
 
 
 
-# 2 "c:\\users\\trifo\\documents\\vugen\\scripts\\uc1-login\\\\combined_UC1-Login.c" 2
+# 2 "c:\\users\\trifo\\documents\\homework\\loadrunner\\scripts\\uc1-login\\\\combined_UC1-Login.c" 2
 
 # 1 "globals.h" 1
 
@@ -2594,14 +2594,14 @@ void
  
 
 
-# 3 "c:\\users\\trifo\\documents\\vugen\\scripts\\uc1-login\\\\combined_UC1-Login.c" 2
+# 3 "c:\\users\\trifo\\documents\\homework\\loadrunner\\scripts\\uc1-login\\\\combined_UC1-Login.c" 2
 
 # 1 "vuser_init.c" 1
 vuser_init()
 {
 	return 0;
 }
-# 4 "c:\\users\\trifo\\documents\\vugen\\scripts\\uc1-login\\\\combined_UC1-Login.c" 2
+# 4 "c:\\users\\trifo\\documents\\homework\\loadrunner\\scripts\\uc1-login\\\\combined_UC1-Login.c" 2
 
 # 1 "Action.c" 1
 Action()
@@ -2631,6 +2631,10 @@ lr_start_transaction("home_page");
 
 	web_add_auto_header("Sec-Fetch-User", 
 		"?1");
+
+
+	web_reg_find("Text=Moved Permanently",
+		"LAST");
 
 	web_custom_request("WebTours", 
 		"URL=http://localhost:1080/WebTours", 
@@ -2721,6 +2725,9 @@ lr_start_transaction("home_page");
 		"frame");
 
 	web_concurrent_start(0);
+	
+	web_reg_find("Text=Welcome to the Web Tours site",
+		"LAST");
 
 	web_custom_request("home.html", 
 		"URL=http://localhost:1080/WebTours/home.html", 
@@ -2816,6 +2823,10 @@ lr_end_transaction("home_page", 2);
 		"Mode=HTTP", 
 		"LAST");
 
+	
+	web_reg_find("Text=Welcome to Web Tours",
+		"LAST");
+
 	web_custom_request("login.pl_2", 
 		"URL=http://localhost:1080/cgi-bin/login.pl?intro=true", 
 		"Method=GET", 
@@ -2871,6 +2882,77 @@ lr_end_transaction("home_page", 2);
 	lr_end_transaction("login",2);
 
 	lr_think_time(81);
+	
+	lr_start_transaction("find_flights");
+
+	web_custom_request("Search Flights Button", 
+		"URL=http://localhost:1080/cgi-bin/welcome.pl?page=search", 
+		"Method=GET", 
+		"Resource=0", 
+		"RecContentType=text/html", 
+		"Referer=http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home", 
+		"Snapshot=t16.inf", 
+		"Mode=HTTP", 
+		"LAST");
+
+	web_concurrent_start(0);
+
+	web_custom_request("nav.pl_3", 
+		"URL=http://localhost:1080/cgi-bin/nav.pl?page=menu&in=flights", 
+		"Method=GET", 
+		"Resource=0", 
+		"RecContentType=text/html", 
+		"Referer=http://localhost:1080/cgi-bin/welcome.pl?page=search", 
+		"Snapshot=t17.inf", 
+		"Mode=HTTP", 
+		"LAST");
+
+	web_custom_request("reservations.pl", 
+		"URL=http://localhost:1080/cgi-bin/reservations.pl?page=welcome", 
+		"Method=GET", 
+		"Resource=0", 
+		"RecContentType=text/html", 
+		"Referer=http://localhost:1080/cgi-bin/welcome.pl?page=search", 
+		"Snapshot=t20.inf", 
+		"Mode=HTTP", 
+		"LAST");
+
+	web_concurrent_end(0);
+
+	web_concurrent_start(0);
+
+	web_custom_request("in_flights.gif", 
+		"URL=http://localhost:1080/WebTours/images/in_flights.gif", 
+		"Method=GET", 
+		"Resource=1", 
+		"RecContentType=image/gif", 
+		"Referer=http://localhost:1080/cgi-bin/nav.pl?page=menu&in=flights", 
+		"Snapshot=t18.inf", 
+		"LAST");
+
+	web_custom_request("home.gif", 
+		"URL=http://localhost:1080/WebTours/images/home.gif", 
+		"Method=GET", 
+		"Resource=1", 
+		"RecContentType=image/gif", 
+		"Referer=http://localhost:1080/cgi-bin/nav.pl?page=menu&in=flights", 
+		"Snapshot=t19.inf", 
+		"LAST");
+
+	web_concurrent_end(0);
+
+	lr_think_time(19);
+
+	web_custom_request("button_next.gif", 
+		"URL=http://localhost:1080/WebTours/images/button_next.gif", 
+		"Method=GET", 
+		"Resource=1", 
+		"RecContentType=image/gif", 
+		"Referer=http://localhost:1080/cgi-bin/reservations.pl?page=welcome", 
+		"Snapshot=t21.inf", 
+		"LAST");
+
+	lr_end_transaction("find_flights",2);
 
 	lr_start_transaction("logout");
 
@@ -2911,12 +2993,12 @@ lr_end_transaction("home_page", 2);
 
 	return 0;
 }
-# 5 "c:\\users\\trifo\\documents\\vugen\\scripts\\uc1-login\\\\combined_UC1-Login.c" 2
+# 5 "c:\\users\\trifo\\documents\\homework\\loadrunner\\scripts\\uc1-login\\\\combined_UC1-Login.c" 2
 
 # 1 "vuser_end.c" 1
 vuser_end()
 {
 	return 0;
 }
-# 6 "c:\\users\\trifo\\documents\\vugen\\scripts\\uc1-login\\\\combined_UC1-Login.c" 2
+# 6 "c:\\users\\trifo\\documents\\homework\\loadrunner\\scripts\\uc1-login\\\\combined_UC1-Login.c" 2
 

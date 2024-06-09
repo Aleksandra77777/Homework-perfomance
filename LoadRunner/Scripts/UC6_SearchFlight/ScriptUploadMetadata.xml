@@ -22,16 +22,22 @@
     <FileEntry Name="combined_UC6_SearchFlight.c" Filter="2" />
     <FileEntry Name="pre_cci.c" Filter="2" />
     <FileEntry Name="12271920440.idx" Filter="1" />
+    <FileEntry Name="179184684440.idx" Filter="1" />
+    <FileEntry Name="195163120440.idx" Filter="1" />
     <FileEntry Name="196871087440.idx" Filter="1" />
     <FileEntry Name="19687108744_7Jf.573.idx" Filter="1" />
     <FileEntry Name="19687108744_gTW.255.idx" Filter="1" />
     <FileEntry Name="19687108744_ktp.25.idx" Filter="1" />
     <FileEntry Name="19687108744_Umx.3.idx" Filter="1" />
     <FileEntry Name="208691310440.idx" Filter="1" />
+    <FileEntry Name="217145998440.idx" Filter="1" />
     <FileEntry Name="227963166440.idx" Filter="1" />
+    <FileEntry Name="246760974440.idx" Filter="1" />
+    <FileEntry Name="258922340440.idx" Filter="1" />
     <FileEntry Name="264302005440.idx" Filter="1" />
     <FileEntry Name="418034440.idx" Filter="1" />
     <FileEntry Name="54887567440.idx" Filter="1" />
+    <FileEntry Name="90289498440.idx" Filter="1" />
     <FileEntry Name="Bookmarks.xml" Filter="1" />
     <FileEntry Name="Breakpoints.xml" Filter="1" />
     <FileEntry Name="CompilerLogMetadata.xml" Filter="1" />
@@ -42,7 +48,6 @@
     <FileEntry Name="mdrv_cmd.txt" Filter="1" />
     <FileEntry Name="options.txt" Filter="1" />
     <FileEntry Name="output.bak" Filter="1" />
-    <FileEntry Name="output.txt" Filter="1" />
     <FileEntry Name="OutputColoringDatabase.json" Filter="1" />
     <FileEntry Name="password.dat" Filter="1" />
     <FileEntry Name="ReplaySummaryReport.xml" Filter="1" />
@@ -54,6 +59,5 @@
     <FileEntry Name="UC6_SearchFlight.prm.bak" Filter="1" />
     <FileEntry Name="UserTasks.xml" Filter="1" />
     <FileEntry Name="data\" Filter="1" />
-    <FileEntry Name="result1\" Filter="1" />
   </GeneralFiles>
 </VugenScriptMetadata>

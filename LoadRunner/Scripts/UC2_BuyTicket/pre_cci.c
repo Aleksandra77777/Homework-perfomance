@@ -3036,46 +3036,6 @@ web_convert_param("CorrelationParameter_URL2",
 
 	lr_end_transaction("payment_details",2);
 
-	lr_start_transaction("logout");
-
-	(web_remove_auto_header("Origin", "ImplicitGen=Yes", "LAST"));
-
-	lr_think_time(33);
-
-	web_custom_request("SignOff Button", 
-		"URL=http://localhost:1080/cgi-bin/welcome.pl?signOff=1", 
-		"Method=GET", 
-		"Resource=0", 
-		"RecContentType=text/html", 
-		"Referer=http://localhost:1080/cgi-bin/nav.pl?page=menu&in=flights", 
-		"Snapshot=t26.inf", 
-		"Mode=HTTP", 
-		"LAST");
-
-	web_concurrent_start(0);
-
-	web_custom_request("home.html_2", 
-		"URL=http://localhost:1080/WebTours/home.html", 
-		"Method=GET", 
-		"Resource=0", 
-		"Referer=http://localhost:1080/cgi-bin/welcome.pl?signOff=1", 
-		"Snapshot=t27.inf", 
-		"Mode=HTTP", 
-		"LAST");
-
-	web_custom_request("nav.pl_4", 
-		"URL=http://localhost:1080/cgi-bin/nav.pl?in=home", 
-		"Method=GET", 
-		"Resource=0", 
-		"RecContentType=text/html", 
-		"Referer=http://localhost:1080/cgi-bin/welcome.pl?signOff=1", 
-		"Snapshot=t28.inf", 
-		"Mode=HTTP", 
-		"LAST");
-
-	web_concurrent_end(0);
-
-	lr_end_transaction("logout",2);
 	
 	lr_end_transaction("UC2_BuyTicket", 2);
 
