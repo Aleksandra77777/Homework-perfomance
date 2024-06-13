@@ -2772,8 +2772,6 @@ Action()
 	web_add_header("Sec-Fetch-Dest", 
 		"image");
 
-	lr_think_time(51);
-
 	web_custom_request("mer_login.gif", 
 		"URL=http://localhost:1080/WebTours/images/mer_login.gif", 
 		"Method=GET", 
@@ -2783,6 +2781,8 @@ Action()
 		"Snapshot=t8.inf", 
 		"LAST");
 
+	lr_think_time(51);
+	
 	lr_start_transaction("login");
 
 	web_add_auto_header("Sec-Fetch-Site", 
@@ -2794,7 +2794,6 @@ Action()
 	web_add_header("Origin", 
 		"http://localhost:1080");
 
-	lr_think_time(37);
 	
 	web_reg_find("Text=User password was correct",
 		"LAST");
@@ -2833,6 +2832,8 @@ Action()
 		"LAST");
 
 	web_concurrent_end(0);
+	
+	lr_think_time(37);
 
 	web_concurrent_start(0);
 
@@ -2962,13 +2963,13 @@ Action()
 	web_concurrent_end(0);
 
 	lr_end_transaction("itinerary",2);
+	
+	lr_think_time(57);
 
 	lr_start_transaction("delete");
 
 	web_add_header("Origin", 
 		"http://localhost:1080");
-
-	lr_think_time(57);
 
 	web_custom_request("itinerary.pl_2", 
 		"URL=http://localhost:1080/cgi-bin/itinerary.pl", 

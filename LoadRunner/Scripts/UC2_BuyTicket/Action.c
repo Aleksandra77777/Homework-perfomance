@@ -1,9 +1,5 @@
 Action()
 {
-	lr_save_string("jojo", "login");
-	
-	lr_save_string("bean", "password");
-	
 	lr_start_transaction("UC2_BuyTicket");
 
 	
@@ -160,7 +156,7 @@ Action()
 	web_add_header("Sec-Fetch-Dest", 
 		"image");
 
-	lr_think_time(33);
+	//lr_think_time(33);
 
 	web_custom_request("mer_login.gif", 
 		"URL=http://localhost:1080/WebTours/images/mer_login.gif", 
@@ -172,6 +168,8 @@ Action()
 		LAST);
 
 	lr_end_transaction("home_page", LR_AUTO);
+	
+	lr_think_time(33);
 
 	lr_start_transaction("login");
 
@@ -377,7 +375,7 @@ Action()
 		"Body=advanceDiscount=0&depart={depart}&departDate={departDate}&arrive={arrive}&returnDate={returnDate}&numPassengers=1&seatPref={seatPref}&seatType={seatType}&findFlights.x=67&findFlights.y=13&.cgifields=roundtrip&.cgifields=seatType&.cgifields=seatPref", 
 		LAST);
 
-web_convert_param("CorrelationParameter_URL2",
+	web_convert_param("CorrelationParameter_URL2",
 		"SourceString={outboundFlight}",
 		"SourceEncoding=HTML",
 		"TargetEncoding=URL",

@@ -60,6 +60,7 @@
     <FileEntry Name="16494054544_Rpu.355.idx" Filter="1" />
     <FileEntry Name="16494054544_UWb.83.idx" Filter="1" />
     <FileEntry Name="16494054544_WGD.15.idx" Filter="1" />
+    <FileEntry Name="192967160440.idx" Filter="1" />
     <FileEntry Name="196871087440.idx" Filter="1" />
     <FileEntry Name="19687108744_0lo.449.idx" Filter="1" />
     <FileEntry Name="19687108744_D9D.697.idx" Filter="1" />
@@ -91,9 +92,13 @@
     <FileEntry Name="login.dat" Filter="1" />
     <FileEntry Name="lrw_custom_body.h" Filter="1" />
     <FileEntry Name="mdrv.log" Filter="1" />
+    <FileEntry Name="mdrv6fE.887.log" Filter="1" />
+    <FileEntry Name="mdrvmrU.881.log" Filter="1" />
+    <FileEntry Name="mdrvp67.769.log" Filter="1" />
     <FileEntry Name="mdrv_cmd.txt" Filter="1" />
     <FileEntry Name="options.txt" Filter="1" />
     <FileEntry Name="output.bak" Filter="1" />
+    <FileEntry Name="output.txt" Filter="1" />
     <FileEntry Name="OutputColoringDatabase.json" Filter="1" />
     <FileEntry Name="password.dat" Filter="1" />
     <FileEntry Name="ReplaySummaryReport.xml" Filter="1" />
@@ -104,5 +109,6 @@
     <FileEntry Name="UC5_SignUp.prm.bak" Filter="1" />
     <FileEntry Name="UserTasks.xml" Filter="1" />
     <FileEntry Name="data\" Filter="1" />
+    <FileEntry Name="result1\" Filter="1" />
   </GeneralFiles>
 </VugenScriptMetadata>

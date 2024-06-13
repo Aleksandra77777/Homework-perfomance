@@ -52,14 +52,14 @@ vuser_init=cci
 Action=cci
 vuser_end=cci
 [TransactionsOrder]
-Order="home_page__*delimiter*__login__*delimiter*__logout__*delimiter*__find_flights"
+Order="home_page__*delimiter*__login__*delimiter*__find_flights__*delimiter*__logout"
 [StateManagement]
-LastReplayStatus=2
+LastReplayStatus=1
 [ActiveReplay]
 LastReplayedRunName=result1
 ActiveRunName=result1
 [Transactions]
 home_page=
 login=
-logout=
 find_flights=
+logout=

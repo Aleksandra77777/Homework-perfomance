@@ -2606,7 +2606,7 @@ vuser_init()
 # 1 "Action.c" 1
 Action()
 {
-lr_start_transaction("home_page");
+	lr_start_transaction("home_page");
 
 	web_add_auto_header("sec-ch-ua", 
 		"\"Chromium\";v=\"124\", \"Google Chrome\";v=\"124\", \"Not-A.Brand\";v=\"99\"");
@@ -2772,8 +2772,6 @@ lr_start_transaction("home_page");
 	web_add_header("Sec-Fetch-Dest", 
 		"image");
 
-	lr_think_time(53);
-
 	web_custom_request("mer_login.gif", 
 		"URL=http://localhost:1080/WebTours/images/mer_login.gif", 
 		"Method=GET", 
@@ -2782,7 +2780,11 @@ lr_start_transaction("home_page");
 		"Referer=http://localhost:1080/cgi-bin/nav.pl?in=home", 
 		"Snapshot=t8.inf", 
 		"LAST");
-lr_end_transaction("home_page", 2);
+	
+	lr_end_transaction("home_page", 2);
+
+	lr_think_time(53);
+	
 
 	lr_start_transaction("login");
 
@@ -2795,7 +2797,6 @@ lr_end_transaction("home_page", 2);
 	web_add_header("Origin", 
 		"http://localhost:1080");
 
-	lr_think_time(40);
 
 	web_reg_find("Text=User password was correct",
 		"LAST");
@@ -2811,6 +2812,8 @@ lr_end_transaction("home_page", 2);
 		"Body=userSession={userSession}&username={login}&password={password}&login.x=31&login.y=6&JSFormSubmit=off",
 		"LAST");
 
+	lr_think_time(40);
+	
 	web_concurrent_start(0);
 
 	web_custom_request("nav.pl_2", 
@@ -2941,7 +2944,6 @@ lr_end_transaction("home_page", 2);
 
 	web_concurrent_end(0);
 
-	lr_think_time(19);
 
 	web_custom_request("button_next.gif", 
 		"URL=http://localhost:1080/WebTours/images/button_next.gif", 
@@ -2953,6 +2955,8 @@ lr_end_transaction("home_page", 2);
 		"LAST");
 
 	lr_end_transaction("find_flights",2);
+	
+	lr_think_time(19);
 
 	lr_start_transaction("logout");
 

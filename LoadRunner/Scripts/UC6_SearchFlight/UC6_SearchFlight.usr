@@ -54,10 +54,10 @@ vuser_end=cci
 [TransactionsOrder]
 Order="UC6_SearchFlight__*delimiter*__login__*delimiter*__flights__*delimiter*__Sign off"
 [StateManagement]
-LastReplayStatus=2
+LastReplayStatus=1
 [ActiveReplay]
-LastReplayedRunName=
-ActiveRunName=
+LastReplayedRunName=result1
+ActiveRunName=result1
 [Transactions]
 UC6_SearchFlight=
 login=

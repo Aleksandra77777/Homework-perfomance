@@ -6,6 +6,9 @@ Action()
 	char * str;
 	char * flightID_tmp;
 	
+	lr_save_string("kowalski ", "login");
+	lr_save_string("scienceguy", "password");
+	
 	lr_start_transaction("UC4_DeleteTickets");
 
 	
@@ -177,8 +180,6 @@ Action()
 	web_add_header("Sec-Fetch-Dest", 
 		"image");
 
-	lr_think_time(46);
-
 	web_custom_request("mer_login.gif", 
 		"URL=http://localhost:1080/WebTours/images/mer_login.gif", 
 		"Method=GET", 
@@ -187,6 +188,8 @@ Action()
 		"Referer=http://localhost:1080/cgi-bin/nav.pl?in=home", 
 		"Snapshot=t8.inf", 
 		LAST);
+	
+	lr_think_time(46);
 
 	lr_start_transaction("login");
 
@@ -199,7 +202,6 @@ Action()
 	web_add_header("Origin", 
 		"http://localhost:1080");
 
-	lr_think_time(30);
 
 	web_custom_request("login.pl",
 		"URL=http://localhost:1080/cgi-bin/login.pl",
@@ -239,6 +241,8 @@ Action()
 		LAST);
 
 	web_concurrent_end(NULL);
+	
+	lr_think_time(30);
 
 	web_concurrent_start(NULL);
 
@@ -310,7 +314,6 @@ Action()
 	web_add_auto_header("Sec-Fetch-User", 
 		"?1");
 
-	lr_think_time(47);
 	
 	web_reg_find("Text=User wants the intineraries",
 		LAST);
@@ -447,6 +450,8 @@ Action()
 	           	
 
 	lr_end_transaction("itinerary",LR_AUTO);
+	
+	lr_think_time(47);
 
 	lr_start_transaction("delete Ticket");
 
@@ -474,7 +479,7 @@ Action()
 		"Body={result_string}", 
 		LAST);
 
-	lr_output_message(lr_eval_string("(FlightID_count)"));
+	lr_output_message(lr_eval_string("{FlightID_count}"));
 	
 	lr_end_transaction("delete Ticket",LR_AUTO);
 

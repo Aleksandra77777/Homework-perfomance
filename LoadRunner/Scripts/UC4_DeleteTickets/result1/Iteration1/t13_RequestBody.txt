@@ -1,4 +1,4 @@
-"1=on&flightID=41-0-AL&flightID=0-178-3&flightID=12-23847-1&flightID=0-31623-11&flightID=371-39"
-"316-1F&flightID=371-47008-1C&flightID=371-54700-1F&flightID=0-6-1B&removeFlights.x=36&removeFl"
-"ights.y=4&cgifields=6&cgifields=3&cgifields=7&cgifields=2&cgifields=8&cgifields=1&cgifields=4&"
-"cgifields=5"
+"1=on&flightID=41150010-790-GH&flightID=41148912-1587-PP&flightID=41163711-2323-KP&flightID=411"
+"50019-3116-RP&flightID=41163709-3858-SP&flightID=41148912-4664-AL&flightID=41163707-5392-MZ&fl"
+"ightID=41164837-6201-GH&removeFlights.x=36&removeFlights.y=4&cgifields=6&cgifields=3&cgifields"
+"=7&cgifields=2&cgifields=8&cgifields=1&cgifields=4&cgifields=5"

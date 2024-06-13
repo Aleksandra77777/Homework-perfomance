@@ -14,15 +14,14 @@
     <FileEntry Name="UC6_SearchFlight.prm" Filter="2" />
     <FileEntry Name="globals.h" Filter="2" />
     <FileEntry Name="arrive.dat" Filter="2" />
-    <FileEntry Name="login.dat" Filter="2" />
-    <FileEntry Name="numPassengers.dat" Filter="2" />
     <FileEntry Name="NewParam.dat" Filter="2" />
-    <FileEntry Name="seatPref.dat" Filter="2" />
+    <FileEntry Name="numPassengers.dat" Filter="2" />
     <FileEntry Name="seatType.dat" Filter="2" />
     <FileEntry Name="combined_UC6_SearchFlight.c" Filter="2" />
     <FileEntry Name="pre_cci.c" Filter="2" />
     <FileEntry Name="12271920440.idx" Filter="1" />
     <FileEntry Name="179184684440.idx" Filter="1" />
+    <FileEntry Name="192967160440.idx" Filter="1" />
     <FileEntry Name="195163120440.idx" Filter="1" />
     <FileEntry Name="196871087440.idx" Filter="1" />
     <FileEntry Name="19687108744_7Jf.573.idx" Filter="1" />
@@ -43,21 +42,28 @@
     <FileEntry Name="CompilerLogMetadata.xml" Filter="1" />
     <FileEntry Name="custom_body_variables.txt" Filter="1" />
     <FileEntry Name="logfile.log" Filter="1" />
+    <FileEntry Name="login.dat" Filter="1" />
     <FileEntry Name="lrw_custom_body.h" Filter="1" />
     <FileEntry Name="mdrv.log" Filter="1" />
+    <FileEntry Name="mdrvOrQ.519.log" Filter="1" />
+    <FileEntry Name="mdrvPxl.989.log" Filter="1" />
+    <FileEntry Name="mdrvQnF.51.log" Filter="1" />
     <FileEntry Name="mdrv_cmd.txt" Filter="1" />
     <FileEntry Name="options.txt" Filter="1" />
     <FileEntry Name="output.bak" Filter="1" />
+    <FileEntry Name="output.txt" Filter="1" />
     <FileEntry Name="OutputColoringDatabase.json" Filter="1" />
     <FileEntry Name="password.dat" Filter="1" />
     <FileEntry Name="ReplaySummaryReport.xml" Filter="1" />
     <FileEntry Name="returnDate.dat" Filter="1" />
     <FileEntry Name="ScriptUploadMetadata.xml" Filter="1" />
+    <FileEntry Name="seatPref.dat" Filter="1" />
     <FileEntry Name="TransactionsData.db" Filter="1" />
     <FileEntry Name="UC6_SearchFlight.c.pickle" Filter="1" />
     <FileEntry Name="UC6_SearchFlight.ci" Filter="1" />
     <FileEntry Name="UC6_SearchFlight.prm.bak" Filter="1" />
     <FileEntry Name="UserTasks.xml" Filter="1" />
     <FileEntry Name="data\" Filter="1" />
+    <FileEntry Name="result1\" Filter="1" />
   </GeneralFiles>
 </VugenScriptMetadata>

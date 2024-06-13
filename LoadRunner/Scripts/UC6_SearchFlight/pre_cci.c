@@ -2604,7 +2604,8 @@ vuser_init()
 
 # 1 "Action.c" 1
 Action()
-{lr_start_transaction("UC6_SearchFlight");
+{
+	lr_start_transaction("UC6_SearchFlight");
 
 
 	web_set_sockets_option("SSL_VERSION", "AUTO");
@@ -2792,7 +2793,6 @@ Action()
 	web_add_header("Origin", 
 		"http://localhost:1080");
 
-	lr_think_time(67);
 
 	web_custom_request("login.pl", 
 		"URL=http://localhost:1080/cgi-bin/login.pl", 
@@ -2832,6 +2832,8 @@ Action()
 		"LAST");
 
 	web_concurrent_end(0);
+	
+	lr_think_time(67);
 
 	web_concurrent_start(0);
 

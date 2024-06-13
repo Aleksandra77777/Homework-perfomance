@@ -54,10 +54,10 @@ vuser_end=cci
 [TransactionsOrder]
 Order="UC5_SignUp__*delimiter*__sign up__*delimiter*__sign off"
 [StateManagement]
-LastReplayStatus=2
+LastReplayStatus=1
 [ActiveReplay]
-LastReplayedRunName=
-ActiveRunName=
+LastReplayedRunName=result1
+ActiveRunName=result1
 [Transactions]
 UC5_SignUp=
 "sign up"=
