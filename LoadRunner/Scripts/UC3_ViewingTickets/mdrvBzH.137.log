@@ -1,0 +1,15 @@
+Start auto log messages stack - Iteration 1.	[MsgId: MMSG-10545]
+Action.c(348): Registering web_custom_request("cancelallreservations.gif") was successful  	[MsgId: MMSG-26390]
+Action.c(357): web_concurrent_end started  	[MsgId: MMSG-26355]
+Action.c(357): web_concurrent_end was successful, 1573 body bytes, 594 header bytes  	[MsgId: MMSG-26386]
+Action.c(359): Notify: Transaction "itinerary" ended with a "Pass" status (Duration: 0,4023 Wasted Time: 0,0000).	[MsgId: MMSG-16871]
+Action.c(361): Think time - Waiting 3,00 seconds (according to limit).	[MsgId: MMSG-15946]
+Action.c(361): lr_think_time: 3,00 seconds (recorded think time was 57,00 seconds).	[MsgId: MMSG-15947]
+Action.c(363): Notify: Transaction "delete" started.	[MsgId: MMSG-16999]
+Action.c(365): web_add_header("Origin") started  	[MsgId: MMSG-26355]
+Action.c(365): web_add_header("Origin") was successful  	[MsgId: MMSG-26392]
+Action.c(368): web_custom_request("itinerary.pl_2") started  	[MsgId: MMSG-26355]
+Action.c(368): Error -26612: HTTP Status-Code=500 (Internal Server Error) for "http://localhost:1080/cgi-bin/itinerary.pl"  	[MsgId: MERR-26612]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+

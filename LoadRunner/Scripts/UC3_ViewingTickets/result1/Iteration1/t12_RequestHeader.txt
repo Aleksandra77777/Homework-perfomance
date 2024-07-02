@@ -1,6 +1,6 @@
-POST /cgi-bin/itinerary.pl HTTP/1.1
+POST /cgi-bin/login.pl HTTP/1.1
 Content-Type: application/x-www-form-urlencoded
-Referer: http://localhost:1080/cgi-bin/itinerary.pl
+Referer: http://localhost:1080/cgi-bin/nav.pl?in=home
 Origin: http://localhost:1080
 sec-ch-ua: "Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"
 sec-ch-ua-mobile: ?0
@@ -16,6 +16,6 @@ Accept-Language: ru-RU,ru;q=0.9
 Accept: */*
 Connection: Keep-Alive
 Host: localhost:1080
-Cookie: MSO=SID&1718307834; MTUserInfo=firstName&Jojo&address2&&username&Jojo&hash&47&lastName&Bean%0A&address1&&creditCard&123456789&expDate&08%2F27%0A
-Content-Length: 1234
+Cookie: MSO=SID&1719255684
+Content-Length: 114
 

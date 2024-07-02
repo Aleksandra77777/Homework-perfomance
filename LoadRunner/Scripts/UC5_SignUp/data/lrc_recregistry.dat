@@ -166,7 +166,7 @@ Registry settings:
 		default	false
 	TestDir
 		(Default)	
-		default	C:\Users\trifo\Documents\VuGen\Scripts\UC5_SignUp\data\
+		default	C:\Users\trifo\Documents\Homework\LoadRunner\Scripts\UC5_SignUp\data\
 	TrapOnClient
 		default	true
 	TrapOnMainThreadOnly

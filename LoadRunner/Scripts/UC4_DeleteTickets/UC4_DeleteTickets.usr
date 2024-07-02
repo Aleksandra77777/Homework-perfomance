@@ -57,15 +57,17 @@ Action=cci
 Action1=cci
 vuser_end=cci
 [TransactionsOrder]
-Order="UC4_DeleteTickets__*delimiter*__login__*delimiter*__itinerary__*delimiter*__delete Ticket__*delimiter*__sign off__*delimiter*__itinerary__*delimiter*__delete Ticket"
+Order="home_page__*delimiter*__UC4_DeleteTickets__*delimiter*__login__*delimiter*__itinerary__*delimiter*__delete_Ticket__*delimiter*__sign_off__*delimiter*__itinerary__*delimiter*__delete Ticket"
 [StateManagement]
 LastReplayStatus=1
 [ActiveReplay]
 LastReplayedRunName=result1
 ActiveRunName=result1
 [Transactions]
+home_page=
 UC4_DeleteTickets=
 login=
 itinerary=
+delete_Ticket=
+sign_off=
 "delete Ticket"=
-"sign off"=

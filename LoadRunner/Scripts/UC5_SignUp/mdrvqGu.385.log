@@ -1,0 +1,15 @@
+Start auto log messages stack - Iteration 10.	[MsgId: MMSG-10545]
+Action.c(158): web_custom_request("mer_login.gif") was successful, 679 body bytes, 298 header bytes  	[MsgId: MMSG-26386]
+Action.c(167): Notify: Transaction "home_page" ended with a "Pass" status (Duration: 5,2199 Think Time: 5,0081).	[MsgId: MMSG-16872]
+Action.c(169): Notify: Transaction "sign_up" started.	[MsgId: MMSG-16999]
+Action.c(171): web_add_auto_header("Sec-Fetch-Site") started  	[MsgId: MMSG-26355]
+Action.c(171): web_add_auto_header("Sec-Fetch-Site") was successful  	[MsgId: MMSG-26392]
+Action.c(174): web_add_header("Sec-Fetch-Dest") started  	[MsgId: MMSG-26355]
+Action.c(174): web_add_header("Sec-Fetch-Dest") was successful  	[MsgId: MMSG-26392]
+Action.c(177): Think time - Waiting 5,00 seconds (according to limit).	[MsgId: MMSG-15946]
+Action.c(177): lr_think_time: 5,00 seconds (recorded think time was 48,00 seconds).	[MsgId: MMSG-15947]
+Action.c(179): web_custom_request("sign up now") started  	[MsgId: MMSG-26355]
+Action.c(179): Error -26612: HTTP Status-Code=500 (Internal Server Error) for "http://localhost:1080/cgi-bin/login.pl?username=&password=&getInfo=true"  	[MsgId: MERR-26612]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+

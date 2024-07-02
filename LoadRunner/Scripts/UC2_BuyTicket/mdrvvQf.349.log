@@ -1,0 +1,14 @@
+Start auto log messages stack - Iteration 1.	[MsgId: MMSG-10545]
+Action.c(367): web_custom_request("reservations.pl_2") started  	[MsgId: MMSG-26355]
+Action.c(367): Registered web_reg_find successful for "Text=from <B>Paris</B> to <B>London</B>" (count=1)  	[MsgId: MMSG-26364]
+Action.c(367): web_custom_request("reservations.pl_2") was successful, 2438 body bytes, 255 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(378): web_convert_param started  	[MsgId: MMSG-26355]
+Action.c(378): web_convert_param was successful  	[MsgId: MMSG-26392]
+Action.c(384): Notify: Transaction "find_flight" ended with a "Pass" status (Duration: 0,0915 Wasted Time: 0,0003).	[MsgId: MMSG-16871]
+Action.c(386): lr_think_time: 25,00 seconds.	[MsgId: MMSG-15948]
+Action.c(388): Notify: Transaction "choose_flight" started.	[MsgId: MMSG-16999]
+Action.c(390): web_custom_request("reservations.pl_3") started  	[MsgId: MMSG-26355]
+Action.c(390): Error -26612: HTTP Status-Code=500 (Internal Server Error) for "http://localhost:1080/cgi-bin/reservations.pl"  	[MsgId: MERR-26612]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+

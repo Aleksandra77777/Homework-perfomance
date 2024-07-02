@@ -1,0 +1,13 @@
+Start auto log messages stack - Iteration 1.	[MsgId: MMSG-10545]
+Action.c(274): web_custom_request("Search Flights Button") was successful, 616 body bytes, 216 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(284): web_concurrent_start started  	[MsgId: MMSG-26355]
+Action.c(284): web_concurrent_start was successful  	[MsgId: MMSG-26392]
+Action.c(286): web_custom_request("nav.pl_3") started  	[MsgId: MMSG-26355]
+Action.c(286): Registering web_custom_request("nav.pl_3") was successful  	[MsgId: MMSG-26390]
+Action.c(296): web_custom_request("reservations.pl") started  	[MsgId: MMSG-26355]
+Action.c(296): Registering web_custom_request("reservations.pl") was successful  	[MsgId: MMSG-26390]
+Action.c(306): web_concurrent_end started  	[MsgId: MMSG-26355]
+Action.c(286): Error -26612: HTTP Status-Code=500 (Internal Server Error) for "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=flights"   [issued at Action.c(306)]  	[MsgId: MERR-26612]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+

@@ -58,15 +58,15 @@ $$$$$$ End Log Message $$$$$$
 Code generation version: 2021.0.0.430
 
 ****** Analyze segments filter initialization ******
-****** Request Header For Transaction With Id 12 ******
+****** Request Header For Transaction With Id 217 ******
 GET /WebTours HTTP/1.1
 Host: localhost:1080
 Connection: keep-alive
-sec-ch-ua: "Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"
+sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
 sec-ch-ua-mobile: ?0
 sec-ch-ua-platform: "Windows"
 Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
 Sec-Fetch-Site: none
 Sec-Fetch-Mode: navigate
@@ -76,11 +76,11 @@ Accept-Encoding: gzip, deflate, br, zstd
 Accept-Language: ru-RU,ru;q=0.9
 
 
-$$$$$$ Request Header For Transaction With Id 12 Ended $$$$$$
+$$$$$$ Request Header For Transaction With Id 217 Ended $$$$$$
 
-****** Response Header For Transaction With Id 12 ******
+****** Response Header For Transaction With Id 217 ******
 HTTP/1.1 301 Moved Permanently
-Date: Mon, 13 May 2024 20:59:56 GMT
+Date: Sat, 22 Jun 2024 10:43:37 GMT
 Server: Apache/2.2.21 (Win32)
 Location: http://localhost:1080/WebTours/
 Content-Length: 239
@@ -89,9 +89,9 @@ Connection: Keep-Alive
 Content-Type: text/html; charset=iso-8859-1
 
 
-$$$$$$ Response Header For Transaction With Id 12 Ended $$$$$$
+$$$$$$ Response Header For Transaction With Id 217 Ended $$$$$$
 
-****** Response Body For Transaction With Id 12 ******
+****** Response Body For Transaction With Id 217 ******
 <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
 <html><head>
 <title>301 Moved Permanently</title>
@@ -100,7 +100,7 @@ $$$$$$ Response Header For Transaction With Id 12 Ended $$$$$$
 <p>The document has moved <a href="http://localhost:1080/WebTours/">here</a>.</p>
 </body></html>
 
-$$$$$$ Response Body For Transaction With Id 12 Ended $$$$$$
+$$$$$$ Response Body For Transaction With Id 217 Ended $$$$$$
 
 ****** Start Log Message ******
 
@@ -110,18 +110,93 @@ End Frames Hierarchy Tree Dump
 
 $$$$$$ End Log Message $$$$$$
 
+****** Request Header For Transaction With Id 240 ******
+GET /WebTours/ HTTP/1.1
+Host: localhost:1080
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: ru-RU,ru;q=0.9
+
+
+$$$$$$ Request Header For Transaction With Id 240 Ended $$$$$$
+
+****** Response Header For Transaction With Id 240 ******
+HTTP/1.1 200 OK
+Date: Sat, 22 Jun 2024 10:43:51 GMT
+Server: Apache/2.2.21 (Win32)
+Last-Modified: Mon, 27 May 2013 11:20:22 GMT
+ETag: "20000000c1266-16e-4ddb1559ac980"
+Accept-Ranges: bytes
+Content-Length: 366
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/html
+
+
+$$$$$$ Response Header For Transaction With Id 240 Ended $$$$$$
+
+****** Response Body For Transaction With Id 240 ******
+<HTML>
+<HEAD>
+<title>Web Tours</title>
+<frameset rows = "65,*" border="1" bordercolor="#E0E7F1">
+<frame name="header" src="header.html" scrolling="no" noresize="noresize" marginheight="2" marginwidth="2"/>
+<frame name="body" src="/cgi-bin/welcome.pl?signOff=true" scrolling="auto" noresize="noresize" marginheight="2" marginwidth="2" />
+</frameset>
+</HEAD>
+</HTML>
+
+
+$$$$$$ Response Body For Transaction With Id 240 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+The Node has no URL
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Start Log Message ******
+Set SSL version to 'AUTO'
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 240 ****** (Location Flag : tFlagInsertEnd, Location ID : 240)
+	web_custom_request("WebTours",
+		"URL=http://localhost:1080/WebTours",
+		"Method=GET",
+		"Resource=0",
+		"RecContentType=text/html",
+		"Referer=",
+		"Snapshot=t23.inf",
+		"Mode=HTTP",
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 240 Ended $$$$$$
+
 [Traffic Filtering] Filtering 192.168.0.181:76787678
-****** Request Header For Transaction With Id 25 ******
+****** Request Header For Transaction With Id 242 ******
 GET /nservice/ HTTP/1.1
 Host: 192.168.0.181:7678
 Connection: keep-alive
-User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
 Accept-Encoding: gzip, deflate
 
 
-$$$$$$ Request Header For Transaction With Id 25 Ended $$$$$$
+$$$$$$ Request Header For Transaction With Id 242 Ended $$$$$$
 
-****** Response Header For Transaction With Id 25 ******
+****** Response Header For Transaction With Id 242 ******
 HTTP/1.1 200 OK
 Content-Type: text/xml; charset="utf-8"
 Content-Length: 1440
@@ -131,9 +206,9 @@ Server: SHP, UPnP/1.0, Samsung UPnP SDK/1.0
 Application-URL: http://192.168.0.181:8080/ws/app/
 
 
-$$$$$$ Response Header For Transaction With Id 25 Ended $$$$$$
+$$$$$$ Response Header For Transaction With Id 242 Ended $$$$$$
 
-****** Response Body For Transaction With Id 25 ******
+****** Response Body For Transaction With Id 242 ******
 <?xml version="1.0"?>
 <root xmlns="urn:schemas-upnp-org:device-1-0" xmlns:sec="http://www.sec.co.kr/dlna" xmlns:dlna="urn:schemas-dlna-org:device-1-0">
   <specVersion>
@@ -168,129 +243,17 @@ $$$$$$ Response Header For Transaction With Id 25 Ended $$$$$$
   </device>
 </root>
 
-$$$$$$ Response Body For Transaction With Id 25 Ended $$$$$$
+$$$$$$ Response Body For Transaction With Id 242 Ended $$$$$$
 
-[Traffic Filtering] Filtering clientservices.googleapis.com
-****** Request Header For Transaction With Id 28 ******
-GET /chrome-variations/seed?osname=win&channel=stable&milestone=124 HTTP/1.1
-Host: clientservices.googleapis.com
-Connection: keep-alive
-If-None-Match: SMChYyMDI0MDUxMy0wNDAxMTMuNDEzMDAwEggIABADGHwgABoQCggxNzE1NjE1NxICCAIYAQ==#BzSFomHtsrY=
-A-IM: x-bm,gzip
-Sec-Fetch-Site: none
-Sec-Fetch-Mode: no-cors
-Sec-Fetch-Dest: empty
-User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
-Accept-Encoding: gzip, deflate, br, zstd
-
-
-$$$$$$ Request Header For Transaction With Id 28 Ended $$$$$$
-
-****** Response Header For Transaction With Id 28 ******
-HTTP/1.1 200 OK
-Im: x-bm
-X-Content-Type-Options: nosniff
-X-Country: ru
-X-Frame-Options: SAMEORIGIN
-X-Seed-Signature: MEYCIQCTrPTdhHHIHdyfECUeUzJcNcGV3XTO6CuRy9ccriyVbQIhANbkKXBVdQyKAnIiUQlgUAXazdAlp1XiJhjHAMgHkqti
-X-Xss-Protection: 0
-Date: Mon, 13 May 2024 21:00:04 GMT
-Content-Length: 76
-Content-Type: application/octet-stream
-Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
-
-
-$$$$$$ Response Header For Transaction With Id 28 Ended $$$$$$
-
-****** Response Body For Transaction With Id 28 ******
-@
-?SMChYyMDI0MDUxMy0wNDAxMTMuNDEzMDAwEggIABADGHwgAA==#OIPqZK18rtU\x00X\xF9\xA7\x17\x00\x80\xA9\x17\xBC\x02
-$$$$$$ Response Body For Transaction With Id 28 Ended $$$$$$
-
-****** Request Header For Transaction With Id 45 ******
-GET /WebTours/ HTTP/1.1
-Host: localhost:1080
-Connection: keep-alive
-Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
-Sec-Fetch-Site: none
-Sec-Fetch-Mode: navigate
-Sec-Fetch-User: ?1
-Sec-Fetch-Dest: document
-sec-ch-ua: "Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"
-sec-ch-ua-mobile: ?0
-sec-ch-ua-platform: "Windows"
-Accept-Encoding: gzip, deflate, br, zstd
-Accept-Language: ru-RU,ru;q=0.9
-
-
-$$$$$$ Request Header For Transaction With Id 45 Ended $$$$$$
-
-****** Response Header For Transaction With Id 45 ******
-HTTP/1.1 200 OK
-Date: Mon, 13 May 2024 21:00:23 GMT
-Server: Apache/2.2.21 (Win32)
-Last-Modified: Mon, 27 May 2013 11:20:22 GMT
-ETag: "20000000c1266-16e-4ddb1559ac980"
-Accept-Ranges: bytes
-Content-Length: 366
-Keep-Alive: timeout=5, max=100
-Connection: Keep-Alive
-Content-Type: text/html
-
-
-$$$$$$ Response Header For Transaction With Id 45 Ended $$$$$$
-
-****** Response Body For Transaction With Id 45 ******
-<HTML>
-<HEAD>
-<title>Web Tours</title>
-<frameset rows = "65,*" border="1" bordercolor="#E0E7F1">
-<frame name="header" src="header.html" scrolling="no" noresize="noresize" marginheight="2" marginwidth="2"/>
-<frame name="body" src="/cgi-bin/welcome.pl?signOff=true" scrolling="auto" noresize="noresize" marginheight="2" marginwidth="2" />
-</frameset>
-</HEAD>
-</HTML>
-
-
-$$$$$$ Response Body For Transaction With Id 45 Ended $$$$$$
-
-****** Start Log Message ******
-
-Start Frames Hierarchy Tree Dump
-The Node has no URL
-End Frames Hierarchy Tree Dump
-
-$$$$$$ End Log Message $$$$$$
-
-****** Start Log Message ******
-Set SSL version to 'AUTO'
-$$$$$$ End Log Message $$$$$$
-
-****** Add Event For Transaction With Id 45 ****** (Location Flag : tFlagInsertEnd, Location ID : 45)
-	web_custom_request("WebTours",
-		"URL=http://localhost:1080/WebTours",
-		"Method=GET",
-		"Resource=0",
-		"RecContentType=text/html",
-		"Referer=",
-		"Snapshot=t1.inf",
-		"Mode=HTTP",
-		LAST);
-
-
-$$$$$$ Add Event For Transaction With Id 45 Ended $$$$$$
-
-****** Request Header For Transaction With Id 60 ******
+****** Request Header For Transaction With Id 245 ******
 GET /WebTours/header.html HTTP/1.1
 Host: localhost:1080
 Connection: keep-alive
-sec-ch-ua: "Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"
+sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
 sec-ch-ua-mobile: ?0
 sec-ch-ua-platform: "Windows"
 Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
 Sec-Fetch-Site: same-origin
 Sec-Fetch-Mode: navigate
@@ -300,24 +263,24 @@ Accept-Encoding: gzip, deflate, br, zstd
 Accept-Language: ru-RU,ru;q=0.9
 
 
-$$$$$$ Request Header For Transaction With Id 60 Ended $$$$$$
+$$$$$$ Request Header For Transaction With Id 245 Ended $$$$$$
 
-****** Response Header For Transaction With Id 60 ******
+****** Response Header For Transaction With Id 245 ******
 HTTP/1.1 200 OK
-Date: Mon, 13 May 2024 21:00:36 GMT
+Date: Sat, 22 Jun 2024 10:43:52 GMT
 Server: Apache/2.2.21 (Win32)
 Last-Modified: Mon, 27 May 2013 11:20:22 GMT
 ETag: "20000000c1236-2c6-4ddb1559ac980"
 Accept-Ranges: bytes
 Content-Length: 710
-Keep-Alive: timeout=5, max=100
+Keep-Alive: timeout=5, max=99
 Connection: Keep-Alive
 Content-Type: text/html
 
 
-$$$$$$ Response Header For Transaction With Id 60 Ended $$$$$$
+$$$$$$ Response Header For Transaction With Id 245 Ended $$$$$$
 
-****** Response Body For Transaction With Id 60 ******
+****** Response Body For Transaction With Id 245 ******
 <!DOCTYPE html>
 <HTML xmlns="http://www.w3.org/1999/xhtml">
 <HEAD></HEAD>
@@ -332,7 +295,7 @@ $$$$$$ Response Header For Transaction With Id 60 Ended $$$$$$
 		</table>
 	</BODY>
 </HTML>
-$$$$$$ Response Body For Transaction With Id 60 Ended $$$$$$
+$$$$$$ Response Body For Transaction With Id 245 Ended $$$$$$
 
 ****** Start Log Message ******
 
@@ -342,169 +305,92 @@ End Frames Hierarchy Tree Dump
 
 $$$$$$ End Log Message $$$$$$
 
-****** Add Event For Transaction With Id 60 ****** (Location Flag : tFlagInsertEnd, Location ID : 60)
+****** Add Event For Transaction With Id 245 ****** (Location Flag : tFlagInsertEnd, Location ID : 245)
 	web_custom_request("header.html",
 		"URL=http://localhost:1080/WebTours/header.html",
 		"Method=GET",
 		"Resource=0",
 		"RecContentType=text/html",
 		"Referer=http://localhost:1080/WebTours/",
-		"Snapshot=t2.inf",
+		"Snapshot=t24.inf",
 		"Mode=HTTP",
 		LAST);
 
 
-$$$$$$ Add Event For Transaction With Id 60 Ended $$$$$$
+$$$$$$ Add Event For Transaction With Id 245 Ended $$$$$$
 
-****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 45)
+****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 240)
 	web_add_auto_header("sec-ch-ua",
-		"\"Chromium\";v=\"124\", \"Google Chrome\";v=\"124\", \"Not-A.Brand\";v=\"99\"");
+		"\"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"126\", \"Google Chrome\";v=\"126\"");
 
 
 $$$$$$ Add Event For Transaction With Id 0 Ended $$$$$$
 
-****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 45)
+****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 240)
 	web_add_auto_header("sec-ch-ua-mobile",
 		"?0");
 
 
 $$$$$$ Add Event For Transaction With Id 0 Ended $$$$$$
 
-****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 45)
+****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 240)
 	web_add_auto_header("sec-ch-ua-platform",
 		"\"Windows\"");
 
 
 $$$$$$ Add Event For Transaction With Id 0 Ended $$$$$$
 
-****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 45)
+****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 240)
 	web_add_auto_header("Upgrade-Insecure-Requests",
 		"1");
 
 
 $$$$$$ Add Event For Transaction With Id 0 Ended $$$$$$
 
-****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 45)
+****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 240)
 	web_add_header("Sec-Fetch-Site",
 		"none");
 
 
 $$$$$$ Add Event For Transaction With Id 0 Ended $$$$$$
 
-****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 60)
+****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 245)
 	web_add_header("Sec-Fetch-Site",
 		"same-origin");
 
 
 $$$$$$ Add Event For Transaction With Id 0 Ended $$$$$$
 
-****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 45)
+****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 240)
 	web_add_auto_header("Sec-Fetch-Mode",
 		"navigate");
 
 
 $$$$$$ Add Event For Transaction With Id 0 Ended $$$$$$
 
-****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 45)
+****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 240)
 	web_add_header("Sec-Fetch-Dest",
 		"document");
 
 
 $$$$$$ Add Event For Transaction With Id 0 Ended $$$$$$
 
-****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 60)
+****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 245)
 	web_add_header("Sec-Fetch-Dest",
 		"frame");
 
 
 $$$$$$ Add Event For Transaction With Id 0 Ended $$$$$$
 
-****** Request Header For Transaction With Id 62 ******
-GET /WebTours/images/hp_logo.png HTTP/1.1
-Host: localhost:1080
-Connection: keep-alive
-sec-ch-ua: "Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"
-sec-ch-ua-mobile: ?0
-User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
-sec-ch-ua-platform: "Windows"
-Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
-Sec-Fetch-Site: same-origin
-Sec-Fetch-Mode: no-cors
-Sec-Fetch-Dest: image
-Referer: http://localhost:1080/WebTours/header.html
-Accept-Encoding: gzip, deflate, br, zstd
-Accept-Language: ru-RU,ru;q=0.9
-
-
-$$$$$$ Request Header For Transaction With Id 62 Ended $$$$$$
-
-****** Response Header For Transaction With Id 62 ******
-HTTP/1.1 200 OK
-Date: Mon, 13 May 2024 21:00:36 GMT
-Server: Apache/2.2.21 (Win32)
-Last-Modified: Thu, 12 Jan 2012 13:30:28 GMT
-ETag: "20000000c124e-259-4b654c0620500"
-Accept-Ranges: bytes
-Content-Length: 601
-Keep-Alive: timeout=5, max=99
-Connection: Keep-Alive
-Content-Type: image/png
-
-
-$$$$$$ Response Header For Transaction With Id 62 Ended $$$$$$
-
-****** Response Body For Transaction With Id 62 ******
-\x89PNG
-\x1A
-\x00\x00\x00IHDR\x00\x00\x00E\x00\x00\x00-\x08\x03\x00\x00\x00\xCF\xF4V,\x00\x00\x00\x04gAMA\x00\x00\xD6\xD8\xD4OX2\x00\x00\x00\x19tEXtSoftware\x00Adobe ImageReadyq\xC9e<\x00\x00\x000PLTE\x01/c<b\x89\xFF\xFF\xFF\x15Cr_~\x9E\x7F\x99\xB2\x9C\xB0\xC4\xF2\xF5\xF7\xCD\xD7\xE1\xC1\xCE\xDA\xB1\xC0\xD0\xD9\xE1\xE8\xE2\xE7\xEE\xEA\xEE\xF2\xEE\xF2\xF5\x003fJQw \x00\x00\x00\x10tRNS\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\x00\xE0#]\x19\x00\x00\x01\x93IDATx\xDA\xECV]o\xC3 \x0C\xC4\x18L\x08$\xFB\xFF\xFFv\xFE\x80uM2\xA2\xBDL\xCA=\xD0\xAA\x8A/>s\xB6\xEB>\xFE\x02\xEEa\xF9\x9F,H\xE9\x88\x80\xB5\x1D'\xEC\xD1]\xB2\x90?\xA2b\xF4~\xC3\x90\xFC\x15\xE2%\xCB~|\x8C\xC0-|:\x04\x08T\xCF\xEF\xB8d9\xBCq\x01\xE7\x80?\x83S`(\x07\x964\xC0B\xC8\xA1,\xB2\xA0k@\x9Af!\x8D+\xA2\xFE\x858\xC9\x925\x03\x11\x04\xEE'\x9A_Y\x92\xC5\xB2\x84\xC5\xBD!\xCF\xB0\x90\x15\xA2\x8A \xCD
-\x15\x9C]\x1Agi\xA9\x04\xFD\xBEs\x9D\x81m\xE6SZ\xD1\xD18K\xB6\xF4W\xEF\xF7\xAAw-\xB1E\x8D\x06\xE3,v/\xC8?\x04+\xB0\xDC\x15n\xEA\x9D2\xCC\x02\xFDBvi\x81\xAA\xD2 H3h\x82S,Y\xAA\xAC-@"r\xB5\xA2\xC7Q\x16+\xAEj\xD1\x03w\x11\xD4\x9A!\xCC\xB1Dq\x7F\x14\xC7p`\xC2 ->\xC3b\x8A\x8A(P\xC7\xB0\x96\xD5\xF4\xCD(\xD2\xCC\xBB\xA0\x04\xAA\xE5\xAB\x19\xC6\xABK\xDD\xFDZ\xD6\xD8\xC6\x955\xC3\xF8Ms\x01\xC4\x1D\xCD"|M\x1Bm\xCDE\x13\xAE\xE3P(\xCB\x82|d\xEC\xADc\x83f\xA2\x03\xFC\x82o\xD3\xA0\x00\xC3fE\x9A\x99/\xAF\xD9\x84\xA5\xB7\xF8\xF4d\xE8]\xDD\xFC\x01\xF7\xA6\x14wP\x8F\x94\xD1{wb\xF23\xE1\xDB\xA4\xBA;\xBD\x19+\x98 S7\xBAIN[\xCD\xE7 V\xCD\xBC\xD6\xC6\xB7\x1A],Q\xF5\x1D\xD6\x89\x8B\xEBq\xA3\xCB\x8ANU\x8E\x0B\xF08~\xFEK=,\x13\xF8\x14`\x00G2p	^\xC8\xDBu\x00\x00\x00\x00IEND\xAEB`\x82
-$$$$$$ Response Body For Transaction With Id 62 Ended $$$$$$
-
-****** Start Log Message ******
-
-Start Frames Hierarchy Tree Dump
-/WebTours/
-	/WebTours/header.html
-End Frames Hierarchy Tree Dump
-
-$$$$$$ End Log Message $$$$$$
-
-****** Add Event For Transaction With Id 62 ****** (Location Flag : tFlagInsertEnd, Location ID : 62)
-	web_custom_request("hp_logo.png",
-		"URL=http://localhost:1080/WebTours/images/hp_logo.png",
-		"Method=GET",
-		"Resource=1",
-		"RecContentType=image/png",
-		"Referer=http://localhost:1080/WebTours/header.html",
-		"Snapshot=t3.inf",
-		LAST);
-
-
-$$$$$$ Add Event For Transaction With Id 62 Ended $$$$$$
-
-****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 62)
-	web_add_header("Sec-Fetch-Site",
-		"same-origin");
-
-
-$$$$$$ Add Event For Transaction With Id 0 Ended $$$$$$
-
-****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 62)
-	web_add_header("Sec-Fetch-Dest",
-		"image");
-
-
-$$$$$$ Add Event For Transaction With Id 0 Ended $$$$$$
-
-****** Request Header For Transaction With Id 64 ******
+****** Request Header For Transaction With Id 255 ******
 GET /cgi-bin/welcome.pl?signOff=true HTTP/1.1
 Host: localhost:1080
 Connection: keep-alive
-sec-ch-ua: "Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"
+sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
 sec-ch-ua-mobile: ?0
 sec-ch-ua-platform: "Windows"
 Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
 Sec-Fetch-Site: same-origin
 Sec-Fetch-Mode: navigate
@@ -514,23 +400,23 @@ Accept-Encoding: gzip, deflate, br, zstd
 Accept-Language: ru-RU,ru;q=0.9
 
 
-$$$$$$ Request Header For Transaction With Id 64 Ended $$$$$$
+$$$$$$ Request Header For Transaction With Id 255 Ended $$$$$$
 
-****** Response Header For Transaction With Id 64 ******
+****** Response Header For Transaction With Id 255 ******
 HTTP/1.1 200 OK
-Date: Mon, 13 May 2024 21:00:36 GMT
+Date: Sat, 22 Jun 2024 10:44:06 GMT
 Server: Apache/2.2.21 (Win32)
-Set-Cookie: MSO=SID&1715634036; path=/
-Set-Cookie: MTUserInfo=; path=/; expires=Sun, 12-May-2024 21:00:36 GMT
+Set-Cookie: MSO=SID&1719053046; path=/
+Set-Cookie: MTUserInfo=; path=/; expires=Fri, 21-Jun-2024 10:44:06 GMT
 Keep-Alive: timeout=5, max=100
 Connection: Keep-Alive
 Transfer-Encoding: chunked
 Content-Type: text/html; charset=ISO-8859-1
 
 
-$$$$$$ Response Header For Transaction With Id 64 Ended $$$$$$
+$$$$$$ Response Header For Transaction With Id 255 Ended $$$$$$
 
-****** Response Body For Transaction With Id 64 ******
+****** Response Body For Transaction With Id 255 ******
 <!-- 
  A Session ID has been created and loaded into a cookie called MSO.
  Also, the server options have been loaded into the cookie called
@@ -552,7 +438,7 @@ $$$$$$ Response Header For Transaction With Id 64 Ended $$$$$$
 
 </body>
 </html>
-$$$$$$ Response Body For Transaction With Id 64 Ended $$$$$$
+$$$$$$ Response Body For Transaction With Id 255 Ended $$$$$$
 
 ****** Start Log Message ******
 
@@ -563,53 +449,53 @@ End Frames Hierarchy Tree Dump
 
 $$$$$$ End Log Message $$$$$$
 
-****** Add Event For Transaction With Id 1000045 ****** (Location Flag : tFlagInsertBefore, Location ID : 60)
+****** Add Event For Transaction With Id 1000240 ****** (Location Flag : tFlagInsertBefore, Location ID : 245)
 	web_concurrent_start(NULL);
 
 
-$$$$$$ Add Event For Transaction With Id 1000045 Ended $$$$$$
+$$$$$$ Add Event For Transaction With Id 1000240 Ended $$$$$$
 
-****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertAfter, Location ID : 60)
+****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertAfter, Location ID : 245)
 	web_concurrent_end(NULL);
 
 
 $$$$$$ Add Event For Transaction With Id 0 Ended $$$$$$
 
-****** Add Event For Transaction With Id 64 ****** (Location Flag : tFlagInsertAfter, Location ID : 60)
+****** Add Event For Transaction With Id 255 ****** (Location Flag : tFlagInsertAfter, Location ID : 245)
 	web_custom_request("welcome.pl",
 		"URL=http://localhost:1080/cgi-bin/welcome.pl?signOff=true",
 		"Method=GET",
 		"Resource=0",
 		"RecContentType=text/html",
 		"Referer=http://localhost:1080/WebTours/",
-		"Snapshot=t4.inf",
+		"Snapshot=t25.inf",
 		"Mode=HTTP",
 		LAST);
 
 
-$$$$$$ Add Event For Transaction With Id 64 Ended $$$$$$
+$$$$$$ Add Event For Transaction With Id 255 Ended $$$$$$
 
-****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 64)
+****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 255)
 	web_add_header("Sec-Fetch-Site",
 		"same-origin");
 
 
 $$$$$$ Add Event For Transaction With Id 0 Ended $$$$$$
 
-****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 64)
+****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 255)
 	web_add_header("Sec-Fetch-Dest",
 		"frame");
 
 
 $$$$$$ Add Event For Transaction With Id 0 Ended $$$$$$
 
-****** Request Header For Transaction With Id 77 ******
-GET /WebTours/images/webtours.png HTTP/1.1
+****** Request Header For Transaction With Id 269 ******
+GET /WebTours/images/hp_logo.png HTTP/1.1
 Host: localhost:1080
 Connection: keep-alive
-sec-ch-ua: "Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"
+sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
 sec-ch-ua-mobile: ?0
-User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
 sec-ch-ua-platform: "Windows"
 Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
 Sec-Fetch-Site: same-origin
@@ -620,11 +506,90 @@ Accept-Encoding: gzip, deflate, br, zstd
 Accept-Language: ru-RU,ru;q=0.9
 
 
-$$$$$$ Request Header For Transaction With Id 77 Ended $$$$$$
+$$$$$$ Request Header For Transaction With Id 269 Ended $$$$$$
 
-****** Response Header For Transaction With Id 77 ******
+****** Response Header For Transaction With Id 269 ******
 HTTP/1.1 200 OK
-Date: Mon, 13 May 2024 21:01:09 GMT
+Date: Sat, 22 Jun 2024 10:44:25 GMT
+Server: Apache/2.2.21 (Win32)
+Last-Modified: Thu, 12 Jan 2012 13:30:28 GMT
+ETag: "20000000c124e-259-4b654c0620500"
+Accept-Ranges: bytes
+Content-Length: 601
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: image/png
+
+
+$$$$$$ Response Header For Transaction With Id 269 Ended $$$$$$
+
+****** Response Body For Transaction With Id 269 ******
+\x89PNG
+\x1A
+\x00\x00\x00IHDR\x00\x00\x00E\x00\x00\x00-\x08\x03\x00\x00\x00\xCF\xF4V,\x00\x00\x00\x04gAMA\x00\x00\xD6\xD8\xD4OX2\x00\x00\x00\x19tEXtSoftware\x00Adobe ImageReadyq\xC9e<\x00\x00\x000PLTE\x01/c<b\x89\xFF\xFF\xFF\x15Cr_~\x9E\x7F\x99\xB2\x9C\xB0\xC4\xF2\xF5\xF7\xCD\xD7\xE1\xC1\xCE\xDA\xB1\xC0\xD0\xD9\xE1\xE8\xE2\xE7\xEE\xEA\xEE\xF2\xEE\xF2\xF5\x003fJQw \x00\x00\x00\x10tRNS\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\x00\xE0#]\x19\x00\x00\x01\x93IDATx\xDA\xECV]o\xC3 \x0C\xC4\x18L\x08$\xFB\xFF\xFFv\xFE\x80uM2\xA2\xBDL\xCA=\xD0\xAA\x8A/>s\xB6\xEB>\xFE\x02\xEEa\xF9\x9F,H\xE9\x88\x80\xB5\x1D'\xEC\xD1]\xB2\x90?\xA2b\xF4~\xC3\x90\xFC\x15\xE2%\xCB~|\x8C\xC0-|:\x04\x08T\xCF\xEF\xB8d9\xBCq\x01\xE7\x80?\x83S`(\x07\x964\xC0B\xC8\xA1,\xB2\xA0k@\x9Af!\x8D+\xA2\xFE\x858\xC9\x925\x03\x11\x04\xEE'\x9A_Y\x92\xC5\xB2\x84\xC5\xBD!\xCF\xB0\x90\x15\xA2\x8A \xCD
+\x15\x9C]\x1Agi\xA9\x04\xFD\xBEs\x9D\x81m\xE6SZ\xD1\xD18K\xB6\xF4W\xEF\xF7\xAAw-\xB1E\x8D\x06\xE3,v/\xC8?\x04+\xB0\xDC\x15n\xEA\x9D2\xCC\x02\xFDBvi\x81\xAA\xD2 H3h\x82S,Y\xAA\xAC-@"r\xB5\xA2\xC7Q\x16+\xAEj\xD1\x03w\x11\xD4\x9A!\xCC\xB1Dq\x7F\x14\xC7p`\xC2 ->\xC3b\x8A\x8A(P\xC7\xB0\x96\xD5\xF4\xCD(\xD2\xCC\xBB\xA0\x04\xAA\xE5\xAB\x19\xC6\xABK\xDD\xFDZ\xD6\xD8\xC6\x955\xC3\xF8Ms\x01\xC4\x1D\xCD"|M\x1Bm\xCDE\x13\xAE\xE3P(\xCB\x82|d\xEC\xADc\x83f\xA2\x03\xFC\x82o\xD3\xA0\x00\xC3fE\x9A\x99/\xAF\xD9\x84\xA5\xB7\xF8\xF4d\xE8]\xDD\xFC\x01\xF7\xA6\x14wP\x8F\x94\xD1{wb\xF23\xE1\xDB\xA4\xBA;\xBD\x19+\x98 S7\xBAIN[\xCD\xE7 V\xCD\xBC\xD6\xC6\xB7\x1A],Q\xF5\x1D\xD6\x89\x8B\xEBq\xA3\xCB\x8ANU\x8E\x0B\xF08~\xFEK=,\x13\xF8\x14`\x00G2p	^\xC8\xDBu\x00\x00\x00\x00IEND\xAEB`\x82
+$$$$$$ Response Body For Transaction With Id 269 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+/WebTours/
+	/WebTours/header.html
+	/cgi-bin/welcome.pl?signOff=true
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 269 ****** (Location Flag : tFlagInsertEnd, Location ID : 269)
+	web_custom_request("hp_logo.png",
+		"URL=http://localhost:1080/WebTours/images/hp_logo.png",
+		"Method=GET",
+		"Resource=1",
+		"RecContentType=image/png",
+		"Referer=http://localhost:1080/WebTours/header.html",
+		"Snapshot=t26.inf",
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 269 Ended $$$$$$
+
+****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 269)
+	web_add_header("Sec-Fetch-Site",
+		"same-origin");
+
+
+$$$$$$ Add Event For Transaction With Id 0 Ended $$$$$$
+
+****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 269)
+	web_add_header("Sec-Fetch-Dest",
+		"image");
+
+
+$$$$$$ Add Event For Transaction With Id 0 Ended $$$$$$
+
+****** Request Header For Transaction With Id 271 ******
+GET /WebTours/images/webtours.png HTTP/1.1
+Host: localhost:1080
+Connection: keep-alive
+sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:1080/WebTours/header.html
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: ru-RU,ru;q=0.9
+Cookie: MSO=SID&1719053046
+
+
+$$$$$$ Request Header For Transaction With Id 271 Ended $$$$$$
+
+****** Response Header For Transaction With Id 271 ******
+HTTP/1.1 200 OK
+Date: Sat, 22 Jun 2024 10:44:25 GMT
 Server: Apache/2.2.21 (Win32)
 Last-Modified: Mon, 04 Nov 2013 13:47:02 GMT
 ETag: "20000000c1264-105b-4ea5a26938180"
@@ -635,9 +600,9 @@ Connection: Keep-Alive
 Content-Type: image/png
 
 
-$$$$$$ Response Header For Transaction With Id 77 Ended $$$$$$
+$$$$$$ Response Header For Transaction With Id 271 Ended $$$$$$
 
-****** Response Body For Transaction With Id 77 ******
+****** Response Body For Transaction With Id 271 ******
 \x89PNG
 \x1A
 \x00\x00\x00IHDR\x00\x00\x00\x82\x00\x00\x00-\x08\x03\x00\x00\x00U\x97C\xF4\x00\x00\x00	pHYs\x00\x00\x0B\x13\x00\x00\x0B\x13\x01\x00\x9A\x9C\x18\x00\x00
@@ -657,7 +622,7 @@ y\xC2\x1D\xC2g"/\xD16\xD1\x88\xD8C\\*\x1EN\xF2H*Mz\x92\xEC\x91\xBC5y$\xC53\xA5,\
 \x8A\xB9T\xF1\xF1S\x97\xAD\xA9\xC0\xD6*\x05\xBD\xF5\x16d	+\xAC\xED\x84\x98QB\xF5\xB7,\xBE\x13\xCAK\xD7\xDAl0q\x00(c\xBFK
 \x00k\xBC\xD9\xA0\xAB\x03\x80v}\\\x01\x8C\xDA\x1B\x89\x88
 \x9C\xFA\xF2\x9D\x90^\xCA\xBC\x1E\x9A\x14^\xD5-|z"\xA5\x10\x0E_\x0C\xA1\x9D\xAE_>\xFE\xFC\x89\x7F\x08\x0F\xE1!<\x84\x87p7\xFE\x0C\x003E5\xCBq\xB3\x1F<\x00\x00\x00\x00IEND\xAEB`\x82
-$$$$$$ Response Body For Transaction With Id 77 Ended $$$$$$
+$$$$$$ Response Body For Transaction With Id 271 Ended $$$$$$
 
 ****** Start Log Message ******
 
@@ -669,54 +634,54 @@ End Frames Hierarchy Tree Dump
 
 $$$$$$ End Log Message $$$$$$
 
-****** Add Event For Transaction With Id 1000060 ****** (Location Flag : tFlagInsertBefore, Location ID : 62)
+****** Add Event For Transaction With Id 1000245 ****** (Location Flag : tFlagInsertBefore, Location ID : 269)
 	web_concurrent_start(NULL);
 
 
-$$$$$$ Add Event For Transaction With Id 1000060 Ended $$$$$$
+$$$$$$ Add Event For Transaction With Id 1000245 Ended $$$$$$
 
-****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertAfter, Location ID : 62)
+****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertAfter, Location ID : 269)
 	web_concurrent_end(NULL);
 
 
 $$$$$$ Add Event For Transaction With Id 0 Ended $$$$$$
 
-****** Add Event For Transaction With Id 77 ****** (Location Flag : tFlagInsertAfter, Location ID : 62)
+****** Add Event For Transaction With Id 271 ****** (Location Flag : tFlagInsertAfter, Location ID : 269)
 	web_custom_request("webtours.png",
 		"URL=http://localhost:1080/WebTours/images/webtours.png",
 		"Method=GET",
 		"Resource=1",
 		"RecContentType=image/png",
 		"Referer=http://localhost:1080/WebTours/header.html",
-		"Snapshot=t5.inf",
+		"Snapshot=t27.inf",
 		LAST);
 
 
-$$$$$$ Add Event For Transaction With Id 77 Ended $$$$$$
+$$$$$$ Add Event For Transaction With Id 271 Ended $$$$$$
 
-****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 77)
+****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 271)
 	web_add_header("Sec-Fetch-Site",
 		"same-origin");
 
 
 $$$$$$ Add Event For Transaction With Id 0 Ended $$$$$$
 
-****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 77)
+****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 271)
 	web_add_header("Sec-Fetch-Dest",
 		"image");
 
 
 $$$$$$ Add Event For Transaction With Id 0 Ended $$$$$$
 
-****** Request Header For Transaction With Id 87 ******
+****** Request Header For Transaction With Id 285 ******
 GET /WebTours/home.html HTTP/1.1
 Host: localhost:1080
 Connection: keep-alive
-sec-ch-ua: "Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"
+sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
 sec-ch-ua-mobile: ?0
 sec-ch-ua-platform: "Windows"
 Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
 Sec-Fetch-Site: same-origin
 Sec-Fetch-Mode: navigate
@@ -724,14 +689,14 @@ Sec-Fetch-Dest: frame
 Referer: http://localhost:1080/cgi-bin/welcome.pl?signOff=true
 Accept-Encoding: gzip, deflate, br, zstd
 Accept-Language: ru-RU,ru;q=0.9
-Cookie: MSO=SID&1715634036
+Cookie: MSO=SID&1719053046
 
 
-$$$$$$ Request Header For Transaction With Id 87 Ended $$$$$$
+$$$$$$ Request Header For Transaction With Id 285 Ended $$$$$$
 
-****** Response Header For Transaction With Id 87 ******
+****** Response Header For Transaction With Id 285 ******
 HTTP/1.1 200 OK
-Date: Mon, 13 May 2024 21:01:09 GMT
+Date: Sat, 22 Jun 2024 10:44:46 GMT
 Server: Apache/2.2.21 (Win32)
 Last-Modified: Mon, 27 May 2013 11:20:22 GMT
 ETag: "20000000c1238-551-4ddb1559ac980"
@@ -742,9 +707,9 @@ Connection: Keep-Alive
 Content-Type: text/html
 
 
-$$$$$$ Response Header For Transaction With Id 87 Ended $$$$$$
+$$$$$$ Response Header For Transaction With Id 285 Ended $$$$$$
 
-****** Response Body For Transaction With Id 87 ******
+****** Response Body For Transaction With Id 285 ******
 <HTML>
 <HEAD>
 	<title>Web Tours</title>
@@ -786,7 +751,7 @@ This product uses parts of the SMT Kernel, Copyright (c) 1991-99 <A href="http:/
 </body>
 </HTML>
 
-$$$$$$ Response Body For Transaction With Id 87 Ended $$$$$$
+$$$$$$ Response Body For Transaction With Id 285 Ended $$$$$$
 
 ****** Start Log Message ******
 
@@ -798,43 +763,94 @@ End Frames Hierarchy Tree Dump
 
 $$$$$$ End Log Message $$$$$$
 
-****** Add Event For Transaction With Id 87 ****** (Location Flag : tFlagInsertEnd, Location ID : 87)
+****** Add Event For Transaction With Id 285 ****** (Location Flag : tFlagInsertEnd, Location ID : 285)
 	web_custom_request("home.html",
 		"URL=http://localhost:1080/WebTours/home.html",
 		"Method=GET",
 		"Resource=0",
 		"RecContentType=text/html",
 		"Referer=http://localhost:1080/cgi-bin/welcome.pl?signOff=true",
-		"Snapshot=t6.inf",
+		"Snapshot=t28.inf",
 		"Mode=HTTP",
 		LAST);
 
 
-$$$$$$ Add Event For Transaction With Id 87 Ended $$$$$$
+$$$$$$ Add Event For Transaction With Id 285 Ended $$$$$$
 
-****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 87)
+****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 285)
 	web_add_header("Sec-Fetch-Site",
 		"same-origin");
 
 
 $$$$$$ Add Event For Transaction With Id 0 Ended $$$$$$
 
-****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 87)
+****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 285)
 	web_add_header("Sec-Fetch-Dest",
 		"frame");
 
 
 $$$$$$ Add Event For Transaction With Id 0 Ended $$$$$$
 
-****** Request Header For Transaction With Id 91 ******
+[Traffic Filtering] Filtering update.googleapis.com
+****** Request Header For Transaction With Id 289 ******
+POST /service/update2/json?cup2key=14:Y2GIsaGtP5M7Rye3V8lo4VXGyFzG4AEhulv8G9AUH00&cup2hreq=5c52efc85745856a6912bd9fedb41d84270c58a38eddb2cbed0e26dcde008430 HTTP/1.1
+Host: update.googleapis.com
+Connection: keep-alive
+Content-Length: 8659
+X-Goog-Update-AppId: obedbbhbpmojnkanicioggnmelmoomoc,neifaoindggfcjicffkgpmnlppeffabd,hfnkpimlhhgieaddgfemjhofmfblmnib,kiabhabjdbkjdpjbpigfodbdjmbglcoo,giekcmmlnklenlaomppkphknjmnnpneh,llkgjffcdpffmhiakmfcdcblohccpfmo,efniojlnjndmcbiieegkicadnoecjjef,laoigpblnllgcgjnjnllmfolckpjlhki,oimompecagnajdejgnnjijobebaeigek,ggkkehgbnfjpeggfpleeakpidbkibbmn,jflookgnkcckhobaglndicnbbgbonegd,ehgidpndbllacpjalkiimkbadgjfnnmc,jamhcnnkihinmdlkakkaopbjbbcngflc,ojhpjlocmbogdgmfpkhlaaeamibhnphh,jflhchccmppkfebkiaminageehmchikm,eeigpngbgcognadeebkilcpcaedhellh,niikhdgajlphfehepabhhblakbdgeefj,ihnlcenocehgdaegdmhbidjhnhdchfmm,khaoiebndkojlmppeemjhbpbandiljpe,gcmjkmgdlgnkkcocmoeiminaijmmjnii,lmelglejhemejginpboagddgdfbepgmp,gonpemdgkjcecdgbnaabipppbmgfggbe
+X-Goog-Update-Interactivity: bg
+X-Goog-Update-Updater: chrome-126.0.6478.63
+Content-Type: application/json
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: empty
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+
+
+$$$$$$ Request Header For Transaction With Id 289 Ended $$$$$$
+
+****** Request Body For Transaction With Id 289 ******
+{"request":{"@os":"win","@updater":"chrome","acceptformat":"crx3,puff","app":[{"accept_locale":"RU500000","appid":"obedbbhbpmojnkanicioggnmelmoomoc","brand":"GGLS","cohort":"1:s6f:","cohorthint":"Auto","cohortname":"Auto","enabled":true,"lang":"ru","packages":{"package":[{"fp":"1.aa893287a456d75a567495e5442f84d77261471cfb49a9a0259eb23662736a77"}]},"ping":{"ping_freshness":"{8b96ff4b-fb3e-4fc3-ae9a-4c13d58bec3e}","rd":6382},"updatecheck":{},"version":"20240429.634529504.14"},{"appid":"neifaoindggfcjicffkgpmnlppeffabd","brand":"GGLS","cohort":"1:1299:","cohorthint":"Windows (102+, canary/dev/beta/stable)","cohortname":"Auto","enabled":true,"installdate":5773,"lang":"ru","packages":{"package":[{"fp":"1.c900ba9a2d8318263fd43782ee6fd5fb50bad78bf0eb2c972b5922c458af45ed"}]},"ping":{"ping_freshness":"{fe56f285-6a2b-4de4-aaee-320cf02a15e1}","rd":6382},"updatecheck":{},"version":"1.0.2738.0"},{"appid":"hfnkpimlhhgieaddgfemjhofmfblmnib","brand":"GGLS","cohort":"1:287f:","cohorthint":"Auto","cohortname":"Auto full","enab
+$$$$$$ Request Body For Transaction With Id 289 Ended $$$$$$
+
+****** Response Header For Transaction With Id 289 ******
+HTTP/1.1 200 OK
+Content-Security-Policy: script-src 'report-sample' 'nonce-NMo-9BDlUnioT3ORRQIECQ' 'unsafe-inline' 'strict-dynamic' https: http:;object-src 'none';base-uri 'self';report-uri https://csp.withgoogle.com/csp/clientupdate-aus/1
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Date: Sat, 22 Jun 2024 10:44:47 GMT
+X-Cup-Server-Proof: 30450221009e33f03b8a370df84f4f75397f0d9e622f77e14f57462fdcc4ecbe2b2242f86d0220186949144c2c689c322326692e9641f0692adb2214371137b3d70a62dfa18244:5c52efc85745856a6912bd9fedb41d84270c58a38eddb2cbed0e26dcde008430
+ETag: W/"30450221009e33f03b8a370df84f4f75397f0d9e622f77e14f57462fdcc4ecbe2b2242f86d0220186949144c2c689c322326692e9641f0692adb2214371137b3d70a62dfa18244:5c52efc85745856a6912bd9fedb41d84270c58a38eddb2cbed0e26dcde008430"
+Content-Type: application/json; charset=utf-8
+X-Daynum: 6382
+X-Daystart: 13487
+Content-Encoding: gzip
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Server: GSE
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Transfer-Encoding: chunked
+
+
+$$$$$$ Response Header For Transaction With Id 289 Ended $$$$$$
+
+****** Response Body For Transaction With Id 289 ******
+)]}'
+{"response":{"server":"prod","protocol":"3.1","daystart":{"elapsed_seconds":13487,"elapsed_days":6382},"app":[{"cohorthint":"Auto","appid":"obedbbhbpmojnkanicioggnmelmoomoc","cohort":"1:s6f:","status":"ok","cohortname":"Auto","ping":{"status":"ok"},"updatecheck":{"status":"noupdate"}},{"cohorthint":"Windows (102+, canary/dev/beta/stable)","appid":"neifaoindggfcjicffkgpmnlppeffabd","cohort":"1:1299:","status":"ok","cohortname":"Auto","ping":{"status":"ok"},"updatecheck":{"status":"noupdate"}},{"cohorthint":"Auto","appid":"hfnkpimlhhgieaddgfemjhofmfblmnib","cohort":"1:287f:","status":"ok","cohortname":"Auto full","ping":{"status":"ok"},"updatecheck":{"status":"noupdate"}},{"cohorthint":"Auto","appid":"kiabhabjdbkjdpjbpigfodbdjmbglcoo","cohort":"1:v3l:","status":"ok","cohortname":"Auto","ping":{"status":"ok"},"updatecheck":{"status":"noupdate"}},{"cohorthint":"Auto","appid":"giekcmmlnklenlaomppkphknjmnnpneh","cohort":"1:j5l:","status":"ok","cohortname":"Auto","ping":{"status":"ok"},"updatecheck":{"status":"noupdate"}},{"appid":"llkgjffcdpffmhiakmfcdcblohccpfmo","cohort":"1::","status":"ok","cohortname":"","ping":{"status":"ok"},"updatecheck":{"_esbAllowlist":"true","status":"noupdate"}},{"cohorthint":"Auto Stage3","appid":"efniojlnjndmcbiieegkicadnoecjjef","cohort":"1:18ql:","status":"ok","cohortname":"Auto Stage3","ping":{"status":"ok"},"updatecheck":{"status":"noupdate"}},{"cohorthint":"Auto","appid":"laoigpblnllgcgjnjnllmfolckpjlhki","cohort":"1:10zr:","status":"ok","cohortname":"Auto","ping":{"status":"ok"},"updatecheck":{"status":"noupdate"}},{"cohorthint":"4.10.2557.0 for Chrome 95+","appid":"oimompecagnajdejgnnjijobebaeigek","cohort":"1:1zdx:","status":"ok","cohortname":"4.10.2710.0 to Windows (x86/x64)","ping":{"status":"ok"},"updatecheck":{"status":"noupdate"}},{"cohorthint":"108-and-above-all-users","appid":"ggkkehgbnfjpeggfpleeakpidbkibbmn","cohort":"1:ut9/1a0f:2c99@0.1","status":"ok","cohortname":"M108 and Above","ping":{"status":"ok"},"updatecheck":{"status":"noupdate"}},{"cohorthint":"Auto","appid":"jflookgnkcckhobaglndicnbbgbonegd","cohort":"1:s7x:","status":"ok","cohortname":"Auto","ping":{"status":"ok"},"updatecheck":{"status":"noupdate"}},{"cohorthint":"stable64","appid":"ehgidpndbllacpjalkiimkbadgjfnnmc","cohort":"1:ofl:","status":"ok","cohortname":"stable64","ping":{"status":"ok"},"updatecheck":{"status":"noupdate"}},{"cohorthint":"Auto","appid":"jamhcnnkihinmdlkakkaopbjbbcngflc","cohort":"1:wvr:","status":"ok","cohortname":"Auto","ping":{"status":"ok"},"updatecheck":{"status":"noupdate"}},{"cohorthint":"All users","appid":"ojhpjlocmbogdgmfpkhlaaeamibhnphh","cohort":"1:w0x:","status":"ok","cohortname":"All users","ping":{"status":"ok"},"updatecheck":{"status":"noupdate"}},{"appid":"jflhchccmppkfebkiaminageehmchikm","cohort":"1:26yf:","status":"ok","cohortname":"Stable","ping":{"status":"ok"},"updatecheck":{"status":"noupdate"}},{"cohorthint":"Auto","appid":"eeigpngbgcognadeebkilcpcaedhellh","cohort":"1:w59:","status":"ok","cohortname":"Auto","ping":{"status":"ok"},"updatecheck":{"status":"noupdate"}},{"appid":"niikhdgajlphfehepabhhblakbdgeefj","cohort":"1:1uh3:","status":"ok","cohortname":"Auto Main Cohort.","ping":{"status":"ok"},"updatecheck":{"status":"noupdate"}},{"cohorthint":"Win (Including up-to-date)","appid":"ihnlcenocehgdaegdmhbidjhnhdchfmm","cohort":"1::","status":"ok","cohortname":"","ping":{"status":"ok"},"updatecheck":{"status":"noupdate"}},{"cohorthint":"Auto","appid":"khaoiebndkojlmppeemjhbpbandiljpe","cohort":"1:cux:","status":"ok","cohortname":"Auto","ping":{"status":"ok"},"updatecheck":{"status":"noupdate"}},{"cohorthint":"M54AndUp","appid":"gcmjkmgdlgnkkcocmoeiminaijmmjnii","cohort":"1:bm1:","status":"ok","cohortname":"Stable","ping":{"status":"ok"},"updatecheck":{"status":"noupdate"}},{"cohorthint":"Auto","appid":"lmelglejhemejginpboagddgdfbepgmp","cohort":"1:lwl:","status":"ok","cohortname":"Auto","ping":{"status":"ok"},"updatecheck":{"status":"noupdate"}},{"cohorthint":"General release","appid":"gonpemdgkjcecdgbnaabipppbmgfggbe","cohort":"1:z1x:2gil@0.5","status":"ok","cohortname":"Auto","ping":{"status":"ok"},"updatecheck":{"status":"noupdate"}}]}}
+$$$$$$ Response Body For Transaction With Id 289 Ended $$$$$$
+
+****** Request Header For Transaction With Id 293 ******
 GET /cgi-bin/nav.pl?in=home HTTP/1.1
 Host: localhost:1080
 Connection: keep-alive
-sec-ch-ua: "Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"
+sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
 sec-ch-ua-mobile: ?0
 sec-ch-ua-platform: "Windows"
 Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
 Sec-Fetch-Site: same-origin
 Sec-Fetch-Mode: navigate
@@ -842,25 +858,25 @@ Sec-Fetch-Dest: frame
 Referer: http://localhost:1080/cgi-bin/welcome.pl?signOff=true
 Accept-Encoding: gzip, deflate, br, zstd
 Accept-Language: ru-RU,ru;q=0.9
-Cookie: MSO=SID&1715634036
+Cookie: MSO=SID&1719053046
 
 
-$$$$$$ Request Header For Transaction With Id 91 Ended $$$$$$
+$$$$$$ Request Header For Transaction With Id 293 Ended $$$$$$
 
-****** Response Header For Transaction With Id 91 ******
+****** Response Header For Transaction With Id 293 ******
 HTTP/1.1 200 OK
-Date: Mon, 13 May 2024 21:01:09 GMT
+Date: Sat, 22 Jun 2024 10:44:46 GMT
 Server: Apache/2.2.21 (Win32)
-Expires: Sun, 12 May 2024 21:01:10 GMT
+Expires: Fri, 21 Jun 2024 10:44:46 GMT
 Keep-Alive: timeout=5, max=100
 Connection: Keep-Alive
 Transfer-Encoding: chunked
 Content-Type: text/html; charset=ISO-8859-1
 
 
-$$$$$$ Response Header For Transaction With Id 91 Ended $$$$$$
+$$$$$$ Response Header For Transaction With Id 293 Ended $$$$$$
 
-****** Response Body For Transaction With Id 91 ******
+****** Response Body For Transaction With Id 293 ******
 <!DOCTYPE html
 	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 	 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -877,7 +893,7 @@ H3 {font-family: tahoma; font-size : 10pt; color: black}
 small {font-family: tahoma; font-size : 8pt}
 </style>
 <form method="post" action="/cgi-bin/login.pl" target="body">
-<input type="hidden" name="userSession" value="138974.000486027HVtitHfpVftciQApifAQ"/>
+<input type="hidden" name="userSession" value="139250.955528554HVzcHcVpAcftcQHzpDczVf"/>
 <table border="0"><tr><td>&nbsp;</td>
 <td>&nbsp;</td></tr>
 <tr><td>&nbsp;</td>
@@ -902,7 +918,7 @@ src="/WebTours/images/mer_login.gif"/></td></tr>
 </body>
 </html>
 
-$$$$$$ Response Body For Transaction With Id 91 Ended $$$$$$
+$$$$$$ Response Body For Transaction With Id 293 Ended $$$$$$
 
 ****** Start Log Message ******
 
@@ -916,100 +932,53 @@ End Frames Hierarchy Tree Dump
 
 $$$$$$ End Log Message $$$$$$
 
-****** Add Event For Transaction With Id 1000064 ****** (Location Flag : tFlagInsertBefore, Location ID : 87)
+****** Add Event For Transaction With Id 1000255 ****** (Location Flag : tFlagInsertBefore, Location ID : 285)
 	web_concurrent_start(NULL);
 
 
-$$$$$$ Add Event For Transaction With Id 1000064 Ended $$$$$$
+$$$$$$ Add Event For Transaction With Id 1000255 Ended $$$$$$
 
-****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertAfter, Location ID : 87)
+****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertAfter, Location ID : 285)
 	web_concurrent_end(NULL);
 
 
 $$$$$$ Add Event For Transaction With Id 0 Ended $$$$$$
 
-****** Add Event For Transaction With Id 91 ****** (Location Flag : tFlagInsertAfter, Location ID : 87)
+****** Add Event For Transaction With Id 293 ****** (Location Flag : tFlagInsertAfter, Location ID : 285)
 	web_custom_request("nav.pl",
 		"URL=http://localhost:1080/cgi-bin/nav.pl?in=home",
 		"Method=GET",
 		"Resource=0",
 		"RecContentType=text/html",
 		"Referer=http://localhost:1080/cgi-bin/welcome.pl?signOff=true",
-		"Snapshot=t7.inf",
+		"Snapshot=t29.inf",
 		"Mode=HTTP",
 		LAST);
 
 
-$$$$$$ Add Event For Transaction With Id 91 Ended $$$$$$
+$$$$$$ Add Event For Transaction With Id 293 Ended $$$$$$
 
-****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 91)
+****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 293)
 	web_add_header("Sec-Fetch-Site",
 		"same-origin");
 
 
 $$$$$$ Add Event For Transaction With Id 0 Ended $$$$$$
 
-****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 91)
+****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 293)
 	web_add_header("Sec-Fetch-Dest",
 		"frame");
 
 
 $$$$$$ Add Event For Transaction With Id 0 Ended $$$$$$
 
-[Traffic Filtering] Filtering update.googleapis.com
-****** Request Header For Transaction With Id 94 ******
-POST /service/update2/json?cup2key=14:vL4SP1pw87J2P-PPgv6G8A3FXsPJsTOvx9F1_SizzSE&cup2hreq=19bcf6f2faa3c3e1e0d5713feb02dff7286d6a2adb4bfb9da6b6dca007c34543 HTTP/1.1
-Host: update.googleapis.com
-Connection: keep-alive
-Content-Length: 8671
-X-Goog-Update-AppId: niikhdgajlphfehepabhhblakbdgeefj,neifaoindggfcjicffkgpmnlppeffabd,gcmjkmgdlgnkkcocmoeiminaijmmjnii,obedbbhbpmojnkanicioggnmelmoomoc,kiabhabjdbkjdpjbpigfodbdjmbglcoo,giekcmmlnklenlaomppkphknjmnnpneh,laoigpblnllgcgjnjnllmfolckpjlhki,hfnkpimlhhgieaddgfemjhofmfblmnib,ehgidpndbllacpjalkiimkbadgjfnnmc,efniojlnjndmcbiieegkicadnoecjjef,ggkkehgbnfjpeggfpleeakpidbkibbmn,jamhcnnkihinmdlkakkaopbjbbcngflc,jflookgnkcckhobaglndicnbbgbonegd,ojhpjlocmbogdgmfpkhlaaeamibhnphh,khaoiebndkojlmppeemjhbpbandiljpe,ihnlcenocehgdaegdmhbidjhnhdchfmm,llkgjffcdpffmhiakmfcdcblohccpfmo,oimompecagnajdejgnnjijobebaeigek,jflhchccmppkfebkiaminageehmchikm,lmelglejhemejginpboagddgdfbepgmp,eeigpngbgcognadeebkilcpcaedhellh,gonpemdgkjcecdgbnaabipppbmgfggbe
-X-Goog-Update-Interactivity: bg
-X-Goog-Update-Updater: chrome-124.0.6367.158
-Content-Type: application/json
-User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
-Accept-Encoding: gzip, deflate
-
-
-$$$$$$ Request Header For Transaction With Id 94 Ended $$$$$$
-
-****** Request Body For Transaction With Id 94 ******
-{"request":{"@os":"win","@updater":"chrome","acceptformat":"crx3,puff","app":[{"appid":"niikhdgajlphfehepabhhblakbdgeefj","brand":"GGLS","cohort":"1:1uh3:","cohortname":"Auto Main Cohort.","enabled":true,"installdate":6286,"lang":"ru","packages":{"package":[{"fp":"1.d55a7e7343659361fe7d245cb262d4b0a1251b061db833e4e04b5d3e78ea356e"}]},"ping":{"ping_freshness":"{fa8a336d-5cee-4c3e-b0b3-2b70ae0aaef4}","rd":6342},"updatecheck":{},"version":"2024.5.10.0"},{"appid":"neifaoindggfcjicffkgpmnlppeffabd","brand":"GGLS","cohort":"1:1299:","cohorthint":"Windows (102+, canary/dev/beta/stable)","cohortname":"Auto","enabled":true,"installdate":5773,"lang":"ru","packages":{"package":[{"fp":"1.c900ba9a2d8318263fd43782ee6fd5fb50bad78bf0eb2c972b5922c458af45ed"}]},"ping":{"ping_freshness":"{9d78fd97-37b1-4308-8174-7aa00a0fa727}","rd":6342},"updatecheck":{},"version":"1.0.2738.0"},{"appid":"gcmjkmgdlgnkkcocmoeiminaijmmjnii","brand":"GGLS","cohort":"1:bm1:","cohorthint":"M54AndUp","cohortname":"Stable","enabled":true,"lang":"ru","p
-$$$$$$ Request Body For Transaction With Id 94 Ended $$$$$$
-
-****** Response Header For Transaction With Id 94 ******
-HTTP/1.1 200 OK
-Content-Security-Policy: script-src 'report-sample' 'nonce-iu508eK1BLXeMVMV_9veMQ' 'unsafe-inline' 'strict-dynamic' https: http:;object-src 'none';base-uri 'self';report-uri https://csp.withgoogle.com/csp/clientupdate-aus/1
-Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-Pragma: no-cache
-Expires: Mon, 01 Jan 1990 00:00:00 GMT
-Date: Mon, 13 May 2024 21:01:10 GMT
-X-Cup-Server-Proof: 3045022100bdab71e9a741a837d0adf3471bdfeddea1a0e52d24743f66dd1d9202da7405c9022072acb40b14fb2320b45817156a6e7cec5c1f6f74c6360a4535ef6ce735035e44:19bcf6f2faa3c3e1e0d5713feb02dff7286d6a2adb4bfb9da6b6dca007c34543
-ETag: W/"3045022100bdab71e9a741a837d0adf3471bdfeddea1a0e52d24743f66dd1d9202da7405c9022072acb40b14fb2320b45817156a6e7cec5c1f6f74c6360a4535ef6ce735035e44:19bcf6f2faa3c3e1e0d5713feb02dff7286d6a2adb4bfb9da6b6dca007c34543"
-Content-Type: application/json; charset=utf-8
-X-Daynum: 6342
-X-Daystart: 50470
-Content-Encoding: gzip
-X-Content-Type-Options: nosniff
-X-Frame-Options: SAMEORIGIN
-X-XSS-Protection: 1; mode=block
-Content-Length: 1060
-Server: GSE
-
-
-$$$$$$ Response Header For Transaction With Id 94 Ended $$$$$$
-
-****** Response Body For Transaction With Id 94 ******
-)]}'
-{"response":{"server":"prod","protocol":"3.1","daystart":{"elapsed_seconds":50470,"elapsed_days":6342},"app":[{"appid":"niikhdgajlphfehepabhhblakbdgeefj","cohort":"1:1uh3:","status":"ok","cohortname":"Auto Main Cohort.","ping":{"status":"ok"},"updatecheck":{"status":"noupdate"}},{"cohorthint":"Windows (102+, canary/dev/beta/stable)","appid":"neifaoindggfcjicffkgpmnlppeffabd","cohort":"1:1299:","status":"ok","cohortname":"Auto","ping":{"status":"ok"},"updatecheck":{"status":"noupdate"}},{"cohorthint":"M54AndUp","appid":"gcmjkmgdlgnkkcocmoeiminaijmmjnii","cohort":"1:bm1:","status":"ok","cohortname":"Stable","ping":{"status":"ok"},"updatecheck":{"status":"noupdate"}},{"cohorthint":"Auto","appid":"obedbbhbpmojnkanicioggnmelmoomoc","cohort":"1:s6f:","status":"ok","cohortname":"Auto","ping":{"status":"ok"},"updatecheck":{"status":"noupdate"}},{"cohorthint":"Auto","appid":"kiabhabjdbkjdpjbpigfodbdjmbglcoo","cohort":"1:v3l:","status":"ok","cohortname":"Auto","ping":{"status":"ok"},"updatecheck":{"status":"noupdate"}},{"cohorthint":"Auto","appid":"giekcmmlnklenlaomppkphknjmnnpneh","cohort":"1:j5l:","status":"ok","cohortname":"Auto","ping":{"status":"ok"},"updatecheck":{"status":"noupdate"}},{"cohorthint":"Auto","appid":"laoigpblnllgcgjnjnllmfolckpjlhki","cohort":"1:10zr:","status":"ok","cohortname":"Auto","ping":{"status":"ok"},"updatecheck":{"status":"noupdate"}},{"cohorthint":"Auto","appid":"hfnkpimlhhgieaddgfemjhofmfblmnib","cohort":"1:2879:","status":"ok","cohortname":"Auto androidlowmem","ping":{"status":"ok"},"updatecheck":{"status":"noupdate"}},{"cohorthint":"stable64","appid":"ehgidpndbllacpjalkiimkbadgjfnnmc","cohort":"1:ofl:","status":"ok","cohortname":"stable64","ping":{"status":"ok"},"updatecheck":{"status":"noupdate"}},{"cohorthint":"Auto Stage3","appid":"efniojlnjndmcbiieegkicadnoecjjef","cohort":"1:18ql:","status":"ok","cohortname":"Auto Stage3","ping":{"status":"ok"},"updatecheck":{"status":"noupdate"}},{"cohorthint":"108-and-above-all-users","appid":"ggkkehgbnfjpeggfpleeakpidbkibbmn","cohort":"1:ut9/1a0f:2c99@0.1","status":"ok","cohortname":"M108 and Above","ping":{"status":"ok"},"updatecheck":{"status":"noupdate"}},{"cohorthint":"Auto","appid":"jamhcnnkihinmdlkakkaopbjbbcngflc","cohort":"1:wvr:","status":"ok","cohortname":"Auto","ping":{"status":"ok"},"updatecheck":{"status":"noupdate"}},{"cohorthint":"Auto","appid":"jflookgnkcckhobaglndicnbbgbonegd","cohort":"1:s7x:","status":"ok","cohortname":"Auto","ping":{"status":"ok"},"updatecheck":{"status":"noupdate"}},{"cohorthint":"All users","appid":"ojhpjlocmbogdgmfpkhlaaeamibhnphh","cohort":"1:w0x:","status":"ok","cohortname":"All users","ping":{"status":"ok"},"updatecheck":{"status":"noupdate"}},{"cohorthint":"Auto","appid":"khaoiebndkojlmppeemjhbpbandiljpe","cohort":"1:cux:","status":"ok","cohortname":"Auto","ping":{"status":"ok"},"updatecheck":{"status":"noupdate"}},{"cohorthint":"Win (Including up-to-date)","appid":"ihnlcenocehgdaegdmhbidjhnhdchfmm","cohort":"1::","status":"ok","cohortname":"","ping":{"status":"ok"},"updatecheck":{"status":"noupdate"}},{"appid":"llkgjffcdpffmhiakmfcdcblohccpfmo","cohort":"1::","status":"ok","cohortname":"","ping":{"status":"ok"},"updatecheck":{"_esbAllowlist":"true","status":"noupdate"}},{"cohorthint":"4.10.2557.0 for Chrome 95+","appid":"oimompecagnajdejgnnjijobebaeigek","cohort":"1:1zdx:","status":"ok","cohortname":"4.10.2710.0 to Windows (x86/x64)","ping":{"status":"ok"},"updatecheck":{"status":"noupdate"}},{"appid":"jflhchccmppkfebkiaminageehmchikm","cohort":"1:26yf:","status":"ok","cohortname":"Stable","ping":{"status":"ok"},"updatecheck":{"status":"noupdate"}},{"cohorthint":"Auto","appid":"lmelglejhemejginpboagddgdfbepgmp","cohort":"1:lwl:2dxr@0.025","status":"ok","cohortname":"Auto","ping":{"status":"ok"},"updatecheck":{"status":"noupdate"}},{"cohorthint":"Auto","appid":"eeigpngbgcognadeebkilcpcaedhellh","cohort":"1:w59:","status":"ok","cohortname":"Auto","ping":{"status":"ok"},"updatecheck":{"status":"noupdate"}},{"cohorthint":"General release","appid":"gonpemdgkjcecdgbnaabipppbmgfggbe","cohort":"1:z1x:","status":"ok","cohortname":"Auto","ping":{"status":"ok"},"updatecheck":{"status":"noupdate"}}]}}
-$$$$$$ Response Body For Transaction With Id 94 Ended $$$$$$
-
-****** Request Header For Transaction With Id 96 ******
+****** Request Header For Transaction With Id 296 ******
 GET /WebTours/images/mer_login.gif HTTP/1.1
 Host: localhost:1080
 Connection: keep-alive
-sec-ch-ua: "Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"
+sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
 sec-ch-ua-mobile: ?0
-User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
 sec-ch-ua-platform: "Windows"
 Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
 Sec-Fetch-Site: same-origin
@@ -1018,14 +987,14 @@ Sec-Fetch-Dest: image
 Referer: http://localhost:1080/cgi-bin/nav.pl?in=home
 Accept-Encoding: gzip, deflate, br, zstd
 Accept-Language: ru-RU,ru;q=0.9
-Cookie: MSO=SID&1715634036
+Cookie: MSO=SID&1719053046
 
 
-$$$$$$ Request Header For Transaction With Id 96 Ended $$$$$$
+$$$$$$ Request Header For Transaction With Id 296 Ended $$$$$$
 
-****** Response Header For Transaction With Id 96 ******
+****** Response Header For Transaction With Id 296 ******
 HTTP/1.1 200 OK
-Date: Mon, 13 May 2024 21:01:10 GMT
+Date: Sat, 22 Jun 2024 10:44:46 GMT
 Server: Apache/2.2.21 (Win32)
 Last-Modified: Thu, 12 Jan 2012 13:30:28 GMT
 ETag: "20000000c125c-2a7-4b654c0620500"
@@ -1036,15 +1005,15 @@ Connection: Keep-Alive
 Content-Type: image/gif
 
 
-$$$$$$ Response Header For Transaction With Id 96 Ended $$$$$$
+$$$$$$ Response Header For Transaction With Id 296 Ended $$$$$$
 
-****** Response Body For Transaction With Id 96 ******
+****** Response Body For Transaction With Id 296 ******
 GIF89a\\\x00\x13\x00\xC4\x1F\x00\xD3\xDA\xE4\xBE\xC4\xCE\xCC\xD2\xDB\xC3\xCA\xD4\x81\x86\x8BORU\xF7\xF7\xF7\xDB\xDC\xDE\xC8\xCA\xCD\xDE\xE4\xEE$&'\xDA\xE1\xEB\xC0\xC7\xD1\xDC\xE3\xED\xD8\xDF\xE9\xDE\xE6\xF0\xC9\xD0\xD9\xCE\xD5\xDF\xE0\xE7\xF1\xC6\xCD\xD7\xD6\xDD\xE6\xDB\xE2\xED\xD1\xD8\xE2\xB1\xB7\xBF\xA0\xA3\xA7;=@fin\xA5\xAB\xB2\xBC\xC3\xCD\xE1\xE8\xF2\x93\x95\x99\xFF\xFF\xFF!\xF9\x04\x01\x00\x00\x1F\x00,\x00\x00\x00\x00\\\x00\x13\x00\x00\x05\xFF\xE0'\x1A\x01\xE6\x9Dh\xAA\xAEl\xEB\xBEp|b\x9C!\xDE\x87\xAC\xEF|\x0F\x1F\xB8\x13\xC2v+\x1A\x8F\xC8\xA4r\xC9l\x16\x82\x13\xD0 \xFDp8\x01\x06c0\x98@\x04\x91\x08\x00@q,\x1A\x89\x84\xA4\xC3n\xBB\xDF\xF0\xB8\xDC-I7\x16\x0E\xCA8,\x80L\xB8Z\x01W\x1F	'\x06\x08\x1E\x08VWY[]\x10\x10a\x16dfh\x0Fko\x04\x10ss\x18\x17\x9Cl\x12\x0F	wy\x00\x16a\x90\x7F\x03\x81W\x1C\x1FQ\x1C&$\xAE\x8D\\^\x91b\x94\x0B\x15	\x97p
 \x9F\xA0p\x04\x1E\xC3\xA2	\x15xz\x00\xA9~\x80\x0C\x82\x8CT&\x1E\x1F\xD2XY]^`\x11\x93e\xBC\xBE\x98n\xC1p\x10\xC2m\x1C\x10\x14\x1C\x1D\xEAm\x90q\xC8\xCA\xA6\xA8\x11}\x13\x7F\xD1\xD8\x01\x1F)\xD7\xB5\xB4\xDC\xFA"i\x97\xA5qm\xCA\xB9\xD1\x90\xA1@\x86v\x1D\x18:,\xD0\xA1\x00\x81\x0E
 \x1Cf\xD0\x00\x07Y)=\xF6\xF0A\xE3\xE7\x0F\x05@F\xDA\x1E\xFF	\x10`\xE1[%q\xC0\xD0u\xC0\x90\x81B\x07\x0F\x19nR\xEC@\x80\xA2E\x8C\x17\x01(\x80\xD8\xC6\xE3\xB2S\x16V>\xE3\x12\x80\xE4?~\x02U\x16\x04\xD7\xEB\xD7\x1B\x85l4\\d\xA3\x00\x82V6\x17|^T\x885\xD4(z \xF9,m\xC5\xA8\xE4\x89\x93X\xA2r\x9B\xFA\xD2*9\x99_\xB9N\xC8\xBBA,Fae;\x18\xAD\xA7v\x15[,n\xADAu4\xD7\x9BA\x98We\xD2\xB4\xE9\x81\xE2\x05\x05\x1B\xC2\xFA%+S\xF0\xA8\x8F\xA7
 \x8F\xAC\x95\x18\xAE-\x95`\\\x86\xB3\x9BP\x81\xEB\x8C<\x0B\x14\xD0\x00\xB1\xAF\x86\xCA\x15\xC7\x02\xEE<\xEF(*\xA5\x86\xA3\x91\x9E\xE1\x81\x16J\xC6\x04\x1DS\x85<\xECM_6\x0486\xF7\x9C\xCC\xB7hVMkQ\xE3\x90hQ\\\xE4\xA9UWE8\xBD\x83\x85\x89\x19\x02\x94\xEF]\xEF\xF7Z\xE1\x83\xA2\x0C\xA9\xC2H`\xBE\xE4c\x96\xB3.\xCF\x86C\xE7cg\x1D\xD5\xCC=~\xE8\x03\x1F!\x86|\x90C$"D8\xE1\xE0\x83\x10Fx\x03\x14U\x88\xB0\xA0\x0F\x18f\xA8\xE1
 @<\x81@5\x1B\x86(\xA2\x0B\x18\x0CqC\x08\x00;
-$$$$$$ Response Body For Transaction With Id 96 Ended $$$$$$
+$$$$$$ Response Body For Transaction With Id 296 Ended $$$$$$
 
 ****** Start Log Message ******
 
@@ -1059,40 +1028,40 @@ End Frames Hierarchy Tree Dump
 
 $$$$$$ End Log Message $$$$$$
 
-****** Add Event For Transaction With Id 96 ****** (Location Flag : tFlagInsertEnd, Location ID : 96)
+****** Add Event For Transaction With Id 296 ****** (Location Flag : tFlagInsertEnd, Location ID : 296)
 	web_custom_request("mer_login.gif",
 		"URL=http://localhost:1080/WebTours/images/mer_login.gif",
 		"Method=GET",
 		"Resource=1",
 		"RecContentType=image/gif",
 		"Referer=http://localhost:1080/cgi-bin/nav.pl?in=home",
-		"Snapshot=t8.inf",
+		"Snapshot=t30.inf",
 		LAST);
 
 
-$$$$$$ Add Event For Transaction With Id 96 Ended $$$$$$
+$$$$$$ Add Event For Transaction With Id 296 Ended $$$$$$
 
-****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 96)
+****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 296)
 	web_add_header("Sec-Fetch-Site",
 		"same-origin");
 
 
 $$$$$$ Add Event For Transaction With Id 0 Ended $$$$$$
 
-****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 96)
+****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 296)
 	web_add_header("Sec-Fetch-Dest",
 		"image");
 
 
 $$$$$$ Add Event For Transaction With Id 0 Ended $$$$$$
 
-****** Request Header For Transaction With Id 98 ******
+****** Request Header For Transaction With Id 302 ******
 GET /favicon.ico HTTP/1.1
 Host: localhost:1080
 Connection: keep-alive
-sec-ch-ua: "Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"
+sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
 sec-ch-ua-mobile: ?0
-User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
 sec-ch-ua-platform: "Windows"
 Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
 Sec-Fetch-Site: same-origin
@@ -1101,14 +1070,14 @@ Sec-Fetch-Dest: image
 Referer: http://localhost:1080/WebTours/
 Accept-Encoding: gzip, deflate, br, zstd
 Accept-Language: ru-RU,ru;q=0.9
-Cookie: MSO=SID&1715634036
+Cookie: MSO=SID&1719053046
 
 
-$$$$$$ Request Header For Transaction With Id 98 Ended $$$$$$
+$$$$$$ Request Header For Transaction With Id 302 Ended $$$$$$
 
-****** Response Header For Transaction With Id 98 ******
+****** Response Header For Transaction With Id 302 ******
 HTTP/1.1 404 Not Found
-Date: Mon, 13 May 2024 21:01:10 GMT
+Date: Sat, 22 Jun 2024 10:44:48 GMT
 Server: Apache/2.2.21 (Win32)
 Content-Length: 209
 Keep-Alive: timeout=5, max=98
@@ -1116,9 +1085,9 @@ Connection: Keep-Alive
 Content-Type: text/html; charset=iso-8859-1
 
 
-$$$$$$ Response Header For Transaction With Id 98 Ended $$$$$$
+$$$$$$ Response Header For Transaction With Id 302 Ended $$$$$$
 
-****** Response Body For Transaction With Id 98 ******
+****** Response Body For Transaction With Id 302 ******
 <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
 <html><head>
 <title>404 Not Found</title>
@@ -1127,7 +1096,7 @@ $$$$$$ Response Header For Transaction With Id 98 Ended $$$$$$
 <p>The requested URL /favicon.ico was not found on this server.</p>
 </body></html>
 
-$$$$$$ Response Body For Transaction With Id 98 Ended $$$$$$
+$$$$$$ Response Body For Transaction With Id 302 Ended $$$$$$
 
 ****** Start Log Message ******
 
@@ -1142,57 +1111,15 @@ End Frames Hierarchy Tree Dump
 
 $$$$$$ End Log Message $$$$$$
 
-[Traffic Filtering] Filtering content-autofill.googleapis.com
-****** Request Header For Transaction With Id 104 ******
-GET /v1/pages/ChVDaHJvbWUvMTI0LjAuNjM2Ny4xNTgSIAlN-SI5wUW4MBIFDeeNQA4SBQ3OQUx6IUnhNcH6RPDw?alt=proto HTTP/1.1
-Host: content-autofill.googleapis.com
-Connection: keep-alive
-X-Goog-Encode-Response-If-Executable: base64
-X-Goog-Api-Key: AIzaSyBOti4mM-6x9WDnZIjIeyEU21OpBXqWBgw
-Sec-Fetch-Site: none
-Sec-Fetch-Mode: no-cors
-Sec-Fetch-Dest: empty
-User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
-Accept-Encoding: gzip, deflate, br, zstd
-Accept-Language: ru-RU,ru;q=0.9
-
-
-$$$$$$ Request Header For Transaction With Id 104 Ended $$$$$$
-
-****** Response Header For Transaction With Id 104 ******
-HTTP/1.1 200 OK
-Cache-Control: private,max-age=604800
-Content-Type: text/plain
-X-Goog-Safety-Encoding: base64
-X-Goog-Safety-Content-Type: application/x-protobuf
-Vary: Origin
-Vary: X-Origin
-Vary: Referer
-Content-Encoding: gzip
-Date: Mon, 13 May 2024 21:01:11 GMT
-Server: ESF
-Content-Length: 44
-X-XSS-Protection: 0
-X-Frame-Options: SAMEORIGIN
-X-Content-Type-Options: nosniff
-Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
-
-
-$$$$$$ Response Header For Transaction With Id 104 Ended $$$$$$
-
-****** Response Body For Transaction With Id 104 ******
-ChIKBw3njUAOGgAKBw3OQUx6GgA=
-$$$$$$ Response Body For Transaction With Id 104 Ended $$$$$$
-
-****** Request Header For Transaction With Id 123 ******
+****** Request Header For Transaction With Id 331 ******
 GET /cgi-bin/login.pl?username=&password=&getInfo=true HTTP/1.1
 Host: localhost:1080
 Connection: keep-alive
-sec-ch-ua: "Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"
+sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
 sec-ch-ua-mobile: ?0
 sec-ch-ua-platform: "Windows"
 Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
 Sec-Fetch-Site: same-origin
 Sec-Fetch-Mode: navigate
@@ -1201,14 +1128,14 @@ Sec-Fetch-Dest: frame
 Referer: http://localhost:1080/WebTours/home.html
 Accept-Encoding: gzip, deflate, br, zstd
 Accept-Language: ru-RU,ru;q=0.9
-Cookie: MSO=SID&1715634036
+Cookie: MSO=SID&1719053046
 
 
-$$$$$$ Request Header For Transaction With Id 123 Ended $$$$$$
+$$$$$$ Request Header For Transaction With Id 331 Ended $$$$$$
 
-****** Response Header For Transaction With Id 123 ******
+****** Response Header For Transaction With Id 331 ******
 HTTP/1.1 200 OK
-Date: Mon, 13 May 2024 21:02:19 GMT
+Date: Sat, 22 Jun 2024 10:45:36 GMT
 Server: Apache/2.2.21 (Win32)
 Expires: 5s
 Keep-Alive: timeout=5, max=100
@@ -1217,9 +1144,9 @@ Transfer-Encoding: chunked
 Content-Type: text/html; charset=ISO-8859-1
 
 
-$$$$$$ Response Header For Transaction With Id 123 Ended $$$$$$
+$$$$$$ Response Header For Transaction With Id 331 Ended $$$$$$
 
-****** Response Body For Transaction With Id 123 ******
+****** Response Body For Transaction With Id 331 ******
 <!DOCTYPE html
 	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 	 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -1235,7 +1162,7 @@ $$$$$$ Response Header For Transaction With Id 123 Ended $$$$$$
 </body>
 </html>
 
-$$$$$$ Response Body For Transaction With Id 123 Ended $$$$$$
+$$$$$$ Response Body For Transaction With Id 331 Ended $$$$$$
 
 ****** Start Log Message ******
 
@@ -1250,34 +1177,34 @@ End Frames Hierarchy Tree Dump
 
 $$$$$$ End Log Message $$$$$$
 
-****** Add Event For Transaction With Id 123 ****** (Location Flag : tFlagInsertEnd, Location ID : 123)
+****** Add Event For Transaction With Id 331 ****** (Location Flag : tFlagInsertEnd, Location ID : 331)
 	web_custom_request("sign up now",
 		"URL=http://localhost:1080/cgi-bin/login.pl?username=&password=&getInfo=true",
 		"Method=GET",
 		"Resource=0",
 		"RecContentType=text/html",
 		"Referer=http://localhost:1080/WebTours/home.html",
-		"Snapshot=t9.inf",
+		"Snapshot=t31.inf",
 		"Mode=HTTP",
 		LAST);
 
 
-$$$$$$ Add Event For Transaction With Id 123 Ended $$$$$$
+$$$$$$ Add Event For Transaction With Id 331 Ended $$$$$$
 
-****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 45)
+****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 240)
 	web_add_auto_header("Sec-Fetch-User",
 		"?1");
 
 
 $$$$$$ Add Event For Transaction With Id 0 Ended $$$$$$
 
-****** Request Header For Transaction With Id 126 ******
+****** Request Header For Transaction With Id 334 ******
 GET /WebTours/images/button_next.gif HTTP/1.1
 Host: localhost:1080
 Connection: keep-alive
-sec-ch-ua: "Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"
+sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
 sec-ch-ua-mobile: ?0
-User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
 sec-ch-ua-platform: "Windows"
 Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
 Sec-Fetch-Site: same-origin
@@ -1286,14 +1213,14 @@ Sec-Fetch-Dest: image
 Referer: http://localhost:1080/cgi-bin/login.pl?username=&password=&getInfo=true
 Accept-Encoding: gzip, deflate, br, zstd
 Accept-Language: ru-RU,ru;q=0.9
-Cookie: MSO=SID&1715634036
+Cookie: MSO=SID&1719053046
 
 
-$$$$$$ Request Header For Transaction With Id 126 Ended $$$$$$
+$$$$$$ Request Header For Transaction With Id 334 Ended $$$$$$
 
-****** Response Header For Transaction With Id 126 ******
+****** Response Header For Transaction With Id 334 ******
 HTTP/1.1 200 OK
-Date: Mon, 13 May 2024 21:02:19 GMT
+Date: Sat, 22 Jun 2024 10:45:36 GMT
 Server: Apache/2.2.21 (Win32)
 Last-Modified: Thu, 12 Jan 2012 13:30:28 GMT
 ETag: "20000000c123f-2f6-4b654c0620500"
@@ -1304,15 +1231,15 @@ Connection: Keep-Alive
 Content-Type: image/gif
 
 
-$$$$$$ Response Header For Transaction With Id 126 Ended $$$$$$
+$$$$$$ Response Header For Transaction With Id 334 Ended $$$$$$
 
-****** Response Body For Transaction With Id 126 ******
+****** Response Body For Transaction With Id 334 ******
 GIF89a\\\x00\x13\x00\xC4\x1F\x00\xBE\xC4\xCD\xCC\xD2\xDBRUW\xC3\xCA\xD4}\x82\x87\xF7\xF7\xF7\xDB\xDC\xDE\xC8\xCA\xCD)+,\xDE\xE4\xEE\xD6\xDD\xE6\xD1\xD8\xE2\xDA\xE1\xEB\xC0\xC6\xD1\xDC\xE3\xED\xD8\xDE\xE8\xDE\xE6\xF0\xC9\xD0\xD9\xCD\xD4\xDE\xD4\xDB\xE5\xE0\xE7\xF1\xD3\xDB\xE5\xC6\xCD\xD7\xD8\xDF\xE9\xDB\xE2\xED\xCF\xD6\xE0\xB1\xB7\xBF\xA4\xA8\xAE\xBC\xC3\xCD\xE1\xE8\xF2\x93\x95\x99\xFF\xFF\xFF!\xF9\x04\x01\x00\x00\x1F\x00,\x00\x00\x00\x00\\\x00\x13\x00\x00\x05\xFF\xE0'\x16\xC0\xE6\x9Dh\xAA\xAEl\xEB\xBEp|n@!\xDE\x86\xAC\xEF|\x0F\x1B\xB8\xD3\xC1v+\x1A\x8F\xC8\xA4r\xC9l\x16\x0B\x81\x13\xB0 \xFDp8\x80Fc0\xB0D\x02\x92\xCCb\xA2\xB80\x1C\x89\x04\xA5\xC3n\xBB\xDF\xF0\xB8\xDCMI;\x18\x17\xC5d\x91\x91\x04"\x16\\Z\x00W\x1F	'\x05\x07\x1E\x07VWY[]\x11\x11aceg	\x10ks\x9B\x9Cs\x14\x10	wy{}\x92\x81\x03\x83W\x1C\x1FQ%\x1E$\xAA\x8F\\^\x93b\x15\x96\x18\x19\x02\x08\xBC\x1A\x9Dl\x1B\xBE\x08
 \xBFo\x9F	\x18x
 \x15|\x12\xA6\x82\x84\x8ET&\x1E\x1F\xD2WZ]^`\xB6\xB8\x08\x04\x03
 \x04\x08\xC5\x08\x1B\x0C\xC4\xC5t\xA0\xC9y\xCC}\x7F\x16\x81\xA9\x8E\x1F)\xD7\xB1\xDA\x91\xDD\x0B\xB7\x0F\x0C< `\x90\x80\x81\x0C\x1D\xC8!\x10\xD0\x81\xC3.^\x1D\x04\x96+\xE7\xE1!\xC3\x13k\xCAE\xE4\xC5\xB0\x03\xA8;\x0F\x965\x93\x07\x1B\x80{(\xF2\xFF9\xDA\xC7\x8D\xD2\xAD<\x04\x08dr\xA3\x01\x81\x06\x00\xE76\xD8\xB4`\x13'\x01\x06\x08\x12\x90\x8B\xA0S(\x81\x0E@;\xD4\xB4\x90\x01\x01\x87c\xA2D\xC6\x03T2\x16\xCA\x13*\xB1\xB0\xFC\xE2R\x01@\x02\x02(h2\xD81\xA6N\x0C\x1DlRP\x8B \x03X6\x08\x16\xBCM\xEB\x96\x17/\x02\x18\xDA1\x08	\xCF\x0FUT\xD1\xAC\xE23\xB9\xB5\x1F\x99\x0B\x0Ft\xCE\x14\xEA!&\x1B\x01\x04j\xC2\xDD\x90vCS\x06\x8E/g\x1E\x08V\x83\x86\xA0*#\xE5\xF7T=,W\xAD\x11\x86\xD4\xD2\x9B\x19\x07\xE0\x10\x0E\xAD\xB9%'\x82\x02\x1D\x04P\xD6Mwn[r\x1B3\xD4\x04\xB0\xE0\x9C\xC7P\xCA\xFA\x92\x04l2uVY\xFC(\x91\x01\x88!\xC2C\x9B\x8F\xEF*E\x90\xC9&\x84]51\x1Fm\x9A`\x00G\x8D\x16;L\x08\xDA\xF4\xC1\x85sSM\x07\xB67\xE3\xD5\xEAY\\\xC5\x1Cf\x80!\x14\x1F\x07n`\xB0\xC0\x03\x10\xC8\xA1\x00\x06
 \x10\xE4\xC0s\x1A	v@\x81\x02	\x00\xC4\x06\x03\x19\xACA\xC1-\xB9,\xE0\xD5H\x7F\x9DV\x83\x074,\xD2\x88V\xAC\xE5W\x89\x19\xFD\xCD\xB4\xCE\x8Ar\x1C\xE3\x8E\x1E\x1C\xCA\x87+\x8BP\xE1\x01\x10+m1\x8F\x89\xFB\xA58\x16\x8B@\xB2\xE1\xE2h1\xD23\x9F!\x88|\x90C\x8DN4\xE9\xE4\x93P\x1A\x01E\x15",\xE9\xC3\x95Xf\xB9\x02\x10O\x1CP\x8D\x96`\x86\xE9\xC2\x06C\xDC\x10\x02\x00;
-$$$$$$ Response Body For Transaction With Id 126 Ended $$$$$$
+$$$$$$ Response Body For Transaction With Id 334 Ended $$$$$$
 
 ****** Start Log Message ******
 
@@ -1325,47 +1252,47 @@ End Frames Hierarchy Tree Dump
 
 $$$$$$ End Log Message $$$$$$
 
-****** Add Event For Transaction With Id 126 ****** (Location Flag : tFlagInsertEnd, Location ID : 126)
+****** Add Event For Transaction With Id 334 ****** (Location Flag : tFlagInsertEnd, Location ID : 334)
 	web_custom_request("button_next.gif",
 		"URL=http://localhost:1080/WebTours/images/button_next.gif",
 		"Method=GET",
 		"Resource=1",
 		"RecContentType=image/gif",
 		"Referer=http://localhost:1080/cgi-bin/login.pl?username=&password=&getInfo=true",
-		"Snapshot=t10.inf",
+		"Snapshot=t32.inf",
 		LAST);
 
 
-$$$$$$ Add Event For Transaction With Id 126 Ended $$$$$$
+$$$$$$ Add Event For Transaction With Id 334 Ended $$$$$$
 
-****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 123)
+****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 331)
 	web_add_auto_header("Sec-Fetch-Site",
 		"same-origin");
 
 
 $$$$$$ Add Event For Transaction With Id 0 Ended $$$$$$
 
-****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 123)
+****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 331)
 	web_add_header("Sec-Fetch-Dest",
 		"frame");
 
 
 $$$$$$ Add Event For Transaction With Id 0 Ended $$$$$$
 
-****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 126)
+****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 334)
 	web_add_header("Sec-Fetch-Dest",
 		"image");
 
 
 $$$$$$ Add Event For Transaction With Id 0 Ended $$$$$$
 
-****** Request Header For Transaction With Id 128 ******
+****** Request Header For Transaction With Id 336 ******
 GET /WebTours/profileValidate.js HTTP/1.1
 Host: localhost:1080
 Connection: keep-alive
-sec-ch-ua: "Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"
+sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
 sec-ch-ua-mobile: ?0
-User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
 sec-ch-ua-platform: "Windows"
 Accept: */*
 Sec-Fetch-Site: same-origin
@@ -1374,14 +1301,14 @@ Sec-Fetch-Dest: script
 Referer: http://localhost:1080/cgi-bin/login.pl?username=&password=&getInfo=true
 Accept-Encoding: gzip, deflate, br, zstd
 Accept-Language: ru-RU,ru;q=0.9
-Cookie: MSO=SID&1715634036
+Cookie: MSO=SID&1719053046
 
 
-$$$$$$ Request Header For Transaction With Id 128 Ended $$$$$$
+$$$$$$ Request Header For Transaction With Id 336 Ended $$$$$$
 
-****** Response Header For Transaction With Id 128 ******
+****** Response Header For Transaction With Id 336 ******
 HTTP/1.1 200 OK
-Date: Mon, 13 May 2024 21:02:19 GMT
+Date: Sat, 22 Jun 2024 10:45:36 GMT
 Server: Apache/2.2.21 (Win32)
 Last-Modified: Sun, 22 Apr 2012 14:28:18 GMT
 ETag: "20000000c126c-2c18-4be45552ee480"
@@ -1392,9 +1319,9 @@ Connection: Keep-Alive
 Content-Type: application/javascript
 
 
-$$$$$$ Response Header For Transaction With Id 128 Ended $$$$$$
+$$$$$$ Response Header For Transaction With Id 336 Ended $$$$$$
 
-****** Response Body For Transaction With Id 128 ******
+****** Response Body For Transaction With Id 336 ******
 // check for IE3
 var isIE3 = (navigator.appVersion.indexOf('MSIE 3') != -1);
 
@@ -1697,7 +1624,7 @@ function validateForm(form) {
   return true; //change this to return true to make the form submit
 }
 
-$$$$$$ Response Body For Transaction With Id 128 Ended $$$$$$
+$$$$$$ Response Body For Transaction With Id 336 Ended $$$$$$
 
 ****** Start Log Message ******
 
@@ -1710,51 +1637,94 @@ End Frames Hierarchy Tree Dump
 
 $$$$$$ End Log Message $$$$$$
 
-****** Add Event For Transaction With Id 1000123 ****** (Location Flag : tFlagInsertBefore, Location ID : 126)
+****** Add Event For Transaction With Id 1000331 ****** (Location Flag : tFlagInsertBefore, Location ID : 334)
 	web_concurrent_start(NULL);
 
 
-$$$$$$ Add Event For Transaction With Id 1000123 Ended $$$$$$
+$$$$$$ Add Event For Transaction With Id 1000331 Ended $$$$$$
 
-****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertAfter, Location ID : 126)
+****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertAfter, Location ID : 334)
 	web_concurrent_end(NULL);
 
 
 $$$$$$ Add Event For Transaction With Id 0 Ended $$$$$$
 
-****** Add Event For Transaction With Id 128 ****** (Location Flag : tFlagInsertAfter, Location ID : 126)
+****** Add Event For Transaction With Id 336 ****** (Location Flag : tFlagInsertAfter, Location ID : 334)
 	web_custom_request("profileValidate.js",
 		"URL=http://localhost:1080/WebTours/profileValidate.js",
 		"Method=GET",
 		"Resource=1",
 		"RecContentType=application/javascript",
 		"Referer=http://localhost:1080/cgi-bin/login.pl?username=&password=&getInfo=true",
-		"Snapshot=t11.inf",
+		"Snapshot=t33.inf",
 		LAST);
 
 
-$$$$$$ Add Event For Transaction With Id 128 Ended $$$$$$
+$$$$$$ Add Event For Transaction With Id 336 Ended $$$$$$
 
-****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 128)
+****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 336)
 	web_add_header("Sec-Fetch-Dest",
 		"script");
 
 
 $$$$$$ Add Event For Transaction With Id 0 Ended $$$$$$
 
-****** Request Header For Transaction With Id 141 ******
+[Traffic Filtering] Filtering clients2.google.com
+****** Request Header For Transaction With Id 356 ******
+GET /service/update2/crx?os=win&arch=x64&os_arch=x86_64&nacl_arch=x86-64&prod=chromecrx&prodchannel=&prodversion=126.0.6478.63&lang=ru&acceptformat=crx3,puff&x=id%3Dmjmpfdkmpojoeemjmfiddlhkkndcdpno%26v%3D0.0.0.0%26installedby%3Dexternal%26uc%26ping%3Dr%253D1%2526e%253D1 HTTP/1.1
+Host: clients2.google.com
+Connection: keep-alive
+X-Goog-Update-Interactivity: bg
+X-Goog-Update-AppId: mjmpfdkmpojoeemjmfiddlhkkndcdpno
+X-Goog-Update-Updater: chromecrx-126.0.6478.63
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: empty
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+
+
+$$$$$$ Request Header For Transaction With Id 356 Ended $$$$$$
+
+****** Response Header For Transaction With Id 356 ******
+HTTP/1.1 200 OK
+Content-Security-Policy: script-src 'report-sample' 'nonce-Q3Lkv_EgxrQ5-h_AAfmNrw' 'unsafe-inline' 'strict-dynamic' https: http:;object-src 'none';base-uri 'self';report-uri https://csp.withgoogle.com/csp/clientupdate-aus/1
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Date: Sat, 22 Jun 2024 10:46:58 GMT
+Content-Type: text/xml; charset=UTF-8
+X-Daynum: 6382
+X-Daystart: 13618
+Content-Encoding: gzip
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Server: GSE
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Transfer-Encoding: chunked
+
+
+$$$$$$ Response Header For Transaction With Id 356 Ended $$$$$$
+
+****** Response Body For Transaction With Id 356 ******
+<?xml version="1.0" encoding="UTF-8"?><gupdate xmlns="http://www.google.com/update2/response" protocol="2.0" server="prod"><daystart elapsed_days="6382" elapsed_seconds="13618"/><app appid="mjmpfdkmpojoeemjmfiddlhkkndcdpno" cohort="1::" cohortname="" status="ok"><ping status="ok"/><updatecheck _esbAllowlist="false" status="noupdate"/></app></gupdate>
+$$$$$$ Response Body For Transaction With Id 356 Ended $$$$$$
+
+****** Request Header For Transaction With Id 364 ******
 POST /cgi-bin/login.pl HTTP/1.1
 Host: localhost:1080
 Connection: keep-alive
-Content-Length: 156
+Content-Length: 154
 Cache-Control: max-age=0
-sec-ch-ua: "Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"
+sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
 sec-ch-ua-mobile: ?0
 sec-ch-ua-platform: "Windows"
 Upgrade-Insecure-Requests: 1
 Origin: http://localhost:1080
 Content-Type: application/x-www-form-urlencoded
-User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
 Sec-Fetch-Site: same-origin
 Sec-Fetch-Mode: navigate
@@ -1763,30 +1733,117 @@ Sec-Fetch-Dest: frame
 Referer: http://localhost:1080/cgi-bin/login.pl?username=&password=&getInfo=true
 Accept-Encoding: gzip, deflate, br, zstd
 Accept-Language: ru-RU,ru;q=0.9
-Cookie: MSO=SID&1715634036
+Cookie: MSO=SID&1719053046
 
 
-$$$$$$ Request Header For Transaction With Id 141 Ended $$$$$$
+$$$$$$ Request Header For Transaction With Id 364 Ended $$$$$$
 
-****** Request Body For Transaction With Id 141 ******
-username=Brad&password=Pitt&passwordConfirm=Pitt&firstName=Brad&lastName=Pitt&address1=Kuntsevskaya+street%2C+10&address2=Moscow&register.x=19&register.y=14
-$$$$$$ Request Body For Transaction With Id 141 Ended $$$$$$
+****** Request Body For Transaction With Id 364 ******
+username=Ivan&password=123456789&passwordConfirm=123456789&firstName=Ivan&lastName=Ivanov&address1=Molodezhnaya&address2=Moscow&register.x=53&register.y=6
+$$$$$$ Request Body For Transaction With Id 364 Ended $$$$$$
 
-****** Response Header For Transaction With Id 141 ******
+****** Response Header For Transaction With Id 364 ******
 HTTP/1.1 200 OK
-Date: Mon, 13 May 2024 21:03:22 GMT
+Date: Sat, 22 Jun 2024 10:47:04 GMT
 Server: Apache/2.2.21 (Win32)
 Expires: 5s
-Set-Cookie: MTUserInfo=firstName&Brad&address2&Moscow&username&Brad&hash&68&lastName&Pitt&address1&Kuntsevskaya%20street%2C%2010&creditCard&&expDate&; path=/
 Keep-Alive: timeout=5, max=100
 Connection: Keep-Alive
 Transfer-Encoding: chunked
 Content-Type: text/html; charset=ISO-8859-1
 
 
-$$$$$$ Response Header For Transaction With Id 141 Ended $$$$$$
+$$$$$$ Response Header For Transaction With Id 364 Ended $$$$$$
 
-****** Response Body For Transaction With Id 141 ******
+****** Response Body For Transaction With Id 364 ******
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+<title>User Information</title>
+<script src="/WebTours/profileValidate.js" type="text/JavaScript"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+</head>
+<body bgcolor="#E0E7F1">
+<style>blockquote {font-family: tahoma; font-size : 10pt}H1 {font-family: tahoma; font-size : 22pt; color: #993333}small {font-family: tahoma; font-size : 8pt}H3 {font-family: tahoma; font-size : 10pt; color: black}TD {font-family: tahoma; font-size : 10pt; color: black}</style><BR/><center><H1><b><font color="#003366">Customer Profile</font></b></H1></center><blockquote><tr><td><B>First time registering? Please complete the form below.</B><BR/>Please choose a username and password combination for your account.<BR/>We'd also like some additional contact information for yourself. We'll use it as default shipping and billing information when making all your travel arrangements.<P><tr><td align=center><center><H3><font color=red>Your username is taken.  Please choose another (usually adding a personally significant number to the end of your username will create a unique name).</font></H3></center><form method="post" action="login.pl" enctype="application/x-www-form-urlencoded" target="info" onsubmit>
+<table><tr><td align="left"><blockquote>Username : </td> <td align="left"><input type="text" name="username" value="Ivan" size="20" /></td></tr> <tr><td align="left"><blockquote>Password : </td> <td align="left"><input type="password" name="password" value="123456789" size="20" /></td></tr> <tr><td align="left"><blockquote>Confirm : </td> <td align="left"><input type="password" name="passwordConfirm" value="123456789" size="20" /></td></tr> <tr><td> </td></tr> <tr><td align="left"><blockquote>First Name : </td> <td align="left"><input type="text" name="firstName" value="Ivan" size="20" /></td></tr> <tr><td align="left"><blockquote>Last Name : </td> <td align="left"><input type="text" name="lastName" value="Ivanov" size="20" /></td></tr> <tr><td align="left"><blockquote>Street Address : </td> <td align="left"><input type="text" name="address1" value="Molodezhnaya" size="30" /></td></tr> <tr><td align="left"><blockquote>City/State/Zip : </td> <td align="left"><input type="text" name="address2" value="Moscow" size="30" /></td></tr> <tr><td align="left">&nbsp;</td> <td align="right">&nbsp;</td></tr> <tr><td align="center" colspan="2"><input type="image" name="register" src="/WebTours/images/button_next.gif" border="0" /></td></tr></table></form></table></blockquote>
+</body>
+</html>
+
+$$$$$$ Response Body For Transaction With Id 364 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+/WebTours/
+	/WebTours/header.html
+	/cgi-bin/login.pl?username=&password=&getInfo=true
+	Form: name= action=login.pl
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 364 ****** (Location Flag : tFlagInsertEnd, Location ID : 364)
+	web_custom_request("login.pl",
+		"URL=http://localhost:1080/cgi-bin/login.pl",
+		"Method=POST",
+		"Resource=0",
+		"RecContentType=text/html",
+		"Referer=http://localhost:1080/cgi-bin/login.pl?username=&password=&getInfo=true",
+		"Snapshot=t34.inf",
+		"Mode=HTTP",
+		"Body=username=Ivan&password=123456789&passwordConfirm=123456789&firstName=Ivan&lastName=Ivanov&address1=Molodezhnaya&address2=Moscow&register.x=53&register.y=6",
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 364 Ended $$$$$$
+
+****** Request Header For Transaction With Id 381 ******
+POST /cgi-bin/login.pl HTTP/1.1
+Host: localhost:1080
+Connection: keep-alive
+Content-Length: 159
+Cache-Control: max-age=0
+sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+Upgrade-Insecure-Requests: 1
+Origin: http://localhost:1080
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: frame
+Referer: http://localhost:1080/cgi-bin/login.pl
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: ru-RU,ru;q=0.9
+Cookie: MSO=SID&1719053046
+
+
+$$$$$$ Request Header For Transaction With Id 381 Ended $$$$$$
+
+****** Request Body For Transaction With Id 381 ******
+username=Mihail&password=123456789&passwordConfirm=123456789&firstName=Mihail&lastName=Ivanov&address1=Molodezhnaya&address2=Moscow&register.x=39&register.y=12
+$$$$$$ Request Body For Transaction With Id 381 Ended $$$$$$
+
+****** Response Header For Transaction With Id 381 ******
+HTTP/1.1 200 OK
+Date: Sat, 22 Jun 2024 10:47:33 GMT
+Server: Apache/2.2.21 (Win32)
+Expires: 5s
+Set-Cookie: MTUserInfo=firstName&Mihail&address2&Moscow&username&Mihail&hash&76&lastName&Ivanov&address1&Molodezhnaya&creditCard&&expDate&; path=/
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=ISO-8859-1
+
+
+$$$$$$ Response Header For Transaction With Id 381 Ended $$$$$$
+
+****** Response Body For Transaction With Id 381 ******
 <!DOCTYPE html
 	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 	 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -1800,48 +1857,65 @@ $$$$$$ Response Header For Transaction With Id 141 Ended $$$$$$
 <br/><br/><br/>
 
 
-<p /><style>blockquote {font-family: tahoma; font-size : 10pt}H1 {font-family: tahoma; font-size : 22pt; color: #993333}small {font-family: tahoma; font-size : 8pt}H3 {font-family: tahoma; font-size : 10pt; color: black}TD {font-family: tahoma; font-size : 10pt; color: black}</style><blockquote>Thank you, <b>Brad</b>, for registering and welcome to the Web Tours family.
+<p /><style>blockquote {font-family: tahoma; font-size : 10pt}H1 {font-family: tahoma; font-size : 22pt; color: #993333}small {font-family: tahoma; font-size : 8pt}H3 {font-family: tahoma; font-size : 10pt; color: black}TD {font-family: tahoma; font-size : 10pt; color: black}</style><blockquote>Thank you, <b>Mihail</b>, for registering and welcome to the Web Tours family.
 We hope we can meet all your current and future travel needs.  If you have any questions, feel free 
 to ask our support staff.   Click below when you're ready to plan your dream trip...<p /><center><a href=welcome.pl?page=menus target='body'><img src=/WebTours/images/button_next.gif border=0></a></center></blockquote>
 </body>
 </html>
-$$$$$$ Response Body For Transaction With Id 141 Ended $$$$$$
+$$$$$$ Response Body For Transaction With Id 381 Ended $$$$$$
 
 ****** Start Log Message ******
 
 Start Frames Hierarchy Tree Dump
-/WebTours/
-	/WebTours/header.html
-	/cgi-bin/login.pl?username=&password=&getInfo=true
+The Node has no URL
+	/WebTours/
+		/WebTours/header.html
+		/cgi-bin/login.pl?username=&password=&getInfo=true
+		Form: name= action=login.pl
+	/cgi-bin/login.pl
 	Form: name= action=login.pl
 End Frames Hierarchy Tree Dump
 
 $$$$$$ End Log Message $$$$$$
 
-****** Add Event For Transaction With Id 141 ****** (Location Flag : tFlagInsertEnd, Location ID : 141)
-	web_custom_request("login.pl",
+****** Add Event For Transaction With Id 381 ****** (Location Flag : tFlagInsertEnd, Location ID : 381)
+	web_custom_request("login.pl_2",
 		"URL=http://localhost:1080/cgi-bin/login.pl",
 		"Method=POST",
 		"Resource=0",
 		"RecContentType=text/html",
-		"Referer=http://localhost:1080/cgi-bin/login.pl?username=&password=&getInfo=true",
-		"Snapshot=t12.inf",
+		"Referer=http://localhost:1080/cgi-bin/login.pl",
+		"Snapshot=t35.inf",
 		"Mode=HTTP",
-		"Body=username=Brad&password=Pitt&passwordConfirm=Pitt&firstName=Brad&lastName=Pitt&address1=Kuntsevskaya+street%2C+10&address2=Moscow&register.x=19&register.y=14",
+		"Body=username=Mihail&password=123456789&passwordConfirm=123456789&firstName=Mihail&lastName=Ivanov&address1=Molodezhnaya&address2=Moscow&register.x=39&register.y=12",
 		LAST);
 
 
-$$$$$$ Add Event For Transaction With Id 141 Ended $$$$$$
+$$$$$$ Add Event For Transaction With Id 381 Ended $$$$$$
 
-****** Request Header For Transaction With Id 151 ******
+****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 364)
+	web_add_auto_header("Origin",
+		"http://localhost:1080");
+
+
+$$$$$$ Add Event For Transaction With Id 0 Ended $$$$$$
+
+****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 364)
+	web_add_auto_header("Sec-Fetch-Dest",
+		"frame");
+
+
+$$$$$$ Add Event For Transaction With Id 0 Ended $$$$$$
+
+****** Request Header For Transaction With Id 395 ******
 GET /cgi-bin/welcome.pl?page=menus HTTP/1.1
 Host: localhost:1080
 Connection: keep-alive
-sec-ch-ua: "Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"
+sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
 sec-ch-ua-mobile: ?0
 sec-ch-ua-platform: "Windows"
 Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
 Sec-Fetch-Site: same-origin
 Sec-Fetch-Mode: navigate
@@ -1850,14 +1924,14 @@ Sec-Fetch-Dest: frame
 Referer: http://localhost:1080/cgi-bin/login.pl
 Accept-Encoding: gzip, deflate, br, zstd
 Accept-Language: ru-RU,ru;q=0.9
-Cookie: MSO=SID&1715634036; MTUserInfo=firstName&Brad&address2&Moscow&username&Brad&hash&68&lastName&Pitt&address1&Kuntsevskaya%20street%2C%2010&creditCard&&expDate&
+Cookie: MSO=SID&1719053046; MTUserInfo=firstName&Mihail&address2&Moscow&username&Mihail&hash&76&lastName&Ivanov&address1&Molodezhnaya&creditCard&&expDate&
 
 
-$$$$$$ Request Header For Transaction With Id 151 Ended $$$$$$
+$$$$$$ Request Header For Transaction With Id 395 Ended $$$$$$
 
-****** Response Header For Transaction With Id 151 ******
+****** Response Header For Transaction With Id 395 ******
 HTTP/1.1 200 OK
-Date: Mon, 13 May 2024 21:03:41 GMT
+Date: Sat, 22 Jun 2024 10:48:04 GMT
 Server: Apache/2.2.21 (Win32)
 Keep-Alive: timeout=5, max=100
 Connection: Keep-Alive
@@ -1865,9 +1939,9 @@ Transfer-Encoding: chunked
 Content-Type: text/html; charset=ISO-8859-1
 
 
-$$$$$$ Response Header For Transaction With Id 151 Ended $$$$$$
+$$$$$$ Response Header For Transaction With Id 395 Ended $$$$$$
 
-****** Response Body For Transaction With Id 151 ******
+****** Response Body For Transaction With Id 395 ******
 <!-- 
  User has returned to the home page.  Since user has already logged on,
  we can give them the menu in the navbar.
@@ -1886,7 +1960,7 @@ $$$$$$ Response Header For Transaction With Id 151 Ended $$$$$$
    </frameset>
 </html>
 
-$$$$$$ Response Body For Transaction With Id 151 Ended $$$$$$
+$$$$$$ Response Body For Transaction With Id 395 Ended $$$$$$
 
 ****** Start Log Message ******
 
@@ -1901,121 +1975,35 @@ End Frames Hierarchy Tree Dump
 
 $$$$$$ End Log Message $$$$$$
 
-****** Add Event For Transaction With Id 151 ****** (Location Flag : tFlagInsertEnd, Location ID : 151)
+****** Add Event For Transaction With Id 395 ****** (Location Flag : tFlagInsertEnd, Location ID : 395)
 	web_custom_request("button_next.gif_2",
 		"URL=http://localhost:1080/cgi-bin/welcome.pl?page=menus",
 		"Method=GET",
 		"Resource=0",
 		"RecContentType=text/html",
 		"Referer=http://localhost:1080/cgi-bin/login.pl",
-		"Snapshot=t13.inf",
+		"Snapshot=t36.inf",
 		"Mode=HTTP",
 		LAST);
 
 
-$$$$$$ Add Event For Transaction With Id 151 Ended $$$$$$
+$$$$$$ Add Event For Transaction With Id 395 Ended $$$$$$
 
-****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 141)
-	web_add_header("Origin",
-		"http://localhost:1080");
-
-
-$$$$$$ Add Event For Transaction With Id 0 Ended $$$$$$
-
-****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 141)
-	web_add_auto_header("Sec-Fetch-Dest",
-		"frame");
+****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 395)
+	web_revert_auto_header("Origin");
 
 
 $$$$$$ Add Event For Transaction With Id 0 Ended $$$$$$
 
-****** Request Header For Transaction With Id 154 ******
-GET /cgi-bin/login.pl?intro=true HTTP/1.1
-Host: localhost:1080
-Connection: keep-alive
-sec-ch-ua: "Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"
-sec-ch-ua-mobile: ?0
-sec-ch-ua-platform: "Windows"
-Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
-Sec-Fetch-Site: same-origin
-Sec-Fetch-Mode: navigate
-Sec-Fetch-Dest: frame
-Referer: http://localhost:1080/cgi-bin/welcome.pl?page=menus
-Accept-Encoding: gzip, deflate, br, zstd
-Accept-Language: ru-RU,ru;q=0.9
-Cookie: MSO=SID&1715634036; MTUserInfo=firstName&Brad&address2&Moscow&username&Brad&hash&68&lastName&Pitt&address1&Kuntsevskaya%20street%2C%2010&creditCard&&expDate&
-
-
-$$$$$$ Request Header For Transaction With Id 154 Ended $$$$$$
-
-****** Response Header For Transaction With Id 154 ******
-HTTP/1.1 200 OK
-Date: Mon, 13 May 2024 21:03:41 GMT
-Server: Apache/2.2.21 (Win32)
-Expires: 5s
-Keep-Alive: timeout=5, max=100
-Connection: Keep-Alive
-Transfer-Encoding: chunked
-Content-Type: text/html; charset=ISO-8859-1
-
-
-$$$$$$ Response Header For Transaction With Id 154 Ended $$$$$$
-
-****** Response Body For Transaction With Id 154 ******
-<!DOCTYPE html
-	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
-<head>
-<title>Welcome to Web Tours</title>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-</head>
-<body bgcolor="#E0E7F1">
-<p /><style>blockquote {font-family: tahoma; font-size : 10pt}H1 {font-family: tahoma; font-size : 22pt; color: #993333}small {font-family: tahoma; font-size : 8pt}H3 {font-family: tahoma; font-size : 10pt; color: black}TD {font-family: tahoma; font-size : 10pt; color: black}</style><BR/><BR/><BR/><BR/><BR/><blockquote>Welcome, <b>Brad</b>, to the Web Tours reservation pages.<BR/>Using the menu to the left, you can search for new flights to book, 
-or review/edit the flights already booked.  Don't forget to sign off when
-you're done!
-</blockquote>
-</body>
-</html>
-$$$$$$ Response Body For Transaction With Id 154 Ended $$$$$$
-
-****** Start Log Message ******
-
-Start Frames Hierarchy Tree Dump
-The Node has no URL
-	/WebTours/
-		/WebTours/header.html
-		/cgi-bin/welcome.pl?page=menus
-	/cgi-bin/login.pl
-End Frames Hierarchy Tree Dump
-
-$$$$$$ End Log Message $$$$$$
-
-****** Add Event For Transaction With Id 154 ****** (Location Flag : tFlagInsertEnd, Location ID : 154)
-	web_custom_request("login.pl_2",
-		"URL=http://localhost:1080/cgi-bin/login.pl?intro=true",
-		"Method=GET",
-		"Resource=0",
-		"RecContentType=text/html",
-		"Referer=http://localhost:1080/cgi-bin/welcome.pl?page=menus",
-		"Snapshot=t14.inf",
-		"Mode=HTTP",
-		LAST);
-
-
-$$$$$$ Add Event For Transaction With Id 154 Ended $$$$$$
-
-****** Request Header For Transaction With Id 156 ******
+****** Request Header For Transaction With Id 398 ******
 GET /cgi-bin/nav.pl?page=menu&in=home HTTP/1.1
 Host: localhost:1080
 Connection: keep-alive
-sec-ch-ua: "Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"
+sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
 sec-ch-ua-mobile: ?0
 sec-ch-ua-platform: "Windows"
 Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
 Sec-Fetch-Site: same-origin
 Sec-Fetch-Mode: navigate
@@ -2023,25 +2011,25 @@ Sec-Fetch-Dest: frame
 Referer: http://localhost:1080/cgi-bin/welcome.pl?page=menus
 Accept-Encoding: gzip, deflate, br, zstd
 Accept-Language: ru-RU,ru;q=0.9
-Cookie: MSO=SID&1715634036; MTUserInfo=firstName&Brad&address2&Moscow&username&Brad&hash&68&lastName&Pitt&address1&Kuntsevskaya%20street%2C%2010&creditCard&&expDate&
+Cookie: MSO=SID&1719053046; MTUserInfo=firstName&Mihail&address2&Moscow&username&Mihail&hash&76&lastName&Ivanov&address1&Molodezhnaya&creditCard&&expDate&
 
 
-$$$$$$ Request Header For Transaction With Id 156 Ended $$$$$$
+$$$$$$ Request Header For Transaction With Id 398 Ended $$$$$$
 
-****** Response Header For Transaction With Id 156 ******
+****** Response Header For Transaction With Id 398 ******
 HTTP/1.1 200 OK
-Date: Mon, 13 May 2024 21:03:41 GMT
+Date: Sat, 22 Jun 2024 10:48:04 GMT
 Server: Apache/2.2.21 (Win32)
-Expires: Sun, 12 May 2024 21:03:42 GMT
+Expires: Fri, 21 Jun 2024 10:48:04 GMT
 Keep-Alive: timeout=5, max=99
 Connection: Keep-Alive
 Transfer-Encoding: chunked
 Content-Type: text/html; charset=ISO-8859-1
 
 
-$$$$$$ Response Header For Transaction With Id 156 Ended $$$$$$
+$$$$$$ Response Header For Transaction With Id 398 Ended $$$$$$
 
-****** Response Body For Transaction With Id 156 ******
+****** Response Body For Transaction With Id 398 ******
 <!DOCTYPE html
 	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 	 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -2076,7 +2064,7 @@ ALT="SignOff Button"/></A></center>
 </body>
 </html>
 
-$$$$$$ Response Body For Transaction With Id 156 Ended $$$$$$
+$$$$$$ Response Body For Transaction With Id 398 Ended $$$$$$
 
 ****** Start Log Message ******
 
@@ -2085,46 +2073,123 @@ The Node has no URL
 	/WebTours/
 		/WebTours/header.html
 		/cgi-bin/welcome.pl?page=menus
-			The Node is NULL
-			/cgi-bin/login.pl?intro=true
 	/cgi-bin/login.pl
 End Frames Hierarchy Tree Dump
 
 $$$$$$ End Log Message $$$$$$
 
-****** Add Event For Transaction With Id 1000151 ****** (Location Flag : tFlagInsertBefore, Location ID : 154)
-	web_concurrent_start(NULL);
-
-
-$$$$$$ Add Event For Transaction With Id 1000151 Ended $$$$$$
-
-****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertAfter, Location ID : 154)
-	web_concurrent_end(NULL);
-
-
-$$$$$$ Add Event For Transaction With Id 0 Ended $$$$$$
-
-****** Add Event For Transaction With Id 156 ****** (Location Flag : tFlagInsertAfter, Location ID : 154)
+****** Add Event For Transaction With Id 398 ****** (Location Flag : tFlagInsertEnd, Location ID : 398)
 	web_custom_request("nav.pl_2",
 		"URL=http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home",
 		"Method=GET",
 		"Resource=0",
 		"RecContentType=text/html",
 		"Referer=http://localhost:1080/cgi-bin/welcome.pl?page=menus",
-		"Snapshot=t15.inf",
+		"Snapshot=t37.inf",
 		"Mode=HTTP",
 		LAST);
 
 
-$$$$$$ Add Event For Transaction With Id 156 Ended $$$$$$
+$$$$$$ Add Event For Transaction With Id 398 Ended $$$$$$
 
-****** Request Header For Transaction With Id 160 ******
-GET /WebTours/images/itinerary.gif HTTP/1.1
+****** Request Header For Transaction With Id 401 ******
+GET /cgi-bin/login.pl?intro=true HTTP/1.1
 Host: localhost:1080
 Connection: keep-alive
-sec-ch-ua: "Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"
+sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
 sec-ch-ua-mobile: ?0
-User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Dest: frame
+Referer: http://localhost:1080/cgi-bin/welcome.pl?page=menus
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: ru-RU,ru;q=0.9
+Cookie: MSO=SID&1719053046; MTUserInfo=firstName&Mihail&address2&Moscow&username&Mihail&hash&76&lastName&Ivanov&address1&Molodezhnaya&creditCard&&expDate&
+
+
+$$$$$$ Request Header For Transaction With Id 401 Ended $$$$$$
+
+****** Response Header For Transaction With Id 401 ******
+HTTP/1.1 200 OK
+Date: Sat, 22 Jun 2024 10:48:04 GMT
+Server: Apache/2.2.21 (Win32)
+Expires: 5s
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=ISO-8859-1
+
+
+$$$$$$ Response Header For Transaction With Id 401 Ended $$$$$$
+
+****** Response Body For Transaction With Id 401 ******
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+<title>Welcome to Web Tours</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+</head>
+<body bgcolor="#E0E7F1">
+<p /><style>blockquote {font-family: tahoma; font-size : 10pt}H1 {font-family: tahoma; font-size : 22pt; color: #993333}small {font-family: tahoma; font-size : 8pt}H3 {font-family: tahoma; font-size : 10pt; color: black}TD {font-family: tahoma; font-size : 10pt; color: black}</style><BR/><BR/><BR/><BR/><BR/><blockquote>Welcome, <b>Mihail</b>, to the Web Tours reservation pages.<BR/>Using the menu to the left, you can search for new flights to book, 
+or review/edit the flights already booked.  Don't forget to sign off when
+you're done!
+</blockquote>
+</body>
+</html>
+$$$$$$ Response Body For Transaction With Id 401 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+The Node has no URL
+	/WebTours/
+		/WebTours/header.html
+		/cgi-bin/welcome.pl?page=menus
+			/cgi-bin/nav.pl?page=menu&in=home
+	/cgi-bin/login.pl
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 1000395 ****** (Location Flag : tFlagInsertBefore, Location ID : 398)
+	web_concurrent_start(NULL);
+
+
+$$$$$$ Add Event For Transaction With Id 1000395 Ended $$$$$$
+
+****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertAfter, Location ID : 398)
+	web_concurrent_end(NULL);
+
+
+$$$$$$ Add Event For Transaction With Id 0 Ended $$$$$$
+
+****** Add Event For Transaction With Id 401 ****** (Location Flag : tFlagInsertAfter, Location ID : 398)
+	web_custom_request("login.pl_3",
+		"URL=http://localhost:1080/cgi-bin/login.pl?intro=true",
+		"Method=GET",
+		"Resource=0",
+		"RecContentType=text/html",
+		"Referer=http://localhost:1080/cgi-bin/welcome.pl?page=menus",
+		"Snapshot=t38.inf",
+		"Mode=HTTP",
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 401 Ended $$$$$$
+
+****** Request Header For Transaction With Id 403 ******
+GET /WebTours/images/flights.gif HTTP/1.1
+Host: localhost:1080
+Connection: keep-alive
+sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
 sec-ch-ua-platform: "Windows"
 Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
 Sec-Fetch-Site: same-origin
@@ -2133,27 +2198,96 @@ Sec-Fetch-Dest: image
 Referer: http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home
 Accept-Encoding: gzip, deflate, br, zstd
 Accept-Language: ru-RU,ru;q=0.9
-Cookie: MSO=SID&1715634036; MTUserInfo=firstName&Brad&address2&Moscow&username&Brad&hash&68&lastName&Pitt&address1&Kuntsevskaya%20street%2C%2010&creditCard&&expDate&
+Cookie: MSO=SID&1719053046; MTUserInfo=firstName&Mihail&address2&Moscow&username&Mihail&hash&76&lastName&Ivanov&address1&Molodezhnaya&creditCard&&expDate&
 
 
-$$$$$$ Request Header For Transaction With Id 160 Ended $$$$$$
+$$$$$$ Request Header For Transaction With Id 403 Ended $$$$$$
 
-****** Response Header For Transaction With Id 160 ******
+****** Response Header For Transaction With Id 403 ******
 HTTP/1.1 200 OK
-Date: Mon, 13 May 2024 21:03:42 GMT
+Date: Sat, 22 Jun 2024 10:48:04 GMT
 Server: Apache/2.2.21 (Win32)
 Last-Modified: Thu, 12 Jan 2012 13:30:28 GMT
-ETag: "20000000c1257-2dd-4b654c0620500"
+ETag: "20000000c1245-2d6-4b654c0620500"
 Accept-Ranges: bytes
-Content-Length: 733
+Content-Length: 726
 Keep-Alive: timeout=5, max=99
 Connection: Keep-Alive
 Content-Type: image/gif
 
 
-$$$$$$ Response Header For Transaction With Id 160 Ended $$$$$$
+$$$$$$ Response Header For Transaction With Id 403 Ended $$$$$$
 
-****** Response Body For Transaction With Id 160 ******
+****** Response Body For Transaction With Id 403 ******
+GIF89a\\\x00\x13\x00\xC4\x1F\x00\xBE\xC4\xCD\xCC\xD2\xDBRUW\xC3\xCA\xD4}\x82\x87\xF7\xF7\xF7\xDB\xDC\xDE\xC8\xCA\xCD)+,\xDE\xE4\xEE\xD6\xDD\xE6\xD1\xD8\xE2\xDA\xE1\xEB\xC0\xC6\xD1\xDC\xE3\xED\xD8\xDE\xE8\xDE\xE6\xF0\xC9\xD0\xD9\xCD\xD4\xDE\xD4\xDB\xE5\xE0\xE7\xF1\xD3\xDB\xE5\xC6\xCD\xD7\xD8\xDF\xE9\xDB\xE2\xED\xCF\xD6\xE0\xB1\xB7\xBF\xA4\xA8\xAE\xBC\xC3\xCD\xE1\xE8\xF2\x93\x95\x99\xFF\xFF\xFF!\xF9\x04\x01\x00\x00\x1F\x00,\x00\x00\x00\x00\\\x00\x13\x00\x00\x05\xFF\xE0'\x16\xC0\xE6\x9Dh\xAA\xAEl\xEB\xBEp|n@!\xDE\x86\xAC\xEF|\x0F\x1B\xB8\xD3\xC1v+\x1A\x8F\xC8\xA4r\xC9l\x16\x0B\x81\x13\xB0 \xFDp8\x80Fc0\xB0D\x02\x92\xCCb\xA2\xB80\x1C\x89\x04\xA5\xC3n\xBB\xDF\xF0\xB8\xDCMI;\x18\x17\xC5d\x91\x91\x04"\x16\\Z\x00W\x1F	'\x05\x07\x1E\x07VWY[]\x11\x11aceg	\x10ks\x9B\x9Cs\x14\x10	wy{}\x92\x81\x03\x83W\x1C\x1FQ%\x1E$\xAA\x8F\\^\x93b\x15\x96\x18\x98\x9A\x1D\x08\xBD\xBD\x1B\x04\x04\x0E\x08
+p\xC1	m\x0B\x04\x9D\x9F	\x18x
+\x15|\x12\xA6\x82\x84\x8ET&\x1E\x1F\xD8WZ]^`\xB6\xB8\xBAl\x19\x08}\x19\xC5\x02\x04\x0C\xC5p\xEDm\x14\x1A\x08\xCC\xA0\xCFy\xD2}\x7F\x16\x81\xA9\x8E>\xA4\xE8\x16\x0B\\\xA4q\x0Bn=\xB8\x94\xA9\x02	n\x821\xB0W\xCFW\x07\x02\x02z-\xEB\xE5\x01BF\x04\x1E\xE04\xBB\xF3 \xDA\xB4~\xD6\xBC\xFF\x01\x10\x88\x82\xA0#\x83\xE2(\xDD2\x83\xA6a\x07t\xBEB\xB6\x9B\x98\xA0\x9D\x02\x02\xF62Z\xD8\x80\x80\x02\xD0\x06\xF5&\x04\x13	J\x94I~\x80R\xC6by\xC2%\x16\x98_d*X\x98\xCB&\xAF\x1A4\x0C\xB8\xE8.]\xBA4\x08\x94\x11\xB8\xC0k\x01\xD1\x0E\x0B4N`\xEA\x8CA\xC9}~\xA2\xA2\xBA6u\xA0J\xAC\x08\xC9\xD04w\x13\x01\x047\xED\xD0\xA1;\x17t\xD9\xE2z\x1D\x12D\xF0\xD0\x8B\xAESRyO\x01\xC4B\x95\xDB_H1\xC9\xF6\x9A.bY	\x08\x08$\x00\x9AA"\xAF\x0C\x1B\x04@\x88\x9D\x81\x03\x82\x07oFB\xC3\x8Br\xAF\xCA\xCEVe\x1D\xA4D\x86+\xE1\xC5\x88	,\xB6\xE0\xABq\xE1\x0E\xB6\x05\xE0LM\xF7YI\xCC\xBD7\xAF\x9C\xF1\xEA\xF3\xAC\xACb\x043\xE8\xBAK\x01\x038	\x14` \xA0AA\x83\xD2\x91;\x98\xEF\xF0\xC0\x01\x1B\x05\x0B\x90\xE5\xC6\x07\xBB^\xED\xDA\x00\xB0H#W\x81\x06^%f\x90\xD7IS\x07\x10P\xA6\xD1\x82r4\x93\x8F\x1E'\xFD\xC7W!Q\x0CQ\xC5K[\xF8s\xA0x
+BX\x02\x00\xF6AX]\x7F\x15\xFA\xE3[!\x87\xBC\xF2A\x0E\x8B\x10\xE1\xC4\x8C4\xD6h\xE3PT!\x02\x8C>\xF4\xE8\xE3\x8F+\x00\xF1\xC4\x01\xDB\x00i\xE4\x91.l0\xC4!\x00\x00;
+$$$$$$ Response Body For Transaction With Id 403 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+The Node has no URL
+	/WebTours/
+		/WebTours/header.html
+		/cgi-bin/welcome.pl?page=menus
+			/cgi-bin/nav.pl?page=menu&in=home
+			/cgi-bin/login.pl?intro=true
+	/cgi-bin/login.pl
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 403 ****** (Location Flag : tFlagInsertEnd, Location ID : 403)
+	web_custom_request("flights.gif",
+		"URL=http://localhost:1080/WebTours/images/flights.gif",
+		"Method=GET",
+		"Resource=1",
+		"RecContentType=image/gif",
+		"Referer=http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home",
+		"Snapshot=t39.inf",
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 403 Ended $$$$$$
+
+****** Request Header For Transaction With Id 405 ******
+GET /WebTours/images/itinerary.gif HTTP/1.1
+Host: localhost:1080
+Connection: keep-alive
+sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: ru-RU,ru;q=0.9
+Cookie: MSO=SID&1719053046; MTUserInfo=firstName&Mihail&address2&Moscow&username&Mihail&hash&76&lastName&Ivanov&address1&Molodezhnaya&creditCard&&expDate&
+
+
+$$$$$$ Request Header For Transaction With Id 405 Ended $$$$$$
+
+****** Response Header For Transaction With Id 405 ******
+HTTP/1.1 200 OK
+Date: Sat, 22 Jun 2024 10:48:04 GMT
+Server: Apache/2.2.21 (Win32)
+Last-Modified: Thu, 12 Jan 2012 13:30:28 GMT
+ETag: "20000000c1257-2dd-4b654c0620500"
+Accept-Ranges: bytes
+Content-Length: 733
+Keep-Alive: timeout=5, max=98
+Connection: Keep-Alive
+Content-Type: image/gif
+
+
+$$$$$$ Response Header For Transaction With Id 405 Ended $$$$$$
+
+****** Response Body For Transaction With Id 405 ******
 GIF89a\\\x00\x13\x00\xC4\x1F\x00\xBE\xC4\xCD\xCC\xD2\xDBRUW\xC3\xCA\xD4}\x82\x87\xF7\xF7\xF7\xDB\xDC\xDE\xC8\xCA\xCD)+,\xDE\xE4\xEE\xD6\xDD\xE6\xD1\xD8\xE2\xDA\xE1\xEB\xC0\xC6\xD1\xDC\xE3\xED\xD8\xDE\xE8\xDE\xE6\xF0\xC9\xD0\xD9\xCD\xD4\xDE\xD4\xDB\xE5\xE0\xE7\xF1\xD3\xDB\xE5\xC6\xCD\xD7\xD8\xDF\xE9\xDB\xE2\xED\xCF\xD6\xE0\xB1\xB7\xBF\xA4\xA8\xAE\xBC\xC3\xCD\xE1\xE8\xF2\x93\x95\x99\xFF\xFF\xFF!\xF9\x04\x01\x00\x00\x1F\x00,\x00\x00\x00\x00\\\x00\x13\x00\x00\x05\xFF\xE0'\x16\xC0\xE6\x9Dh\xAA\xAEl\xEB\xBEp|n@!\xDE\x86\xAC\xEF|\x0F\x1B\xB8\xD3\xC1v+\x1A\x8F\xC8\xA4r\xC9l\x16\x0B\x81\x13\xB0 \xFDp8\x80Fc0\xB0D\x02\x92\xCCb\xA2\xB80\x1C\x89\x04\xA5\xC3n\xBB\xDF\xF0\xB8\xDCMI;\x18\x17\xC5d\x91\x91\x04"\x16\\Z\x00W\x1F	'\x05\x07\x1E\x07VWY[]\x11\x11aceg	\x10ks\x9B\x9Cs\x14\x10	wy{}\x92\x81\x03\x83W\x1C\x1FQ%\x1E$\xAA\x8F\\^\x93b\x15\x96\x18\x98\x14\x08
 \x1D\x04	\x1B\x08\x9D\xC3r\x9F	\x18x
 \x15|\x12\xA6\x82\x84\x8ET&\x1E\x1F\xD1WZ]^`\xB6\xB8\x98\x12\xC2\x13\xC2\xC4\xE4p\xC6\xC8y\xCB}\x7F\x16\x81\xA9\x8E\x1F)\xD6\xB1\xD9\x91\xDC\x0B\xB7\x0F\x97\x99\x08\x19\x02\x08\x028\x08\xE8 \xE0\x1F\x02\x0Fl\x0C"\xF4\xF0/ \x82\x87\x08\x0B>\xDC\xC0\x86\x00Bcw\x1E(c\xC6\xEE\xD95\x00\xF1P\xCCsTo\x1B\xA5[f\xD0\xFF@\x00\xD7!\x98\x06\x08(\x14\\@``\xCD\x050!\x10@ I\x00\x01	;e
@@ -2161,7 +2295,7 @@ GIF89a\\\x00\x13\x00\xC4\x1F\x00\xBE\xC4\xCD\xCC\xD2\xDBRUW\xC3\xCA\xD4}\x82\x87
 \xF4\xE5\xE2\x97\xA1C\xBF\x02vQ,\xFA\xB0\xEC\x06\x02\x04 \xB09\x0B\x10\x02\x02J\xDF\x06c\xA0\x14\x142\x8DM;\xA2\x82\x16U\xDEG\xAB\xF7\xC8\xA4\xFC&,\x830\xB2\x14s\xFA\xD4\xB0a\xC3\x04\x9Fl\x1E\xA2\x15\x86\x80b\x82\x9A\x02\x10\xD6\x95\x8C\x94\xD3S\xEF\xB0H\xAD\xF6\x17\x92\xC9n\x83\xB9z\xCD\x00\x16\x82\x80\xB1\x02t
 \xC8\xC0\xA1\x1FZ\xBA\x08\x00\xF8\x13\xF6\x9A\xCD\x82\x87\x11\xD8,M\xC7\xF1\xE9\xDE\x8F\xA3\xA9\xCA\xB2G\x89\x8CV\xC2F'\xC6|\xDBRX\x00\x85\x04	tH`\xF0\x9FW\x8AF\x0B\xB69\xC7@\xA3g\xBD\xA1A\xCExUz\xD6U1\x82\x19l\xA5\xA0\x80n\xA8M	\xF6\\h\x93\x80\xCD\x85
 r\x1C\xE4\x80pvuV\x1Ch|I\xE3\x01Z\x8B4R\x95i\xEFUb\xC6|\xE5T8\xC0Cj\x11x\x8C\x81\xEB\x18\x17\x1A+\x8BP\xE1\x01\x10$m\xD1N\x84\xF1QXa9\x8E\xD1Q\xE0(\x07\xBA\x93\xA0!\x88|\x90C\x88N\xE4\xA8\xE3\x8E<\x1A\x01E\x15"\xDC\xE8\xC3\x90D\x16\xB9\x02\x10O\x1C@\x8D\x91L6\xE9\xC2\x06C\xDC\x10\x02\x00;
-$$$$$$ Response Body For Transaction With Id 160 Ended $$$$$$
+$$$$$$ Response Body For Transaction With Id 405 Ended $$$$$$
 
 ****** Start Log Message ******
 
@@ -2177,107 +2311,38 @@ End Frames Hierarchy Tree Dump
 
 $$$$$$ End Log Message $$$$$$
 
-****** Add Event For Transaction With Id 160 ****** (Location Flag : tFlagInsertEnd, Location ID : 160)
+****** Add Event For Transaction With Id 1000398 ****** (Location Flag : tFlagInsertBefore, Location ID : 403)
+	web_concurrent_start(NULL);
+
+
+$$$$$$ Add Event For Transaction With Id 1000398 Ended $$$$$$
+
+****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertAfter, Location ID : 403)
+	web_concurrent_end(NULL);
+
+
+$$$$$$ Add Event For Transaction With Id 0 Ended $$$$$$
+
+****** Add Event For Transaction With Id 405 ****** (Location Flag : tFlagInsertAfter, Location ID : 403)
 	web_custom_request("itinerary.gif",
 		"URL=http://localhost:1080/WebTours/images/itinerary.gif",
 		"Method=GET",
 		"Resource=1",
 		"RecContentType=image/gif",
 		"Referer=http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home",
-		"Snapshot=t16.inf",
+		"Snapshot=t40.inf",
 		LAST);
 
 
-$$$$$$ Add Event For Transaction With Id 160 Ended $$$$$$
+$$$$$$ Add Event For Transaction With Id 405 Ended $$$$$$
 
-****** Request Header For Transaction With Id 162 ******
-GET /WebTours/images/flights.gif HTTP/1.1
-Host: localhost:1080
-Connection: keep-alive
-sec-ch-ua: "Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"
-sec-ch-ua-mobile: ?0
-User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
-sec-ch-ua-platform: "Windows"
-Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
-Sec-Fetch-Site: same-origin
-Sec-Fetch-Mode: no-cors
-Sec-Fetch-Dest: image
-Referer: http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home
-Accept-Encoding: gzip, deflate, br, zstd
-Accept-Language: ru-RU,ru;q=0.9
-Cookie: MSO=SID&1715634036; MTUserInfo=firstName&Brad&address2&Moscow&username&Brad&hash&68&lastName&Pitt&address1&Kuntsevskaya%20street%2C%2010&creditCard&&expDate&
-
-
-$$$$$$ Request Header For Transaction With Id 162 Ended $$$$$$
-
-****** Response Header For Transaction With Id 162 ******
-HTTP/1.1 200 OK
-Date: Mon, 13 May 2024 21:03:42 GMT
-Server: Apache/2.2.21 (Win32)
-Last-Modified: Thu, 12 Jan 2012 13:30:28 GMT
-ETag: "20000000c1245-2d6-4b654c0620500"
-Accept-Ranges: bytes
-Content-Length: 726
-Keep-Alive: timeout=5, max=98
-Connection: Keep-Alive
-Content-Type: image/gif
-
-
-$$$$$$ Response Header For Transaction With Id 162 Ended $$$$$$
-
-****** Response Body For Transaction With Id 162 ******
-GIF89a\\\x00\x13\x00\xC4\x1F\x00\xBE\xC4\xCD\xCC\xD2\xDBRUW\xC3\xCA\xD4}\x82\x87\xF7\xF7\xF7\xDB\xDC\xDE\xC8\xCA\xCD)+,\xDE\xE4\xEE\xD6\xDD\xE6\xD1\xD8\xE2\xDA\xE1\xEB\xC0\xC6\xD1\xDC\xE3\xED\xD8\xDE\xE8\xDE\xE6\xF0\xC9\xD0\xD9\xCD\xD4\xDE\xD4\xDB\xE5\xE0\xE7\xF1\xD3\xDB\xE5\xC6\xCD\xD7\xD8\xDF\xE9\xDB\xE2\xED\xCF\xD6\xE0\xB1\xB7\xBF\xA4\xA8\xAE\xBC\xC3\xCD\xE1\xE8\xF2\x93\x95\x99\xFF\xFF\xFF!\xF9\x04\x01\x00\x00\x1F\x00,\x00\x00\x00\x00\\\x00\x13\x00\x00\x05\xFF\xE0'\x16\xC0\xE6\x9Dh\xAA\xAEl\xEB\xBEp|n@!\xDE\x86\xAC\xEF|\x0F\x1B\xB8\xD3\xC1v+\x1A\x8F\xC8\xA4r\xC9l\x16\x0B\x81\x13\xB0 \xFDp8\x80Fc0\xB0D\x02\x92\xCCb\xA2\xB80\x1C\x89\x04\xA5\xC3n\xBB\xDF\xF0\xB8\xDCMI;\x18\x17\xC5d\x91\x91\x04"\x16\\Z\x00W\x1F	'\x05\x07\x1E\x07VWY[]\x11\x11aceg	\x10ks\x9B\x9Cs\x14\x10	wy{}\x92\x81\x03\x83W\x1C\x1FQ%\x1E$\xAA\x8F\\^\x93b\x15\x96\x18\x98\x9A\x1D\x08\xBD\xBD\x1B\x04\x04\x0E\x08
-p\xC1	m\x0B\x04\x9D\x9F	\x18x
-\x15|\x12\xA6\x82\x84\x8ET&\x1E\x1F\xD8WZ]^`\xB6\xB8\xBAl\x19\x08}\x19\xC5\x02\x04\x0C\xC5p\xEDm\x14\x1A\x08\xCC\xA0\xCFy\xD2}\x7F\x16\x81\xA9\x8E>\xA4\xE8\x16\x0B\\\xA4q\x0Bn=\xB8\x94\xA9\x02	n\x821\xB0W\xCFW\x07\x02\x02z-\xEB\xE5\x01BF\x04\x1E\xE04\xBB\xF3 \xDA\xB4~\xD6\xBC\xFF\x01\x10\x88\x82\xA0#\x83\xE2(\xDD2\x83\xA6a\x07t\xBEB\xB6\x9B\x98\xA0\x9D\x02\x02\xF62Z\xD8\x80\x80\x02\xD0\x06\xF5&\x04\x13	J\x94I~\x80R\xC6by\xC2%\x16\x98_d*X\x98\xCB&\xAF\x1A4\x0C\xB8\xE8.]\xBA4\x08\x94\x11\xB8\xC0k\x01\xD1\x0E\x0B4N`\xEA\x8CA\xC9}~\xA2\xA2\xBA6u\xA0J\xAC\x08\xC9\xD04w\x13\x01\x047\xED\xD0\xA1;\x17t\xD9\xE2z\x1D\x12D\xF0\xD0\x8B\xAESRyO\x01\xC4B\x95\xDB_H1\xC9\xF6\x9A.bY	\x08\x08$\x00\x9AA"\xAF\x0C\x1B\x04@\x88\x9D\x81\x03\x82\x07oFB\xC3\x8Br\xAF\xCA\xCEVe\x1D\xA4D\x86+\xE1\xC5\x88	,\xB6\xE0\xABq\xE1\x0E\xB6\x05\xE0LM\xF7YI\xCC\xBD7\xAF\x9C\xF1\xEA\xF3\xAC\xACb\x043\xE8\xBAK\x01\x038	\x14` \xA0AA\x83\xD2\x91;\x98\xEF\xF0\xC0\x01\x1B\x05\x0B\x90\xE5\xC6\x07\xBB^\xED\xDA\x00\xB0H#W\x81\x06^%f\x90\xD7IS\x07\x10P\xA6\xD1\x82r4\x93\x8F\x1E'\xFD\xC7W!Q\x0CQ\xC5K[\xF8s\xA0x
-BX\x02\x00\xF6AX]\x7F\x15\xFA\xE3[!\x87\xBC\xF2A\x0E\x8B\x10\xE1\xC4\x8C4\xD6h\xE3PT!\x02\x8C>\xF4\xE8\xE3\x8F+\x00\xF1\xC4\x01\xDB\x00i\xE4\x91.l0\xC4!\x00\x00;
-$$$$$$ Response Body For Transaction With Id 162 Ended $$$$$$
-
-****** Start Log Message ******
-
-Start Frames Hierarchy Tree Dump
-The Node has no URL
-	/WebTours/
-		/WebTours/header.html
-		/cgi-bin/welcome.pl?page=menus
-			/cgi-bin/nav.pl?page=menu&in=home
-			/cgi-bin/login.pl?intro=true
-	/cgi-bin/login.pl
-End Frames Hierarchy Tree Dump
-
-$$$$$$ End Log Message $$$$$$
-
-****** Add Event For Transaction With Id 1000156 ****** (Location Flag : tFlagInsertBefore, Location ID : 160)
-	web_concurrent_start(NULL);
-
-
-$$$$$$ Add Event For Transaction With Id 1000156 Ended $$$$$$
-
-****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertAfter, Location ID : 160)
-	web_concurrent_end(NULL);
-
-
-$$$$$$ Add Event For Transaction With Id 0 Ended $$$$$$
-
-****** Add Event For Transaction With Id 162 ****** (Location Flag : tFlagInsertAfter, Location ID : 160)
-	web_custom_request("flights.gif",
-		"URL=http://localhost:1080/WebTours/images/flights.gif",
-		"Method=GET",
-		"Resource=1",
-		"RecContentType=image/gif",
-		"Referer=http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home",
-		"Snapshot=t17.inf",
-		LAST);
-
-
-$$$$$$ Add Event For Transaction With Id 162 Ended $$$$$$
-
-****** Request Header For Transaction With Id 170 ******
+****** Request Header For Transaction With Id 413 ******
 GET /WebTours/images/in_home.gif HTTP/1.1
 Host: localhost:1080
 Connection: keep-alive
-sec-ch-ua: "Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"
+sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
 sec-ch-ua-mobile: ?0
-User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
 sec-ch-ua-platform: "Windows"
 Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
 Sec-Fetch-Site: same-origin
@@ -2286,14 +2351,14 @@ Sec-Fetch-Dest: image
 Referer: http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home
 Accept-Encoding: gzip, deflate, br, zstd
 Accept-Language: ru-RU,ru;q=0.9
-Cookie: MSO=SID&1715634036; MTUserInfo=firstName&Brad&address2&Moscow&username&Brad&hash&68&lastName&Pitt&address1&Kuntsevskaya%20street%2C%2010&creditCard&&expDate&
+Cookie: MSO=SID&1719053046; MTUserInfo=firstName&Mihail&address2&Moscow&username&Mihail&hash&76&lastName&Ivanov&address1&Molodezhnaya&creditCard&&expDate&
 
 
-$$$$$$ Request Header For Transaction With Id 170 Ended $$$$$$
+$$$$$$ Request Header For Transaction With Id 413 Ended $$$$$$
 
-****** Response Header For Transaction With Id 170 ******
+****** Response Header For Transaction With Id 413 ******
 HTTP/1.1 200 OK
-Date: Mon, 13 May 2024 21:03:55 GMT
+Date: Sat, 22 Jun 2024 10:48:18 GMT
 Server: Apache/2.2.21 (Win32)
 Last-Modified: Thu, 12 Jan 2012 13:30:28 GMT
 ETag: "20000000c1252-2b0-4b654c0620500"
@@ -2304,14 +2369,14 @@ Connection: Keep-Alive
 Content-Type: image/gif
 
 
-$$$$$$ Response Header For Transaction With Id 170 Ended $$$$$$
+$$$$$$ Response Header For Transaction With Id 413 Ended $$$$$$
 
-****** Response Body For Transaction With Id 170 ******
+****** Response Body For Transaction With Id 413 ******
 GIF89a\\\x00\x13\x00\xC4\x1F\x00\xBE\xC4\xCD\xCC\xD2\xDBRUW\xC3\xCA\xD4}\x82\x87\xF7\xF7\xF7\xDB\xDC\xDE\xC8\xCA\xCD)+,\xDE\xE4\xEE\xD6\xDD\xE6\xD1\xD8\xE2\xDA\xE1\xEB\xC0\xC6\xD1\xDC\xE3\xED\xD8\xDE\xE8\xDE\xE6\xF0\xC9\xD0\xD9\xCD\xD4\xDE\xD4\xDB\xE5\xE0\xE7\xF1\xD3\xDB\xE5\xC6\xCD\xD7\xD8\xDF\xE9\xDB\xE2\xED\xCF\xD6\xE0\xB1\xB7\xBF\xA4\xA8\xAE\xBC\xC3\xCD\xE1\xE8\xF2\x93\x95\x99\xFF\xFF\xFF!\xF9\x04\x01\x00\x00\x1F\x00,\x00\x00\x00\x00\\\x00\x13\x00\x00\x05\xFF\xE0'\x16\xC0\xE6\x9Dh\xAA\xAEl\xEB\xBEp|n@!\xDE\x86\xAC\xEF|\x0F\x1B\xB8\xD3\xC1v+\x1A\x8F\xC8\xA4r\xC9l\x16\x0B\x81\x13\xB0 \xFDp8\x80Fc0\xB0D\x02\x92\xCCb\xA2\xB80\x1C\x89\x04\xA5\xC3n\xBB\xDF\xF0\xB8\xDCMI;\x18\x17\xC5d\x91\x91\x04"\x16\\Z\x00W\x1F	'\x05\x07\x1E\x07VWY[]\x11\x11aceg	\x10ks\x9B\x9Cs\x14\x10	wy{}\x92\x81\x03\x83W\x1C\x1FQ%\x1E$\xAA\x8F\\^\x93b\x15\x96\x18\x98\x9An\x08
 m\xBD\x9D\xC1l\x9F	\x18x
 \x15|\x12\xA6\x82\x84\x8ET&\x1E\x1F\xCFWZ]^`\xB6\xB8\xBAo\x19\x08m\xDF\xC2\xC2\xC4\xC6y\xC9}\x7F\x16\x81\xA9\x8E\x1F)\xD4\xB1\xD7\x91\xDA\x0B\xB7\x0F\x97\x99p\x08\x19\xBF\xFD\x04\x08\x10\x08\xE8\xC0A@@\x01\x1E\x02z\xE8\xA0\xE1`\xBF7\xC4\xEE<@\xA6L]\xB3j\x00\xDE\xA1\x88\xE7h^6J\xB7\xCC\xA0\xD1\xE7\xE6[\xC0\x93\x0C\x11\xFFh\x00\x80`\xC3\x06\x95\x03\x04.\x00\x98@\xE5\x04\x01\x04\xE0D<\x86\xCE\x0F\xA0\x8B\xB14\x9E\xE0\x88\xC5\xE3\x17\x90
 \xF0\xE5"\xC9k\x83\x06/3\x10\x18\xD8\x81\x00\x81\x97\x10:\xB4\xEC\xF0\xB2\xE1Ip\x10A\x19\x9B\xD8\xD3"*gA\xE1a4Z\x8F\x8C\xC8n%\x11d\xED\xF0\x83U68\x1BvH `C\xCA\x97N5p\xD0	J\x94\x9E\x8A?\xCFb\x14:m-\xA4\x8F\xDB\xDE2\xF5\xF7KBC\x001]\x82\xDD\xBAA\x00\x84\xAD8\x13\x84\xC5\x13\xF1\xA9vX\x18\x13\x95E\x8F\x12\x19\xA5p\xC3\x81\xA5\x0B\xD6 \x82\x9C\x9D\xD9\xA8\xE4\x8A\x00C\xC2\x80\x0F\xE9\x88e0\x91\x94\xCF\xD3h\xDD\xCDx\xE5x\xD6Q1n\x19,\xDD\xD5F\x01\x83\xEA\xD7;`X\xF0`&9\x0C\x16\x88&\\\xEC\x98q\xB3\xA8kx\xA0\xB1\xA8Q\xD1\xC7\xCF+\x99\x99>\xAE\xBE\xA7\xE1\xA3L\x03-\x14eH\x95\x8E[\xAC\x13_t\xF4\xD9g\xA0p\xE5\xE5\x97\x0E- \xEC$g\x08"\x1F\xE4\xB0\x08\x11NTh\xE1\x85\x18\xDE\x00E\x15"H\xE8\xC3\x87 \x86\xB8\x02\x10O\x1C \x8D\x88(\xA6\xE8\xC2\x06C\xDC\x10\x02\x00;
-$$$$$$ Response Body For Transaction With Id 170 Ended $$$$$$
+$$$$$$ Response Body For Transaction With Id 413 Ended $$$$$$
 
 ****** Start Log Message ******
 
@@ -2327,26 +2392,26 @@ End Frames Hierarchy Tree Dump
 
 $$$$$$ End Log Message $$$$$$
 
-****** Add Event For Transaction With Id 170 ****** (Location Flag : tFlagInsertAfter, Location ID : 162)
+****** Add Event For Transaction With Id 413 ****** (Location Flag : tFlagInsertAfter, Location ID : 405)
 	web_custom_request("in_home.gif",
 		"URL=http://localhost:1080/WebTours/images/in_home.gif",
 		"Method=GET",
 		"Resource=1",
 		"RecContentType=image/gif",
 		"Referer=http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home",
-		"Snapshot=t18.inf",
+		"Snapshot=t41.inf",
 		LAST);
 
 
-$$$$$$ Add Event For Transaction With Id 170 Ended $$$$$$
+$$$$$$ Add Event For Transaction With Id 413 Ended $$$$$$
 
-****** Request Header For Transaction With Id 172 ******
+****** Request Header For Transaction With Id 417 ******
 GET /WebTours/images/signoff.gif HTTP/1.1
 Host: localhost:1080
 Connection: keep-alive
-sec-ch-ua: "Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"
+sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
 sec-ch-ua-mobile: ?0
-User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
 sec-ch-ua-platform: "Windows"
 Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
 Sec-Fetch-Site: same-origin
@@ -2355,14 +2420,14 @@ Sec-Fetch-Dest: image
 Referer: http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home
 Accept-Encoding: gzip, deflate, br, zstd
 Accept-Language: ru-RU,ru;q=0.9
-Cookie: MSO=SID&1715634036; MTUserInfo=firstName&Brad&address2&Moscow&username&Brad&hash&68&lastName&Pitt&address1&Kuntsevskaya%20street%2C%2010&creditCard&&expDate&
+Cookie: MSO=SID&1719053046; MTUserInfo=firstName&Mihail&address2&Moscow&username&Mihail&hash&76&lastName&Ivanov&address1&Molodezhnaya&creditCard&&expDate&
 
 
-$$$$$$ Request Header For Transaction With Id 172 Ended $$$$$$
+$$$$$$ Request Header For Transaction With Id 417 Ended $$$$$$
 
-****** Response Header For Transaction With Id 172 ******
+****** Response Header For Transaction With Id 417 ******
 HTTP/1.1 200 OK
-Date: Mon, 13 May 2024 21:03:55 GMT
+Date: Sat, 22 Jun 2024 10:48:19 GMT
 Server: Apache/2.2.21 (Win32)
 Last-Modified: Thu, 12 Jan 2012 13:30:28 GMT
 ETag: "20000000c1262-2ef-4b654c0620500"
@@ -2373,16 +2438,16 @@ Connection: Keep-Alive
 Content-Type: image/gif
 
 
-$$$$$$ Response Header For Transaction With Id 172 Ended $$$$$$
+$$$$$$ Response Header For Transaction With Id 417 Ended $$$$$$
 
-****** Response Body For Transaction With Id 172 ******
+****** Response Body For Transaction With Id 417 ******
 GIF89a\\\x00\x13\x00\xC4\x1F\x00\xBE\xC4\xCD\xCC\xD2\xDBRUW\xC3\xCA\xD4}\x82\x87\xF7\xF7\xF7\xDB\xDC\xDE\xC8\xCA\xCD)+,\xDE\xE4\xEE\xD6\xDD\xE6\xD1\xD8\xE2\xDA\xE1\xEB\xC0\xC6\xD1\xDC\xE3\xED\xD8\xDE\xE8\xDE\xE6\xF0\xC9\xD0\xD9\xCD\xD4\xDE\xD4\xDB\xE5\xE0\xE7\xF1\xD3\xDB\xE5\xC6\xCD\xD7\xD8\xDF\xE9\xDB\xE2\xED\xCF\xD6\xE0\xB1\xB7\xBF\xA4\xA8\xAE\xBC\xC3\xCD\xE1\xE8\xF2\x93\x95\x99\xFF\xFF\xFF!\xF9\x04\x01\x00\x00\x1F\x00,\x00\x00\x00\x00\\\x00\x13\x00\x00\x05\xFF\xE0'\x16\xC0\xE6\x9Dh\xAA\xAEl\xEB\xBEp|n@!\xDE\x86\xAC\xEF|\x0F\x1B\xB8\xD3\xC1v+\x1A\x8F\xC8\xA4r\xC9l\x16\x0B\x81\x13\xB0 \xFDp8\x80Fc0\xB0D\x02\x92\xCCb\xA2\xB80\x1C\x89\x04\xA5\xC3n\xBB\xDF\xF0\xB8\xDCMI;\x18\x17\xC5d\x91\x91\x04"\x16\\Z\x00W\x1F	'\x05\x07\x1E\x07VWY[]\x11\x11aceg	\x10ks\x9B\x9Cs\x14\x10	wy{}\x92\x81\x03\x83W\x1C\x1FQ%\x1E$\xAA\x8F\\^\x93b\x15\x96\x18\x98k\x1E\x08\xBD\x02l\x08
 \x9Dn\x0B\x02\xBD\x08\x1El\x0B\xBD\x04\xBD\x13\xA0\x18x
 \x15|\x12\xA6\x82\x84\x8ET&\x1E\x1F\xDAWZ]^`\xB6\xB8\xBA\x1C\x08\x1A\x19\xC8\x0C\xC2\xC3m\x08\x02\x03\x13\x1B\x08\x1B\x1D\xF7\x12\x04\x02
 \x9F	\xA2\xE5\xA1\xD6\xE7\x8F\x85@\xA9\x1C}H\xF1-\x96\xB8H\xE5\x16\xDCzp)\x93\x06\x04\x16\xD8\x04\xEA\x80\xA0C1_\x1A4\x18\xEB\xE5\xE6\x9E\x1B^\x1C\x8F\xFF! \xD0\x01\xD4\x9D\x07\xD3\xAA\x19\xC4\x06\x0E\xC0B\x14\x1D=$G\xE9\x96\x194\x99(\x18\x13@`@\x07\x06\x1D\x9BY\xE0\xB5\xE1\x9E\x06\x0B\xEA\xD8` \xC0\xB2\x8D\x02\x04\x14\x9Am\x10 \xC0\x02@Q1\x0B\x02\xA2\x19\xEB\xE6\x89\x9CXv~\xE9\xA9\x80b\xAELl\xA2\x18K\x86 CT\x8EM\x11$\xE0\xA8AS\xBF7uMRU\x03\x8D\x01L\x82~\xC6\xA2\xCAV\x96aM\xB5\x11\xC9\xFC\xC4\x04\xC1C\xD5\x0E\xBC\xECB\x10\x90\x0F\xEFE`\x9D)\x98l\x83rk\x07\xA2\x1D\xBEJ#\x95\xF8TB,f\xBD=\x86\xC4\xD3\xDC\xE4L\x03\x90u\xA8@\x14B\xDD~\x19.6\x15\xB0\x86\xB3\x9By\x13\xF4\xE1\x83 \x98\x00\x03\xD5\x03e*~m\xD3\xB1C\xDAk\xC5\x90q\xAB\xCB\x01/_a:2\x18\xA9n4>7
 \xC8'\xEB\xF0\x195\xC0h0Y\xCF\\\\\xF3\xA6	X:\xB1G>\x07\xB7\xE5\x9E\xBD\x1D(\xC0\xC0	
 \\\xD5\xD7&\x14(\x90\x01l\x03r\x10\x16\xD0j\xD2\xB9\xC6\xD86\x1E\xD0\xB0H#i\xE9G\x89d\x0C\xBC\xA5\x89\x1C\x00\x1CC\\<\x08\x166J\x84d\x15\x12\xC5\x10U\xE47Nv\x95\x98\xE1!'\x12l\xA0\x01\x80$\xCA\xF1\x1E\x84b\x1DD_!\x87\xBC\xF2A\x0E\x8B\x10\xE1\xC4\x91H&\xA9\xE4PT!\x02\x91>D)\xE5\x94+\x00\xF1\xC4\x01\xDDP\xA9\xE5\x96.l0\xC4!\x00\x00;
-$$$$$$ Response Body For Transaction With Id 172 Ended $$$$$$
+$$$$$$ Response Body For Transaction With Id 417 Ended $$$$$$
 
 ****** Start Log Message ******
 
@@ -2398,28 +2463,28 @@ End Frames Hierarchy Tree Dump
 
 $$$$$$ End Log Message $$$$$$
 
-****** Add Event For Transaction With Id 172 ****** (Location Flag : tFlagInsertAfter, Location ID : 170)
+****** Add Event For Transaction With Id 417 ****** (Location Flag : tFlagInsertAfter, Location ID : 413)
 	web_custom_request("signoff.gif",
 		"URL=http://localhost:1080/WebTours/images/signoff.gif",
 		"Method=GET",
 		"Resource=1",
 		"RecContentType=image/gif",
 		"Referer=http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home",
-		"Snapshot=t19.inf",
+		"Snapshot=t42.inf",
 		LAST);
 
 
-$$$$$$ Add Event For Transaction With Id 172 Ended $$$$$$
+$$$$$$ Add Event For Transaction With Id 417 Ended $$$$$$
 
-****** Request Header For Transaction With Id 180 ******
+****** Request Header For Transaction With Id 426 ******
 GET /cgi-bin/welcome.pl?signOff=1 HTTP/1.1
 Host: localhost:1080
 Connection: keep-alive
-sec-ch-ua: "Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"
+sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
 sec-ch-ua-mobile: ?0
 sec-ch-ua-platform: "Windows"
 Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
 Sec-Fetch-Site: same-origin
 Sec-Fetch-Mode: navigate
@@ -2428,26 +2493,26 @@ Sec-Fetch-Dest: frame
 Referer: http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home
 Accept-Encoding: gzip, deflate, br, zstd
 Accept-Language: ru-RU,ru;q=0.9
-Cookie: MSO=SID&1715634036; MTUserInfo=firstName&Brad&address2&Moscow&username&Brad&hash&68&lastName&Pitt&address1&Kuntsevskaya%20street%2C%2010&creditCard&&expDate&
+Cookie: MSO=SID&1719053046; MTUserInfo=firstName&Mihail&address2&Moscow&username&Mihail&hash&76&lastName&Ivanov&address1&Molodezhnaya&creditCard&&expDate&
 
 
-$$$$$$ Request Header For Transaction With Id 180 Ended $$$$$$
+$$$$$$ Request Header For Transaction With Id 426 Ended $$$$$$
 
-****** Response Header For Transaction With Id 180 ******
+****** Response Header For Transaction With Id 426 ******
 HTTP/1.1 200 OK
-Date: Mon, 13 May 2024 21:04:21 GMT
+Date: Sat, 22 Jun 2024 10:48:46 GMT
 Server: Apache/2.2.21 (Win32)
-Set-Cookie: MSO=SID&1715634261; path=/
-Set-Cookie: MTUserInfo=; path=/; expires=Sun, 12-May-2024 21:04:21 GMT
+Set-Cookie: MSO=SID&1719053326; path=/
+Set-Cookie: MTUserInfo=; path=/; expires=Fri, 21-Jun-2024 10:48:46 GMT
 Keep-Alive: timeout=5, max=100
 Connection: Keep-Alive
 Transfer-Encoding: chunked
 Content-Type: text/html; charset=ISO-8859-1
 
 
-$$$$$$ Response Header For Transaction With Id 180 Ended $$$$$$
+$$$$$$ Response Header For Transaction With Id 426 Ended $$$$$$
 
-****** Response Body For Transaction With Id 180 ******
+****** Response Body For Transaction With Id 426 ******
 <!-- 
  A Session ID has been created and loaded into a cookie called MSO.
  Also, the server options have been loaded into the cookie called
@@ -2469,7 +2534,7 @@ $$$$$$ Response Header For Transaction With Id 180 Ended $$$$$$
 
 </body>
 </html>
-$$$$$$ Response Body For Transaction With Id 180 Ended $$$$$$
+$$$$$$ Response Body For Transaction With Id 426 Ended $$$$$$
 
 ****** Start Log Message ******
 
@@ -2485,29 +2550,29 @@ End Frames Hierarchy Tree Dump
 
 $$$$$$ End Log Message $$$$$$
 
-****** Add Event For Transaction With Id 180 ****** (Location Flag : tFlagInsertEnd, Location ID : 180)
+****** Add Event For Transaction With Id 426 ****** (Location Flag : tFlagInsertEnd, Location ID : 426)
 	web_custom_request("SignOff Button",
 		"URL=http://localhost:1080/cgi-bin/welcome.pl?signOff=1",
 		"Method=GET",
 		"Resource=0",
 		"RecContentType=text/html",
 		"Referer=http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home",
-		"Snapshot=t20.inf",
+		"Snapshot=t43.inf",
 		"Mode=HTTP",
 		LAST);
 
 
-$$$$$$ Add Event For Transaction With Id 180 Ended $$$$$$
+$$$$$$ Add Event For Transaction With Id 426 Ended $$$$$$
 
-****** Request Header For Transaction With Id 183 ******
+****** Request Header For Transaction With Id 429 ******
 GET /WebTours/home.html HTTP/1.1
 Host: localhost:1080
 Connection: keep-alive
-sec-ch-ua: "Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"
+sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
 sec-ch-ua-mobile: ?0
 sec-ch-ua-platform: "Windows"
 Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
 Sec-Fetch-Site: same-origin
 Sec-Fetch-Mode: navigate
@@ -2515,23 +2580,23 @@ Sec-Fetch-Dest: frame
 Referer: http://localhost:1080/cgi-bin/welcome.pl?signOff=1
 Accept-Encoding: gzip, deflate, br, zstd
 Accept-Language: ru-RU,ru;q=0.9
-Cookie: MSO=SID&1715634261
+Cookie: MSO=SID&1719053326
 If-None-Match: "20000000c1238-551-4ddb1559ac980"
 If-Modified-Since: Mon, 27 May 2013 11:20:22 GMT
 
 
-$$$$$$ Request Header For Transaction With Id 183 Ended $$$$$$
+$$$$$$ Request Header For Transaction With Id 429 Ended $$$$$$
 
-****** Response Header For Transaction With Id 183 ******
+****** Response Header For Transaction With Id 429 ******
 HTTP/1.1 304 Not Modified
-Date: Mon, 13 May 2024 21:04:21 GMT
+Date: Sat, 22 Jun 2024 10:48:46 GMT
 Server: Apache/2.2.21 (Win32)
 Connection: Keep-Alive
 Keep-Alive: timeout=5, max=100
 ETag: "20000000c1238-551-4ddb1559ac980"
 
 
-$$$$$$ Response Header For Transaction With Id 183 Ended $$$$$$
+$$$$$$ Response Header For Transaction With Id 429 Ended $$$$$$
 
 ****** Start Log Message ******
 
@@ -2545,28 +2610,28 @@ End Frames Hierarchy Tree Dump
 
 $$$$$$ End Log Message $$$$$$
 
-****** Add Event For Transaction With Id 183 ****** (Location Flag : tFlagInsertEnd, Location ID : 183)
+****** Add Event For Transaction With Id 429 ****** (Location Flag : tFlagInsertEnd, Location ID : 429)
 	web_custom_request("home.html_2",
 		"URL=http://localhost:1080/WebTours/home.html",
 		"Method=GET",
 		"Resource=0",
 		"Referer=http://localhost:1080/cgi-bin/welcome.pl?signOff=1",
-		"Snapshot=t21.inf",
+		"Snapshot=t44.inf",
 		"Mode=HTTP",
 		LAST);
 
 
-$$$$$$ Add Event For Transaction With Id 183 Ended $$$$$$
+$$$$$$ Add Event For Transaction With Id 429 Ended $$$$$$
 
-****** Request Header For Transaction With Id 185 ******
+****** Request Header For Transaction With Id 431 ******
 GET /cgi-bin/nav.pl?in=home HTTP/1.1
 Host: localhost:1080
 Connection: keep-alive
-sec-ch-ua: "Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"
+sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
 sec-ch-ua-mobile: ?0
 sec-ch-ua-platform: "Windows"
 Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
 Sec-Fetch-Site: same-origin
 Sec-Fetch-Mode: navigate
@@ -2574,25 +2639,25 @@ Sec-Fetch-Dest: frame
 Referer: http://localhost:1080/cgi-bin/welcome.pl?signOff=1
 Accept-Encoding: gzip, deflate, br, zstd
 Accept-Language: ru-RU,ru;q=0.9
-Cookie: MSO=SID&1715634261
+Cookie: MSO=SID&1719053326
 
 
-$$$$$$ Request Header For Transaction With Id 185 Ended $$$$$$
+$$$$$$ Request Header For Transaction With Id 431 Ended $$$$$$
 
-****** Response Header For Transaction With Id 185 ******
+****** Response Header For Transaction With Id 431 ******
 HTTP/1.1 200 OK
-Date: Mon, 13 May 2024 21:04:21 GMT
+Date: Sat, 22 Jun 2024 10:48:46 GMT
 Server: Apache/2.2.21 (Win32)
-Expires: Sun, 12 May 2024 21:04:21 GMT
+Expires: Fri, 21 Jun 2024 10:48:46 GMT
 Keep-Alive: timeout=5, max=99
 Connection: Keep-Alive
 Transfer-Encoding: chunked
 Content-Type: text/html; charset=ISO-8859-1
 
 
-$$$$$$ Response Header For Transaction With Id 185 Ended $$$$$$
+$$$$$$ Response Header For Transaction With Id 431 Ended $$$$$$
 
-****** Response Body For Transaction With Id 185 ******
+****** Response Body For Transaction With Id 431 ******
 <!DOCTYPE html
 	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 	 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -2609,7 +2674,7 @@ H3 {font-family: tahoma; font-size : 10pt; color: black}
 small {font-family: tahoma; font-size : 8pt}
 </style>
 <form method="post" action="/cgi-bin/login.pl" target="body">
-<input type="hidden" name="userSession" value="138974.018712029HVtitHzpAiHftciQApifzfcf"/>
+<input type="hidden" name="userSession" value="139250.978209802HVzcHccpVQVzzzzHtcQHzpDDDVf"/>
 <table border="0"><tr><td>&nbsp;</td>
 <td>&nbsp;</td></tr>
 <tr><td>&nbsp;</td>
@@ -2634,7 +2699,7 @@ src="/WebTours/images/mer_login.gif"/></td></tr>
 </body>
 </html>
 
-$$$$$$ Response Body For Transaction With Id 185 Ended $$$$$$
+$$$$$$ Response Body For Transaction With Id 431 Ended $$$$$$
 
 ****** Start Log Message ******
 
@@ -2650,29 +2715,29 @@ End Frames Hierarchy Tree Dump
 
 $$$$$$ End Log Message $$$$$$
 
-****** Add Event For Transaction With Id 1000180 ****** (Location Flag : tFlagInsertBefore, Location ID : 183)
+****** Add Event For Transaction With Id 1000426 ****** (Location Flag : tFlagInsertBefore, Location ID : 429)
 	web_concurrent_start(NULL);
 
 
-$$$$$$ Add Event For Transaction With Id 1000180 Ended $$$$$$
+$$$$$$ Add Event For Transaction With Id 1000426 Ended $$$$$$
 
-****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertAfter, Location ID : 183)
+****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertAfter, Location ID : 429)
 	web_concurrent_end(NULL);
 
 
 $$$$$$ Add Event For Transaction With Id 0 Ended $$$$$$
 
-****** Add Event For Transaction With Id 185 ****** (Location Flag : tFlagInsertAfter, Location ID : 183)
+****** Add Event For Transaction With Id 431 ****** (Location Flag : tFlagInsertAfter, Location ID : 429)
 	web_custom_request("nav.pl_3",
 		"URL=http://localhost:1080/cgi-bin/nav.pl?in=home",
 		"Method=GET",
 		"Resource=0",
 		"RecContentType=text/html",
 		"Referer=http://localhost:1080/cgi-bin/welcome.pl?signOff=1",
-		"Snapshot=t22.inf",
+		"Snapshot=t45.inf",
 		"Mode=HTTP",
 		LAST);
 
 
-$$$$$$ Add Event For Transaction With Id 185 Ended $$$$$$
+$$$$$$ Add Event For Transaction With Id 431 Ended $$$$$$
 

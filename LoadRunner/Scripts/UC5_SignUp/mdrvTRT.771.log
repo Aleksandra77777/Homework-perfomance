@@ -1,0 +1,13 @@
+Start auto log messages stack - Iteration 10.	[MsgId: MMSG-10545]
+Action.c(131): Registering web_custom_request("home.html") was successful  	[MsgId: MMSG-26390]
+Action.c(141): web_add_header("Sec-Fetch-Site") started  	[MsgId: MMSG-26355]
+Action.c(141): web_add_header("Sec-Fetch-Site") was successful  	[MsgId: MMSG-26392]
+Action.c(144): web_add_header("Sec-Fetch-Dest") started  	[MsgId: MMSG-26355]
+Action.c(144): web_add_header("Sec-Fetch-Dest") was successful  	[MsgId: MMSG-26392]
+Action.c(147): web_custom_request("nav.pl") started  	[MsgId: MMSG-26355]
+Action.c(147): Registering web_custom_request("nav.pl") was successful  	[MsgId: MMSG-26390]
+Action.c(157): web_concurrent_end started  	[MsgId: MMSG-26355]
+Action.c(147): Error -26612: HTTP Status-Code=500 (Internal Server Error) for "http://localhost:1080/cgi-bin/nav.pl?in=home"   [issued at Action.c(157)]  	[MsgId: MERR-26612]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+

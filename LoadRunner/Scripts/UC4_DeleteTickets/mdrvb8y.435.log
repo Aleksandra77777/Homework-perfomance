@@ -1,0 +1,16 @@
+Start auto log messages stack - Iteration 4.	[MsgId: MMSG-10545]
+Action.c(452): Notify: Transaction "itinerary" ended with a "Pass" status (Duration: 0,4060 Wasted Time: 0,0001).	[MsgId: MMSG-16871]
+Action.c(454): Think time - Waiting 3,00 seconds (according to limit).	[MsgId: MMSG-15946]
+Action.c(454): lr_think_time: 3,00 seconds (recorded think time was 47,00 seconds).	[MsgId: MMSG-15947]
+Action.c(456): Notify: Transaction "delete Ticket" started.	[MsgId: MMSG-16999]
+Action.c(458): web_add_header("Origin") started  	[MsgId: MMSG-26355]
+Action.c(458): web_add_header("Origin") was successful  	[MsgId: MMSG-26392]
+Action.c(461): Think time - Waiting 3,00 seconds (according to limit).	[MsgId: MMSG-15946]
+Action.c(461): lr_think_time: 3,00 seconds (recorded think time was 59,00 seconds).	[MsgId: MMSG-15947]
+Action.c(463): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(463): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(471): web_custom_request("itinerary.pl_2") started  	[MsgId: MMSG-26355]
+Action.c(471): Error -26612: HTTP Status-Code=500 (Internal Server Error) for "http://localhost:1080/cgi-bin/itinerary.pl"  	[MsgId: MERR-26612]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+

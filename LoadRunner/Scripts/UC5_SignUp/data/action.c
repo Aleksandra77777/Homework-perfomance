@@ -1,10 +1,12 @@
 Action()
 {
 
+	lr_start_transaction("welcome_page");
+
 	web_set_sockets_option("SSL_VERSION", "AUTO");
 
 	web_add_auto_header("sec-ch-ua", 
-		"\"Chromium\";v=\"124\", \"Google Chrome\";v=\"124\", \"Not-A.Brand\";v=\"99\"");
+		"\"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"126\", \"Google Chrome\";v=\"126\"");
 
 	web_add_auto_header("sec-ch-ua-mobile", 
 		"?0");
@@ -33,7 +35,7 @@ Action()
 		"Resource=0", 
 		"RecContentType=text/html", 
 		"Referer=", 
-		"Snapshot=t1.inf", 
+		"Snapshot=t23.inf", 
 		"Mode=HTTP", 
 		LAST);
 
@@ -51,7 +53,7 @@ Action()
 		"Resource=0", 
 		"RecContentType=text/html", 
 		"Referer=http://localhost:1080/WebTours/", 
-		"Snapshot=t2.inf", 
+		"Snapshot=t24.inf", 
 		"Mode=HTTP", 
 		LAST);
 
@@ -67,7 +69,7 @@ Action()
 		"Resource=0", 
 		"RecContentType=text/html", 
 		"Referer=http://localhost:1080/WebTours/", 
-		"Snapshot=t4.inf", 
+		"Snapshot=t25.inf", 
 		"Mode=HTTP", 
 		LAST);
 
@@ -87,7 +89,7 @@ Action()
 		"Resource=1", 
 		"RecContentType=image/png", 
 		"Referer=http://localhost:1080/WebTours/header.html", 
-		"Snapshot=t3.inf", 
+		"Snapshot=t26.inf", 
 		LAST);
 
 	web_add_header("Sec-Fetch-Site", 
@@ -102,7 +104,7 @@ Action()
 		"Resource=1", 
 		"RecContentType=image/png", 
 		"Referer=http://localhost:1080/WebTours/header.html", 
-		"Snapshot=t5.inf", 
+		"Snapshot=t27.inf", 
 		LAST);
 
 	web_concurrent_end(NULL);
@@ -121,7 +123,7 @@ Action()
 		"Resource=0", 
 		"RecContentType=text/html", 
 		"Referer=http://localhost:1080/cgi-bin/welcome.pl?signOff=true", 
-		"Snapshot=t6.inf", 
+		"Snapshot=t28.inf", 
 		"Mode=HTTP", 
 		LAST);
 
@@ -137,7 +139,7 @@ Action()
 		"Resource=0", 
 		"RecContentType=text/html", 
 		"Referer=http://localhost:1080/cgi-bin/welcome.pl?signOff=true", 
-		"Snapshot=t7.inf", 
+		"Snapshot=t29.inf", 
 		"Mode=HTTP", 
 		LAST);
 
@@ -149,7 +151,7 @@ Action()
 	web_add_header("Sec-Fetch-Dest", 
 		"image");
 
-	lr_think_time(46);
+	lr_think_time(54);
 
 	web_custom_request("mer_login.gif", 
 		"URL=http://localhost:1080/WebTours/images/mer_login.gif", 
@@ -157,10 +159,12 @@ Action()
 		"Resource=1", 
 		"RecContentType=image/gif", 
 		"Referer=http://localhost:1080/cgi-bin/nav.pl?in=home", 
-		"Snapshot=t8.inf", 
+		"Snapshot=t30.inf", 
 		LAST);
 
-	lr_start_transaction("sign up");
+	lr_end_transaction("welcome_page",LR_AUTO);
+
+	lr_start_transaction("sign_up");
 
 	web_add_auto_header("Sec-Fetch-Site", 
 		"same-origin");
@@ -168,7 +172,7 @@ Action()
 	web_add_header("Sec-Fetch-Dest", 
 		"frame");
 
-	lr_think_time(69);
+	lr_think_time(48);
 
 	web_custom_request("sign up now", 
 		"URL=http://localhost:1080/cgi-bin/login.pl?username=&password=&getInfo=true", 
@@ -176,7 +180,7 @@ Action()
 		"Resource=0", 
 		"RecContentType=text/html", 
 		"Referer=http://localhost:1080/WebTours/home.html", 
-		"Snapshot=t9.inf", 
+		"Snapshot=t31.inf", 
 		"Mode=HTTP", 
 		LAST);
 
@@ -191,7 +195,7 @@ Action()
 		"Resource=1", 
 		"RecContentType=image/gif", 
 		"Referer=http://localhost:1080/cgi-bin/login.pl?username=&password=&getInfo=true", 
-		"Snapshot=t10.inf", 
+		"Snapshot=t32.inf", 
 		LAST);
 
 	web_add_header("Sec-Fetch-Dest", 
@@ -203,18 +207,22 @@ Action()
 		"Resource=1", 
 		"RecContentType=application/javascript", 
 		"Referer=http://localhost:1080/cgi-bin/login.pl?username=&password=&getInfo=true", 
-		"Snapshot=t11.inf", 
+		"Snapshot=t33.inf", 
 		LAST);
 
 	web_concurrent_end(NULL);
 
-	web_add_header("Origin", 
+	lr_end_transaction("sign_up",LR_AUTO);
+
+	lr_start_transaction("registration_fields");
+
+	web_add_auto_header("Origin", 
 		"http://localhost:1080");
 
 	web_add_auto_header("Sec-Fetch-Dest", 
 		"frame");
 
-	lr_think_time(62);
+	lr_think_time(87);
 
 	web_custom_request("login.pl", 
 		"URL=http://localhost:1080/cgi-bin/login.pl", 
@@ -222,12 +230,31 @@ Action()
 		"Resource=0", 
 		"RecContentType=text/html", 
 		"Referer=http://localhost:1080/cgi-bin/login.pl?username=&password=&getInfo=true", 
-		"Snapshot=t12.inf", 
+		"Snapshot=t34.inf", 
 		"Mode=HTTP", 
-		"Body=username=Brad&password=Pitt&passwordConfirm=Pitt&firstName=Brad&lastName=Pitt&address1=Kuntsevskaya+street%2C+10&address2=Moscow&register.x=19&register.y=14", 
+		"Body=username=Ivan&password=123456789&passwordConfirm=123456789&firstName=Ivan&lastName=Ivanov&address1=Molodezhnaya&address2=Moscow&register.x=53&register.y=6", 
 		LAST);
 
-	lr_think_time(19);
+	lr_think_time(29);
+
+	web_custom_request("login.pl_2", 
+		"URL=http://localhost:1080/cgi-bin/login.pl", 
+		"Method=POST", 
+		"Resource=0", 
+		"RecContentType=text/html", 
+		"Referer=http://localhost:1080/cgi-bin/login.pl", 
+		"Snapshot=t35.inf", 
+		"Mode=HTTP", 
+		"Body=username=Mihail&password=123456789&passwordConfirm=123456789&firstName=Mihail&lastName=Ivanov&address1=Molodezhnaya&address2=Moscow&register.x=39&register.y=12", 
+		LAST);
+
+	lr_end_transaction("registration_fields",LR_AUTO);
+
+	lr_start_transaction("continue");
+
+	web_revert_auto_header("Origin");
+
+	lr_think_time(31);
 
 	web_custom_request("button_next.gif_2", 
 		"URL=http://localhost:1080/cgi-bin/welcome.pl?page=menus", 
@@ -235,21 +262,11 @@ Action()
 		"Resource=0", 
 		"RecContentType=text/html", 
 		"Referer=http://localhost:1080/cgi-bin/login.pl", 
-		"Snapshot=t13.inf", 
+		"Snapshot=t36.inf", 
 		"Mode=HTTP", 
 		LAST);
 
 	web_concurrent_start(NULL);
-
-	web_custom_request("login.pl_2", 
-		"URL=http://localhost:1080/cgi-bin/login.pl?intro=true", 
-		"Method=GET", 
-		"Resource=0", 
-		"RecContentType=text/html", 
-		"Referer=http://localhost:1080/cgi-bin/welcome.pl?page=menus", 
-		"Snapshot=t14.inf", 
-		"Mode=HTTP", 
-		LAST);
 
 	web_custom_request("nav.pl_2", 
 		"URL=http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home", 
@@ -257,7 +274,17 @@ Action()
 		"Resource=0", 
 		"RecContentType=text/html", 
 		"Referer=http://localhost:1080/cgi-bin/welcome.pl?page=menus", 
-		"Snapshot=t15.inf", 
+		"Snapshot=t37.inf", 
+		"Mode=HTTP", 
+		LAST);
+
+	web_custom_request("login.pl_3", 
+		"URL=http://localhost:1080/cgi-bin/login.pl?intro=true", 
+		"Method=GET", 
+		"Resource=0", 
+		"RecContentType=text/html", 
+		"Referer=http://localhost:1080/cgi-bin/welcome.pl?page=menus", 
+		"Snapshot=t38.inf", 
 		"Mode=HTTP", 
 		LAST);
 
@@ -265,22 +292,22 @@ Action()
 
 	web_concurrent_start(NULL);
 
-	web_custom_request("itinerary.gif", 
-		"URL=http://localhost:1080/WebTours/images/itinerary.gif", 
-		"Method=GET", 
-		"Resource=1", 
-		"RecContentType=image/gif", 
-		"Referer=http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home", 
-		"Snapshot=t16.inf", 
-		LAST);
-
 	web_custom_request("flights.gif", 
 		"URL=http://localhost:1080/WebTours/images/flights.gif", 
 		"Method=GET", 
 		"Resource=1", 
 		"RecContentType=image/gif", 
 		"Referer=http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home", 
-		"Snapshot=t17.inf", 
+		"Snapshot=t39.inf", 
+		LAST);
+
+	web_custom_request("itinerary.gif", 
+		"URL=http://localhost:1080/WebTours/images/itinerary.gif", 
+		"Method=GET", 
+		"Resource=1", 
+		"RecContentType=image/gif", 
+		"Referer=http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home", 
+		"Snapshot=t40.inf", 
 		LAST);
 
 	web_custom_request("in_home.gif", 
@@ -289,7 +316,7 @@ Action()
 		"Resource=1", 
 		"RecContentType=image/gif", 
 		"Referer=http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home", 
-		"Snapshot=t18.inf", 
+		"Snapshot=t41.inf", 
 		LAST);
 
 	web_custom_request("signoff.gif", 
@@ -298,16 +325,16 @@ Action()
 		"Resource=1", 
 		"RecContentType=image/gif", 
 		"Referer=http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home", 
-		"Snapshot=t19.inf", 
+		"Snapshot=t42.inf", 
 		LAST);
 
 	web_concurrent_end(NULL);
 
-	lr_end_transaction("sign up",LR_AUTO);
+	lr_end_transaction("continue",LR_AUTO);
 
-	lr_think_time(39);
+	lr_think_time(41);
 
-	lr_start_transaction("sign off");
+	lr_start_transaction("sign_off");
 
 	web_custom_request("SignOff Button", 
 		"URL=http://localhost:1080/cgi-bin/welcome.pl?signOff=1", 
@@ -315,7 +342,7 @@ Action()
 		"Resource=0", 
 		"RecContentType=text/html", 
 		"Referer=http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home", 
-		"Snapshot=t20.inf", 
+		"Snapshot=t43.inf", 
 		"Mode=HTTP", 
 		LAST);
 
@@ -326,7 +353,7 @@ Action()
 		"Method=GET", 
 		"Resource=0", 
 		"Referer=http://localhost:1080/cgi-bin/welcome.pl?signOff=1", 
-		"Snapshot=t21.inf", 
+		"Snapshot=t44.inf", 
 		"Mode=HTTP", 
 		LAST);
 
@@ -336,13 +363,13 @@ Action()
 		"Resource=0", 
 		"RecContentType=text/html", 
 		"Referer=http://localhost:1080/cgi-bin/welcome.pl?signOff=1", 
-		"Snapshot=t22.inf", 
+		"Snapshot=t45.inf", 
 		"Mode=HTTP", 
 		LAST);
 
 	web_concurrent_end(NULL);
 
-	lr_end_transaction("sign off",LR_AUTO);
+	lr_end_transaction("sign_off",LR_AUTO);
 
 	return 0;
 }

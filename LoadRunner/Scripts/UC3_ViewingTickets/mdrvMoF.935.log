@@ -1,0 +1,21 @@
+Start auto log messages stack - Iteration 7.	[MsgId: MMSG-10545]
+Action.c(138): web_add_header("Sec-Fetch-Site") started  	[MsgId: MMSG-26355]
+Action.c(138): web_add_header("Sec-Fetch-Site") was successful  	[MsgId: MMSG-26392]
+Action.c(141): web_add_header("Sec-Fetch-Dest") started  	[MsgId: MMSG-26355]
+Action.c(141): web_add_header("Sec-Fetch-Dest") was successful  	[MsgId: MMSG-26392]
+Action.c(144): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(144): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(149): web_custom_request("nav.pl") started  	[MsgId: MMSG-26355]
+Action.c(149): Registering web_custom_request("nav.pl") was successful  	[MsgId: MMSG-26390]
+Action.c(159): web_concurrent_end started  	[MsgId: MMSG-26355]
+Action.c(149): Error -27721: Step download timeout (120 seconds) has expired when downloading resource "http://localhost:1080/cgi-bin/nav.pl?in=home"   [issued at Action.c(159)]  	[MsgId: MERR-27721]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+
+Start auto log messages stack - Iteration 7.	[MsgId: MMSG-10545]
+Action.c(159): Aborting pending download of URL="http://localhost:1080/cgi-bin/nav.pl?in=home" (RelFrameId=1, Internal ID=146)  	[MsgId: MMSG-27649]
+Action.c(159): Registered web_reg_find successful for "Text=Welcome to the Web Tours site" (count=1)  	[MsgId: MMSG-26364]
+Action.c(159): Error -26377: No match found for the requested parameter "userSession". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 256 bytes. The total length of the response is 1361 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+

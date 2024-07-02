@@ -1,5 +1,7 @@
 Action()
 {
+	lr_start_transaction("UC1-Login");
+	
 	lr_start_transaction("home_page");
 
 	web_add_auto_header("sec-ch-ua", 
@@ -280,7 +282,10 @@ Action()
 
 	lr_think_time(81);
 	
-	lr_start_transaction("find_flights");
+	lr_start_transaction("click_flight");
+
+	web_reg_find("Text=User has returned to the search page",
+		LAST);
 
 	web_custom_request("Search Flights Button", 
 		"URL=http://localhost:1080/cgi-bin/welcome.pl?page=search", 
@@ -310,7 +315,7 @@ Action()
 		"Resource=0", 
 		"RecContentType=text/html", 
 		"Referer=http://localhost:1080/cgi-bin/welcome.pl?page=search", 
-		"Snapshot=t20.inf", 
+		"Snapshot=t19.inf", 
 		"Mode=HTTP", 
 		LAST);
 
@@ -333,26 +338,101 @@ Action()
 		"Resource=1", 
 		"RecContentType=image/gif", 
 		"Referer=http://localhost:1080/cgi-bin/nav.pl?page=menu&in=flights", 
-		"Snapshot=t19.inf", 
+		"Snapshot=t20.inf", 
 		LAST);
 
 	web_concurrent_end(NULL);
 
+	lr_end_transaction("click_flight",LR_AUTO);
+	
+	lr_start_transaction("itinerary");
+	
+	web_reg_find("Text=User wants the intineraries",
+		LAST);
 
-	web_custom_request("button_next.gif", 
-		"URL=http://localhost:1080/WebTours/images/button_next.gif", 
+	web_custom_request("Itinerary Button", 
+		"URL=http://localhost:1080/cgi-bin/welcome.pl?page=itinerary", 
+		"Method=GET", 
+		"Resource=0", 
+		"RecContentType=text/html", 
+		"Referer=http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home", 
+		"Snapshot=t16.inf", 
+		"Mode=HTTP", 
+		LAST);
+
+	web_concurrent_start(NULL);
+
+	web_custom_request("nav.pl_3", 
+		"URL=http://localhost:1080/cgi-bin/nav.pl?page=menu&in=itinerary", 
+		"Method=GET", 
+		"Resource=0", 
+		"RecContentType=text/html", 
+		"Referer=http://localhost:1080/cgi-bin/welcome.pl?page=itinerary", 
+		"Snapshot=t17.inf", 
+		"Mode=HTTP", 
+		LAST);
+
+	web_custom_request("itinerary.pl", 
+		"URL=http://localhost:1080/cgi-bin/itinerary.pl", 
+		"Method=GET", 
+		"Resource=0", 
+		"RecContentType=text/html", 
+		"Referer=http://localhost:1080/cgi-bin/welcome.pl?page=itinerary", 
+		"Snapshot=t18.inf", 
+		"Mode=HTTP", 
+		LAST);
+
+	web_concurrent_end(NULL);
+
+	web_concurrent_start(NULL);
+
+	web_custom_request("in_itinerary.gif", 
+		"URL=http://localhost:1080/WebTours/images/in_itinerary.gif", 
 		"Method=GET", 
 		"Resource=1", 
 		"RecContentType=image/gif", 
-		"Referer=http://localhost:1080/cgi-bin/reservations.pl?page=welcome", 
+		"Referer=http://localhost:1080/cgi-bin/nav.pl?page=menu&in=itinerary", 
+		"Snapshot=t19.inf", 
+		LAST);
+
+	web_custom_request("home.gif", 
+		"URL=http://localhost:1080/WebTours/images/home.gif", 
+		"Method=GET", 
+		"Resource=1", 
+		"RecContentType=image/gif", 
+		"Referer=http://localhost:1080/cgi-bin/nav.pl?page=menu&in=itinerary", 
+		"Snapshot=t20.inf", 
+		LAST);
+
+	web_concurrent_end(NULL);
+
+	web_concurrent_start(NULL);
+
+	web_custom_request("cancelreservation.gif", 
+		"URL=http://localhost:1080/WebTours/images/cancelreservation.gif", 
+		"Method=GET", 
+		"Resource=1", 
+		"RecContentType=image/gif", 
+		"Referer=http://localhost:1080/cgi-bin/itinerary.pl", 
 		"Snapshot=t21.inf", 
 		LAST);
 
-	lr_end_transaction("find_flights",LR_AUTO);
+	web_custom_request("cancelallreservations.gif", 
+		"URL=http://localhost:1080/WebTours/images/cancelallreservations.gif", 
+		"Method=GET", 
+		"Resource=1", 
+		"RecContentType=image/gif", 
+		"Referer=http://localhost:1080/cgi-bin/itinerary.pl", 
+		"Snapshot=t22.inf", 
+		LAST);
+
+	web_concurrent_end(NULL);
+
+	lr_end_transaction("itinerary",LR_AUTO);
 	
 	lr_think_time(19);
 
-	lr_start_transaction("logout");
+	lr_start_transaction("sign_off");
 
 	web_custom_request("SignOff Button", 
 		"URL=http://localhost:1080/cgi-bin/welcome.pl?signOff=1", 
@@ -387,7 +467,9 @@ Action()
 
 	web_concurrent_end(NULL);
 
-	lr_end_transaction("logout",LR_AUTO);
+	lr_end_transaction("sign_off",LR_AUTO);
+	
+	lr_end_transaction("UC1-Login",LR_AUTO);
 
 	return 0;
 }

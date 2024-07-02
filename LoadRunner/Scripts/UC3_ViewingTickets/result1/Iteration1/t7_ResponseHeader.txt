@@ -1,9 +1,9 @@
-HTTP/1.1 200 OK
-Date: Thu, 13 Jun 2024 19:43:58 GMT
+HTTP/1.1 301 Moved Permanently
+Date: Mon, 24 Jun 2024 19:01:24 GMT
 Server: Apache/2.2.21 (Win32)
-Expires: Wed, 12 Jun 2024 19:43:58 GMT
-Keep-Alive: timeout=5, max=94
+Location: http://localhost:1080/WebTours/
+Content-Length: 239
+Keep-Alive: timeout=5, max=95
 Connection: Keep-Alive
-Transfer-Encoding: chunked
-Content-Type: text/html; charset=ISO-8859-1
+Content-Type: text/html; charset=iso-8859-1
 

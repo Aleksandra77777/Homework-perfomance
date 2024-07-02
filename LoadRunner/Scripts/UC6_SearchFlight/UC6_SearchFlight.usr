@@ -52,7 +52,7 @@ vuser_init=cci
 Action=cci
 vuser_end=cci
 [TransactionsOrder]
-Order="UC6_SearchFlight__*delimiter*__login__*delimiter*__flights__*delimiter*__Sign off"
+Order="UC6_SearchFlight__*delimiter*__home_page__*delimiter*__login__*delimiter*__click_flight__*delimiter*__find_flight__*delimiter*__choose_flight__*delimiter*__itinerary__*delimiter*__sign_off"
 [StateManagement]
 LastReplayStatus=1
 [ActiveReplay]
@@ -60,6 +60,10 @@ LastReplayedRunName=result1
 ActiveRunName=result1
 [Transactions]
 UC6_SearchFlight=
+home_page=
 login=
-flights=
-"Sign off"=
+click_flight=
+find_flight=
+choose_flight=
+itinerary=
+sign_off=

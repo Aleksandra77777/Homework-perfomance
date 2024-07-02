@@ -13,8 +13,6 @@
     <FileEntry Name="default.usp" Filter="4" />
     <FileEntry Name="UC3_ViewingTickets.prm" Filter="2" />
     <FileEntry Name="globals.h" Filter="2" />
-    <FileEntry Name="login.dat" Filter="2" />
-    <FileEntry Name="password.dat" Filter="2" />
     <FileEntry Name="combined_UC3_ViewingTickets.c" Filter="2" />
     <FileEntry Name="pre_cci.c" Filter="2" />
     <FileEntry Name="131925812440.idx" Filter="1" />
@@ -66,14 +64,30 @@
     <FileEntry Name="CompilerLogMetadata.xml" Filter="1" />
     <FileEntry Name="data.zip" Filter="1" />
     <FileEntry Name="logfile.log" Filter="1" />
+    <FileEntry Name="login.dat" Filter="1" />
     <FileEntry Name="mdrv.log" Filter="1" />
+    <FileEntry Name="mdrv8IY.159.log" Filter="1" />
+    <FileEntry Name="mdrvaY1.679.log" Filter="1" />
+    <FileEntry Name="mdrvbTz.5.log" Filter="1" />
+    <FileEntry Name="mdrvBzH.137.log" Filter="1" />
+    <FileEntry Name="mdrvdBN.847.log" Filter="1" />
+    <FileEntry Name="mdrvdlN.87.log" Filter="1" />
     <FileEntry Name="mdrvfN0.833.log" Filter="1" />
+    <FileEntry Name="mdrviau.577.log" Filter="1" />
+    <FileEntry Name="mdrvMoF.935.log" Filter="1" />
+    <FileEntry Name="mdrvQYF.553.log" Filter="1" />
+    <FileEntry Name="mdrvUFU.191.log" Filter="1" />
+    <FileEntry Name="mdrvVGh.141.log" Filter="1" />
+    <FileEntry Name="mdrvWQS.895.log" Filter="1" />
+    <FileEntry Name="mdrvY16.69.log" Filter="1" />
+    <FileEntry Name="mdrvY6L.643.log" Filter="1" />
     <FileEntry Name="mdrvz9n.283.log" Filter="1" />
     <FileEntry Name="mdrv_cmd.txt" Filter="1" />
     <FileEntry Name="options.txt" Filter="1" />
     <FileEntry Name="output.bak" Filter="1" />
     <FileEntry Name="output.txt" Filter="1" />
     <FileEntry Name="OutputColoringDatabase.json" Filter="1" />
+    <FileEntry Name="password.dat" Filter="1" />
     <FileEntry Name="ReplaySummaryReport.xml" Filter="1" />
     <FileEntry Name="ScriptUploadMetadata.xml" Filter="1" />
     <FileEntry Name="TransactionsData.db" Filter="1" />

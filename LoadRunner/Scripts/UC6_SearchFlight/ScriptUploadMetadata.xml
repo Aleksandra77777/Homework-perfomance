@@ -45,9 +45,26 @@
     <FileEntry Name="login.dat" Filter="1" />
     <FileEntry Name="lrw_custom_body.h" Filter="1" />
     <FileEntry Name="mdrv.log" Filter="1" />
+    <FileEntry Name="mdrv1pv.303.log" Filter="1" />
+    <FileEntry Name="mdrv484.543.log" Filter="1" />
+    <FileEntry Name="mdrv764.511.log" Filter="1" />
+    <FileEntry Name="mdrv8Dd.115.log" Filter="1" />
+    <FileEntry Name="mdrv8m6.347.log" Filter="1" />
+    <FileEntry Name="mdrvbz5.343.log" Filter="1" />
+    <FileEntry Name="mdrvEga.543.log" Filter="1" />
+    <FileEntry Name="mdrvIPK.139.log" Filter="1" />
+    <FileEntry Name="mdrvLcD.113.log" Filter="1" />
+    <FileEntry Name="mdrvloO.511.log" Filter="1" />
+    <FileEntry Name="mdrvMfY.393.log" Filter="1" />
+    <FileEntry Name="mdrvnw2.211.log" Filter="1" />
     <FileEntry Name="mdrvOrQ.519.log" Filter="1" />
     <FileEntry Name="mdrvPxl.989.log" Filter="1" />
+    <FileEntry Name="mdrvpZy.667.log" Filter="1" />
+    <FileEntry Name="mdrvqeh.191.log" Filter="1" />
     <FileEntry Name="mdrvQnF.51.log" Filter="1" />
+    <FileEntry Name="mdrvrcM.231.log" Filter="1" />
+    <FileEntry Name="mdrvrTm.531.log" Filter="1" />
+    <FileEntry Name="mdrvUgd.385.log" Filter="1" />
     <FileEntry Name="mdrv_cmd.txt" Filter="1" />
     <FileEntry Name="options.txt" Filter="1" />
     <FileEntry Name="output.bak" Filter="1" />

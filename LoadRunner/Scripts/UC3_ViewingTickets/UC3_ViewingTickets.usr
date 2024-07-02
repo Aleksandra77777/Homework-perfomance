@@ -52,7 +52,7 @@ vuser_init=cci
 Action=cci
 vuser_end=cci
 [TransactionsOrder]
-Order="UC3_ViewingTickets__*delimiter*__login__*delimiter*__itinerary__*delimiter*__delete"
+Order="UC3_ViewingTickets__*delimiter*__login__*delimiter*__itinerary__*delimiter*__home_page"
 [StateManagement]
 LastReplayStatus=1
 [ActiveReplay]
@@ -62,4 +62,4 @@ ActiveRunName=result1
 UC3_ViewingTickets=
 login=
 itinerary=
-delete=
+home_page=

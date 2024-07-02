@@ -1,0 +1,14 @@
+Start auto log messages stack - Iteration 5.	[MsgId: MMSG-10545]
+Action.c(139): web_add_header("Sec-Fetch-Site") was successful  	[MsgId: MMSG-26392]
+Action.c(142): web_add_header("Sec-Fetch-Dest") started  	[MsgId: MMSG-26355]
+Action.c(142): web_add_header("Sec-Fetch-Dest") was successful  	[MsgId: MMSG-26392]
+Action.c(146): web_reg_save_param_attrib started  	[MsgId: MMSG-26355]
+Action.c(146): Registering web_reg_save_param_attrib was successful  	[MsgId: MMSG-26390]
+Action.c(154): web_custom_request("nav.pl") started  	[MsgId: MMSG-26355]
+Action.c(154): Registering web_custom_request("nav.pl") was successful  	[MsgId: MMSG-26390]
+Action.c(164): web_concurrent_end started  	[MsgId: MMSG-26355]
+Action.c(154): Error -26612: HTTP Status-Code=500 (Internal Server Error) for "http://localhost:1080/cgi-bin/nav.pl?in=home"   [issued at Action.c(164)]  	[MsgId: MERR-26612]
+Action.c(164): Error -35048: No match found for the requested parameter "userSession". Check whether the tag with specific attributes exists in the response data  	[MsgId: MERR-35048]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+

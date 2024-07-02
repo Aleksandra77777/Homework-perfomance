@@ -1,5 +1,7 @@
-GET /cgi-bin/itinerary.pl HTTP/1.1
-Referer: http://localhost:1080/cgi-bin/welcome.pl?page=itinerary
+POST /cgi-bin/login.pl HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+Referer: http://localhost:1080/cgi-bin/nav.pl?in=home
+Origin: http://localhost:1080
 sec-ch-ua: "Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"
 sec-ch-ua-mobile: ?0
 sec-ch-ua-platform: "Windows"
@@ -14,5 +16,6 @@ Accept-Language: ru-RU,ru;q=0.9
 Accept: */*
 Connection: Keep-Alive
 Host: localhost:1080
-Cookie: MSO=SID&1718307204; MTUserInfo=firstName&%7BfirstName%7D&address2&09876&username&kowalski%20&hash&0&lastName&%7BlastName%7D%0A&address1&1357%20Tuxedo%20Terrace&creditCard&&expDate&%0A
+Cookie: MSO=SID&1719160956
+Content-Length: 124
 

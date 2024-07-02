@@ -1,0 +1,36 @@
+Start auto log messages stack - Iteration 4.	[MsgId: MMSG-10545]
+Action.c(389): Notify: Transaction "flights" ended with a "Pass" status (Duration: 6,6685 Think Time: 6,0413 Wasted Time: 0,0005).	[MsgId: MMSG-16870]
+Action.c(391): Notify: Transaction "Sign off" started.	[MsgId: MMSG-16999]
+Action.c(393): web_remove_auto_header("Origin") started  	[MsgId: MMSG-26355]
+Action.c(393): Previous automatically added web header for "Origin" removed  	[MsgId: MMSG-26587]
+Action.c(393): web_remove/revert_auto_header("Origin") was successful  	[MsgId: MMSG-26392]
+Action.c(395): Think time - Waiting 3,00 seconds (according to limit).	[MsgId: MMSG-15946]
+Action.c(395): lr_think_time: 3,00 seconds (recorded think time was 38,00 seconds).	[MsgId: MMSG-15947]
+Action.c(397): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(397): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(400): web_custom_request("SignOff Button") started  	[MsgId: MMSG-26355]
+Action.c(400): Error -26612: HTTP Status-Code=500 (Internal Server Error) for "http://localhost:1080/cgi-bin/welcome.pl?signOff=1"  	[MsgId: MERR-26612]
+Action.c(400): Error -26366: "Text=A Session ID has been created and loaded into a cookie called MSO" not found for web_reg_find  	[MsgId: MERR-26366]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+
+Start auto log messages stack - Iteration 2.	[MsgId: MMSG-10545]
+Action.c(140): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(140): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(145): web_add_header("Sec-Fetch-Site") started  	[MsgId: MMSG-26355]
+Action.c(145): web_add_header("Sec-Fetch-Site") was successful  	[MsgId: MMSG-26392]
+Action.c(148): web_add_header("Sec-Fetch-Dest") started  	[MsgId: MMSG-26355]
+Action.c(148): web_add_header("Sec-Fetch-Dest") was successful  	[MsgId: MMSG-26392]
+Action.c(151): web_custom_request("nav.pl") started  	[MsgId: MMSG-26355]
+Action.c(151): Registering web_custom_request("nav.pl") was successful  	[MsgId: MMSG-26390]
+Action.c(161): web_concurrent_end started  	[MsgId: MMSG-26355]
+Action.c(151): Error -26612: HTTP Status-Code=500 (Internal Server Error) for "http://localhost:1080/cgi-bin/nav.pl?in=home"   [issued at Action.c(161)]  	[MsgId: MERR-26612]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+
+Start auto log messages stack - Iteration 2.	[MsgId: MMSG-10545]
+Action.c(161): Registered web_reg_find successful for "Text=Welcome to the Web Tours site" (count=1)  	[MsgId: MMSG-26364]
+Action.c(161): Error -26377: No match found for the requested parameter "userSession". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 256 bytes. The total length of the response is 1896 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+

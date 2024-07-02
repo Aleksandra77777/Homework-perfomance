@@ -1,0 +1,15 @@
+Start auto log messages stack - Iteration 16.	[MsgId: MMSG-10545]
+Action.c(330): Registering web_custom_request("home.gif") was successful  	[MsgId: MMSG-26390]
+Action.c(339): web_concurrent_end started  	[MsgId: MMSG-26355]
+Action.c(339): web_concurrent_end was successful, 1414 body bytes, 594 header bytes  	[MsgId: MMSG-26386]
+Action.c(342): web_custom_request("button_next.gif") started  	[MsgId: MMSG-26355]
+Action.c(342): web_custom_request("button_next.gif") was successful, 758 body bytes, 297 header bytes  	[MsgId: MMSG-26386]
+Action.c(351): Notify: Transaction "find_flights" ended with a "Pass" status (Duration: 0,2633).	[MsgId: MMSG-16873]
+Action.c(353): Think time - Waiting 1,00 seconds (according to limit).	[MsgId: MMSG-15946]
+Action.c(353): lr_think_time: 1,00 seconds (recorded think time was 19,00 seconds).	[MsgId: MMSG-15947]
+Action.c(355): Notify: Transaction "logout" started.	[MsgId: MMSG-16999]
+Action.c(357): web_custom_request("SignOff Button") started  	[MsgId: MMSG-26355]
+Action.c(357): Error -27721: Step download timeout (120 seconds) has expired when downloading resource "http://localhost:1080/cgi-bin/welcome.pl?signOff=1"  	[MsgId: MERR-27721]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+

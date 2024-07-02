@@ -1,0 +1,35 @@
+Start auto log messages stack - Iteration 5.	[MsgId: MMSG-10545]
+Action.c(140): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(140): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(145): web_add_header("Sec-Fetch-Site") started  	[MsgId: MMSG-26355]
+Action.c(145): web_add_header("Sec-Fetch-Site") was successful  	[MsgId: MMSG-26392]
+Action.c(148): web_add_header("Sec-Fetch-Dest") started  	[MsgId: MMSG-26355]
+Action.c(148): web_add_header("Sec-Fetch-Dest") was successful  	[MsgId: MMSG-26392]
+Action.c(151): web_custom_request("nav.pl") started  	[MsgId: MMSG-26355]
+Action.c(151): Registering web_custom_request("nav.pl") was successful  	[MsgId: MMSG-26390]
+Action.c(161): web_concurrent_end started  	[MsgId: MMSG-26355]
+Action.c(151): Error -27721: Step download timeout (120 seconds) has expired when downloading resource "http://localhost:1080/cgi-bin/nav.pl?in=home"   [issued at Action.c(161)]  	[MsgId: MERR-27721]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+
+Start auto log messages stack - Iteration 5.	[MsgId: MMSG-10545]
+Action.c(161): Aborting pending download of URL="http://localhost:1080/cgi-bin/nav.pl?in=home" (RelFrameId=1, Internal ID=116)  	[MsgId: MMSG-27649]
+Action.c(161): Registered web_reg_find successful for "Text=Welcome to the Web Tours site" (count=1)  	[MsgId: MMSG-26364]
+Action.c(161): Error -26377: No match found for the requested parameter "userSession". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 256 bytes. The total length of the response is 1361 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+
+Start auto log messages stack - Iteration 9.	[MsgId: MMSG-10545]
+Action.c(203): web_concurrent_start started  	[MsgId: MMSG-26355]
+Action.c(203): web_concurrent_start was successful  	[MsgId: MMSG-26392]
+Action.c(205): web_custom_request("nav.pl_2") started  	[MsgId: MMSG-26355]
+Action.c(205): Registering web_custom_request("nav.pl_2") was successful  	[MsgId: MMSG-26390]
+Action.c(215): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(215): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(219): web_custom_request("login.pl_2") started  	[MsgId: MMSG-26355]
+Action.c(219): Registering web_custom_request("login.pl_2") was successful  	[MsgId: MMSG-26390]
+Action.c(229): web_concurrent_end started  	[MsgId: MMSG-26355]
+Action.c(205): Error -27721: Step download timeout (120 seconds) has expired when downloading resource "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home"   [issued at Action.c(229)]  	[MsgId: MERR-27721]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+

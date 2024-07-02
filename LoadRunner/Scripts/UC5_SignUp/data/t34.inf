@@ -1,0 +1,11 @@
+[t34]
+FileName1=t34.htm
+URL1=http://localhost:1080/cgi-bin/login.pl
+Total=1
+RequestHeaderFile=t34_RequestHeader.txt
+RequestBodyFile=t34_RequestBody.txt
+ResponseHeaderFile=t34_ResponseHeader.txt
+ContentType=text/html
+SnapshotXmlFile=snapshot_34.xml
+[ProtocolInfo]
+ProtocolId=QTWeb

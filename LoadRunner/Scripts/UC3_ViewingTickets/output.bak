@@ -1,4 +1,4 @@
-Virtual User Script started at: 12.06.2024 23:25:55
+Virtual User Script started at: 13.06.2024 22:43:54
 Starting action vuser_init.
 Web Turbo Replay of LoadRunner 2021.0.0 for Windows 10; build 430 (џэт 05 2021 19:27:22)  	[MsgId: MMSG-26983]
 Run mode: HTML  	[MsgId: MMSG-26993]
@@ -87,15 +87,15 @@ Action.c(149): web_custom_request("nav.pl") started  	[MsgId: MMSG-26355]
 Action.c(149): Registering web_custom_request("nav.pl") was successful  	[MsgId: MMSG-26390]
 Action.c(159): web_concurrent_end started  	[MsgId: MMSG-26355]
 Action.c(159): Registered web_reg_find successful for "Text=Welcome to the Web Tours site" (count=1)  	[MsgId: MMSG-26364]
-Action.c(159): web_concurrent_end was successful, 2849 body bytes, 553 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(159): web_concurrent_end was successful, 2845 body bytes, 553 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
 Action.c(163): web_add_header("Sec-Fetch-Site") started  	[MsgId: MMSG-26355]
 Action.c(163): web_add_header("Sec-Fetch-Site") was successful  	[MsgId: MMSG-26392]
 Action.c(166): web_add_header("Sec-Fetch-Dest") started  	[MsgId: MMSG-26355]
 Action.c(166): web_add_header("Sec-Fetch-Dest") was successful  	[MsgId: MMSG-26392]
 Action.c(169): web_custom_request("mer_login.gif") started  	[MsgId: MMSG-26355]
 Action.c(169): web_custom_request("mer_login.gif") was successful, 679 body bytes, 297 header bytes  	[MsgId: MMSG-26386]
-Action.c(178): Think time - Waiting 3.00 seconds (according to limit).
-Action.c(178): lr_think_time: 3.00 seconds (recorded think time was 51.00 seconds).
+Action.c(178): Think time - Waiting 3,00 seconds (according to limit).
+Action.c(178): lr_think_time: 3,00 seconds (recorded think time was 51,00 seconds).
 Action.c(180): Notify: Transaction "login" started.
 Action.c(182): web_add_auto_header("Sec-Fetch-Site") started  	[MsgId: MMSG-26355]
 Action.c(182): web_add_auto_header("Sec-Fetch-Site") was successful  	[MsgId: MMSG-26392]
@@ -130,7 +130,7 @@ Action.c(261): web_custom_request("signoff.gif") started  	[MsgId: MMSG-26355]
 Action.c(261): Registering web_custom_request("signoff.gif") was successful  	[MsgId: MMSG-26390]
 Action.c(270): web_concurrent_end started  	[MsgId: MMSG-26355]
 Action.c(270): web_concurrent_end was successful, 2898 body bytes, 1190 header bytes  	[MsgId: MMSG-26386]
-Action.c(272): Notify: Transaction "login" ended with a "Pass" status (Duration: 3.5102 Think Time: 3.0074 Wasted Time: 0.0242).
+Action.c(272): Notify: Transaction "login" ended with a "Pass" status (Duration: 3.5302 Think Time: 3.0145 Wasted Time: 0.0205).
 Action.c(274): Think time - Waiting 3.00 seconds (according to limit).
 Action.c(274): lr_think_time: 3.00 seconds (recorded think time was 71.00 seconds).
 Action.c(276): Notify: Transaction "itinerary" started.
@@ -163,18 +163,18 @@ Action.c(348): web_custom_request("cancelallreservations.gif") started  	[MsgId:
 Action.c(348): Registering web_custom_request("cancelallreservations.gif") was successful  	[MsgId: MMSG-26390]
 Action.c(357): web_concurrent_end started  	[MsgId: MMSG-26355]
 Action.c(357): web_concurrent_end was successful, 1573 body bytes, 594 header bytes  	[MsgId: MMSG-26386]
-Action.c(359): Notify: Transaction "itinerary" ended with a "Pass" status (Duration: 0.4564 Wasted Time: 0.0309).
+Action.c(359): Notify: Transaction "itinerary" ended with a "Pass" status (Duration: 0,4506 Wasted Time: 0,0223).
 Action.c(361): Think time - Waiting 3.00 seconds (according to limit).
 Action.c(361): lr_think_time: 3.00 seconds (recorded think time was 57.00 seconds).
 Action.c(363): Notify: Transaction "delete" started.
 Action.c(365): web_add_header("Origin") started  	[MsgId: MMSG-26355]
 Action.c(365): web_add_header("Origin") was successful  	[MsgId: MMSG-26392]
-Action.c(370): web_custom_request("itinerary.pl_2") started  	[MsgId: MMSG-26355]
-Action.c(370): web_custom_request("itinerary.pl_2") was successful, 932 body bytes, 255 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(383): Notify: Transaction "delete" ended with a "Pass" status (Duration: 0,1348 Wasted Time: 0,0088).
-Action.c(385): Think time - Waiting 3,00 seconds (according to limit).
-Action.c(385): lr_think_time: 3,00 seconds (recorded think time was 15,00 seconds).
-Action.c(388): Notify: Transaction "UC3_ViewingTickets" ended with a "Pass" status (Duration: 17,4082 Think Time: 15,0321 Wasted Time: 0,3463).
+Action.c(368): web_custom_request("itinerary.pl_2") started  	[MsgId: MMSG-26355]
+Action.c(368): web_custom_request("itinerary.pl_2") was successful, 932 body bytes, 255 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(381): Notify: Transaction "delete" ended with a "Pass" status (Duration: 0.1544 Wasted Time: 0.0054).
+Action.c(383): Think time - Waiting 3.00 seconds (according to limit).
+Action.c(383): lr_think_time: 3.00 seconds (recorded think time was 15.00 seconds).
+Action.c(386): Notify: Transaction "UC3_ViewingTickets" ended with a "Pass" status (Duration: 17.4077 Think Time: 15.0423 Wasted Time: 0.2427).
 Ending action Action.
 Ending iteration 1.
 Ending Vuser...

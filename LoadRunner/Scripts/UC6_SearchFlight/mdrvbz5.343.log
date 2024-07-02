@@ -1,0 +1,16 @@
+Start auto log messages stack - Iteration 7.	[MsgId: MMSG-10545]
+Action.c(254): Registering web_custom_request("signoff.gif") was successful  	[MsgId: MMSG-26390]
+Action.c(263): web_concurrent_end started  	[MsgId: MMSG-26355]
+Action.c(263): web_concurrent_end was successful, 2898 body bytes, 1190 header bytes  	[MsgId: MMSG-26386]
+Action.c(265): Notify: Transaction "login" ended with a "Pass" status (Duration: 5,2627 Think Time: 5,0095).	[MsgId: MMSG-16872]
+Action.c(267): Think time - Waiting 5,00 seconds (according to limit).	[MsgId: MMSG-15946]
+Action.c(267): lr_think_time: 5,00 seconds (recorded think time was 67,00 seconds).	[MsgId: MMSG-15947]
+Action.c(269): Notify: Transaction "click_flight" started.	[MsgId: MMSG-16999]
+Action.c(271): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(271): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(274): web_custom_request("Search Flights Button") started  	[MsgId: MMSG-26355]
+Action.c(274): Error -26612: HTTP Status-Code=500 (Internal Server Error) for "http://localhost:1080/cgi-bin/welcome.pl?page=search"  	[MsgId: MERR-26612]
+Action.c(274): Error -26366: "Text=User has returned to the search page" not found for web_reg_find  	[MsgId: MERR-26366]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+

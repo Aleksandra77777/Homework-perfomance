@@ -1,0 +1,13 @@
+Start auto log messages stack - Iteration 8.	[MsgId: MMSG-10545]
+Action.c(411): Registering web_custom_request("cancelreservation.gif") was successful  	[MsgId: MMSG-26390]
+Action.c(420): web_custom_request("cancelallreservations.gif") started  	[MsgId: MMSG-26355]
+Action.c(420): Registering web_custom_request("cancelallreservations.gif") was successful  	[MsgId: MMSG-26390]
+Action.c(429): web_concurrent_end started  	[MsgId: MMSG-26355]
+Action.c(429): web_concurrent_end was successful, 1573 body bytes, 594 header bytes  	[MsgId: MMSG-26386]
+Action.c(431): Notify: Transaction "itinerary" ended with a "Pass" status (Duration: 0,2532 Wasted Time: 0,0000).	[MsgId: MMSG-16871]
+Action.c(433): Notify: Transaction "find_flight" started.	[MsgId: MMSG-16999]
+Action.c(435): web_custom_request("Search Flights Button") started  	[MsgId: MMSG-26355]
+Action.c(435): Error -27721: Step download timeout (120 seconds) has expired when downloading resource "http://localhost:1080/cgi-bin/welcome.pl?page=search"  	[MsgId: MERR-27721]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+

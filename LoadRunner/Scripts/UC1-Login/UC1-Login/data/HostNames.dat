@@ -1,0 +1,6 @@
+[hosts]
+192.168.0.181=
+localhost=
+update.googleapis.com=
+clientservices.googleapis.com=
+beacons.gvt2.com=

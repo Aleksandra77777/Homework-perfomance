@@ -1,2 +1,2 @@
-"userSession=139190.483191576HVfQzVAptHQVzzzHtcQfHpzzciHf&username=kowalski &password=sciencegu"
-"y&login.x=56&login.y=11&JSFormSubmit=off"
+"userSession=139295.768570271HVzfAczpAQfiDDDDtcQQApVfzfHf&username=kingjulien&password=dancepar"
+"ty&login.x=56&login.y=11&JSFormSubmit=off"

@@ -1,0 +1,28 @@
+Start auto log messages stack - Iteration 25.	[MsgId: MMSG-10545]
+Action.c(187): web_custom_request("login.pl") was successful, 481 body bytes, 411 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(198): web_concurrent_start started  	[MsgId: MMSG-26355]
+Action.c(198): web_concurrent_start was successful  	[MsgId: MMSG-26392]
+Action.c(200): web_custom_request("nav.pl_2") started  	[MsgId: MMSG-26355]
+Action.c(200): Registering web_custom_request("nav.pl_2") was successful  	[MsgId: MMSG-26390]
+Action.c(213): web_custom_request("login.pl_2") started  	[MsgId: MMSG-26355]
+Action.c(213): Registering web_custom_request("login.pl_2") was successful  	[MsgId: MMSG-26390]
+Action.c(223): web_concurrent_end started  	[MsgId: MMSG-26355]
+Action.c(213): Error -26612: HTTP Status-Code=500 (Internal Server Error) for "http://localhost:1080/cgi-bin/login.pl?intro=true"   [issued at Action.c(223)]  	[MsgId: MERR-26612]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+
+Start auto log messages stack - Iteration 33.	[MsgId: MMSG-10545]
+Action.c(174): Notify: Transaction "login" started.	[MsgId: MMSG-16999]
+Action.c(176): web_add_auto_header("Sec-Fetch-Site") started  	[MsgId: MMSG-26355]
+Action.c(176): web_add_auto_header("Sec-Fetch-Site") was successful  	[MsgId: MMSG-26392]
+Action.c(179): web_add_auto_header("Sec-Fetch-Dest") started  	[MsgId: MMSG-26355]
+Action.c(179): web_add_auto_header("Sec-Fetch-Dest") was successful  	[MsgId: MMSG-26392]
+Action.c(182): web_add_header("Origin") started  	[MsgId: MMSG-26355]
+Action.c(182): web_add_header("Origin") was successful  	[MsgId: MMSG-26392]
+Action.c(185): Think time - Waiting 5,00 seconds (according to limit).	[MsgId: MMSG-15946]
+Action.c(185): lr_think_time: 5,00 seconds (recorded think time was 114,00 seconds).	[MsgId: MMSG-15947]
+Action.c(187): web_custom_request("login.pl") started  	[MsgId: MMSG-26355]
+Action.c(187): Error -26612: HTTP Status-Code=500 (Internal Server Error) for "http://localhost:1080/cgi-bin/login.pl"  	[MsgId: MERR-26612]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+

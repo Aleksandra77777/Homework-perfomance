@@ -1,5 +1,6 @@
 Action()
 {
+
 	lr_start_transaction("UC2_BuyTicket");
 
 	
@@ -183,6 +184,9 @@ Action()
 		"http://localhost:1080");
 
 	lr_think_time(114);
+	
+	web_reg_find("Text=User password was correct",
+		LAST);
 
 	web_custom_request("login.pl", 
 		"URL=http://localhost:1080/cgi-bin/login.pl", 
@@ -207,8 +211,8 @@ Action()
 		"Mode=HTTP", 
 		LAST);
 	
-	web_reg_find("Text=Welcome to Web Tours",
-		LAST);
+//	web_reg_find("Text=Welcome to Web Tours",
+//		LAST);
 
 	web_custom_request("login.pl_2", 
 		"URL=http://localhost:1080/cgi-bin/login.pl?intro=true", 
