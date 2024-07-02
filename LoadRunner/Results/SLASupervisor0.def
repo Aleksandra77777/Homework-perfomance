@@ -1,0 +1,29 @@
+﻿[SLASupervisor_BasicInfo]
+NumFilters=2
+
+[AdditionalFilter0]
+DimensionType=Continuous
+InternalDimName=End Time
+Dimension=Scenario Elapsed Time
+EqualFlag=1
+DimensionTableName=Event_meter
+NumValues=1
+DimCount=2
+Dim_0=120.000000
+Dim_1=1320.000000
+
+[AdditionalFilter1]
+DimensionType=Discrete
+InternalDimName=Script Name
+Dimension=Script Name
+EqualFlag=1
+DimensionTableName=Script
+NumValues=1
+UseEscapeSequence=1
+DimCount=1
+Dim_0=UC1_Login_1
+LikeMode=0
+
+[DimensionFunctions]
+DimeFuncCount=0
+
