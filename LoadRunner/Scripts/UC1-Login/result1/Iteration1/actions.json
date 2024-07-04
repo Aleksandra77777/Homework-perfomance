@@ -6,75 +6,75 @@
                 "stepId": "STEP1",
                 "stepName": "Custom Request: WebTours",
                 "infFile": "t1.inf",
-                "time": 1719062455267
+                "time": 1720107935796
             },
             {
                 "stepId": "STEP2",
                 "stepName": "Custom Request: login.pl",
                 "infFile": "t7.inf",
-                "time": 1719062459223
+                "time": 1720107939765
             },
             {
                 "stepId": "STEP3",
-                "stepName": "Custom Request: Itinerary Button",
+                "stepName": "Custom Request: Search Flights Button",
                 "infFile": "t10.inf",
-                "time": 1719062465756
+                "time": 1720107946295
             },
             {
                 "stepId": "STEP4",
-                "stepName": "Custom Request: Search Flights Button",
+                "stepName": "Custom Request: Itinerary Button",
                 "infFile": "t13.inf",
-                "time": 1719062466289
+                "time": 1720107946750
             },
             {
                 "stepId": "STEP5",
                 "stepName": "Custom Request: SignOff Button",
                 "infFile": "t16.inf",
-                "time": 1719062469781
+                "time": 1720107950286
             }
         ],
         "transactions": [
             {
                 "transactionName": "home_page",
-                "rawStartTime": 1719062454871,
-                "rawEndTime": 1719062455989,
+                "rawStartTime": 1720107935300,
+                "rawEndTime": 1720107936546,
                 "thinkTime": 0.0,
-                "wastedTime": 0.18646979331970216
+                "wastedTime": 0.2644493579864502
             },
             {
                 "transactionName": "login",
-                "rawStartTime": 1719062459035,
-                "rawEndTime": 1719062462586,
-                "thinkTime": 3.00411,
-                "wastedTime": 0.02127814292907715
+                "rawStartTime": 1720107939588,
+                "rawEndTime": 1720107943126,
+                "thinkTime": 3.011965,
+                "wastedTime": 0.018650531768798829
+            },
+            {
+                "transactionName": "click_flight",
+                "rawStartTime": 1720107946163,
+                "rawEndTime": 1720107946610,
+                "thinkTime": 0.0,
+                "wastedTime": 0.020404338836669923
             },
             {
                 "transactionName": "itinerary",
-                "rawStartTime": 1719062465622,
-                "rawEndTime": 1719062466149,
+                "rawStartTime": 1720107946627,
+                "rawEndTime": 1720107947104,
                 "thinkTime": 0.0,
-                "wastedTime": 0.036493778228759769
-            },
-            {
-                "transactionName": "find_flight",
-                "rawStartTime": 1719062466165,
-                "rawEndTime": 1719062466621,
-                "thinkTime": 0.0,
-                "wastedTime": 0.025803565979003907
+                "wastedTime": 0.02914285659790039
             },
             {
                 "transactionName": "sign_off",
-                "rawStartTime": 1719062469657,
-                "rawEndTime": 1719062469948,
+                "rawStartTime": 1720107950149,
+                "rawEndTime": 1720107950456,
                 "thinkTime": 0.0,
-                "wastedTime": 0.013718128204345703
+                "wastedTime": 0.012974262237548828
             },
             {
                 "transactionName": "UC1-Login",
-                "rawStartTime": 1719062454858,
-                "rawEndTime": 1719062469964,
-                "thinkTime": 12.027647,
-                "wastedTime": 0.28376340866088869
+                "rawStartTime": 1720107935285,
+                "rawEndTime": 1720107950472,
+                "thinkTime": 12.036622,
+                "wastedTime": 0.34562134742736819
             }
         ]
     }

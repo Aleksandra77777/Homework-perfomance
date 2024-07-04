@@ -13,15 +13,16 @@
     <FileEntry Name="default.usp" Filter="4" />
     <FileEntry Name="UC6_SearchFlight.prm" Filter="2" />
     <FileEntry Name="globals.h" Filter="2" />
-    <FileEntry Name="arrive.dat" Filter="2" />
-    <FileEntry Name="NewParam.dat" Filter="2" />
     <FileEntry Name="numPassengers.dat" Filter="2" />
-    <FileEntry Name="seatType.dat" Filter="2" />
     <FileEntry Name="combined_UC6_SearchFlight.c" Filter="2" />
     <FileEntry Name="pre_cci.c" Filter="2" />
     <FileEntry Name="12271920440.idx" Filter="1" />
     <FileEntry Name="179184684440.idx" Filter="1" />
     <FileEntry Name="192967160440.idx" Filter="1" />
+    <FileEntry Name="19296716044_Gu2.787.idx" Filter="1" />
+    <FileEntry Name="19296716044_kCr.235.idx" Filter="1" />
+    <FileEntry Name="19296716044_Lp6.13.idx" Filter="1" />
+    <FileEntry Name="19296716044_ZwG.771.idx" Filter="1" />
     <FileEntry Name="195163120440.idx" Filter="1" />
     <FileEntry Name="196871087440.idx" Filter="1" />
     <FileEntry Name="19687108744_7Jf.573.idx" Filter="1" />
@@ -37,6 +38,7 @@
     <FileEntry Name="418034440.idx" Filter="1" />
     <FileEntry Name="54887567440.idx" Filter="1" />
     <FileEntry Name="90289498440.idx" Filter="1" />
+    <FileEntry Name="arrive.dat" Filter="1" />
     <FileEntry Name="Bookmarks.xml" Filter="1" />
     <FileEntry Name="Breakpoints.xml" Filter="1" />
     <FileEntry Name="CompilerLogMetadata.xml" Filter="1" />
@@ -49,7 +51,9 @@
     <FileEntry Name="mdrv484.543.log" Filter="1" />
     <FileEntry Name="mdrv764.511.log" Filter="1" />
     <FileEntry Name="mdrv8Dd.115.log" Filter="1" />
+    <FileEntry Name="mdrv8HM.209.log" Filter="1" />
     <FileEntry Name="mdrv8m6.347.log" Filter="1" />
+    <FileEntry Name="mdrva5y.917.log" Filter="1" />
     <FileEntry Name="mdrvbz5.343.log" Filter="1" />
     <FileEntry Name="mdrvEga.543.log" Filter="1" />
     <FileEntry Name="mdrvIPK.139.log" Filter="1" />
@@ -65,7 +69,9 @@
     <FileEntry Name="mdrvrcM.231.log" Filter="1" />
     <FileEntry Name="mdrvrTm.531.log" Filter="1" />
     <FileEntry Name="mdrvUgd.385.log" Filter="1" />
+    <FileEntry Name="mdrvY65.979.log" Filter="1" />
     <FileEntry Name="mdrv_cmd.txt" Filter="1" />
+    <FileEntry Name="NewParam.dat" Filter="1" />
     <FileEntry Name="options.txt" Filter="1" />
     <FileEntry Name="output.bak" Filter="1" />
     <FileEntry Name="output.txt" Filter="1" />
@@ -75,6 +81,7 @@
     <FileEntry Name="returnDate.dat" Filter="1" />
     <FileEntry Name="ScriptUploadMetadata.xml" Filter="1" />
     <FileEntry Name="seatPref.dat" Filter="1" />
+    <FileEntry Name="seatType.dat" Filter="1" />
     <FileEntry Name="TransactionsData.db" Filter="1" />
     <FileEntry Name="UC6_SearchFlight.c.pickle" Filter="1" />
     <FileEntry Name="UC6_SearchFlight.ci" Filter="1" />

@@ -2789,6 +2789,9 @@ Action()
 
 	lr_think_time(114);
 
+	web_reg_find("Text=User password was incorrect",
+		"LAST");
+	
 	web_custom_request("login.pl", 
 		"URL=http://localhost:1080/cgi-bin/login.pl", 
 		"Method=POST", 
@@ -2801,6 +2804,9 @@ Action()
 		"LAST");
 
 	web_concurrent_start(0);
+	
+ 
+ 
 
 	web_custom_request("nav.pl_2", 
 		"URL=http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home", 
@@ -2811,9 +2817,6 @@ Action()
 		"Snapshot=t10.inf", 
 		"Mode=HTTP", 
 		"LAST");
-	
- 
- 
 
 	web_custom_request("login.pl_2", 
 		"URL=http://localhost:1080/cgi-bin/login.pl?intro=true", 
@@ -3032,6 +3035,9 @@ Action()
 		"Referer=http://localhost:1080/cgi-bin/welcome.pl?page=itinerary", 
 		"Snapshot=t17.inf", 
 		"Mode=HTTP", 
+		"LAST");
+	
+	web_reg_find("Text=Flights List",
 		"LAST");
 
 	web_custom_request("itinerary.pl", 

@@ -2616,9 +2616,6 @@ Action()
 	char * str;
 	char * flightID_tmp;
 	
-	lr_save_string("kowalski ", "login");
-	lr_save_string("scienceguy", "password");
-	
 	lr_start_transaction("UC4_DeleteTickets");
 	
 	lr_start_transaction("home_page");

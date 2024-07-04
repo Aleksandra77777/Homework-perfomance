@@ -2772,8 +2772,6 @@ Action()
 		"LAST");
 
 	lr_end_transaction("home_page",2);
-	
-	
 
 	lr_start_transaction("sign_up");
 
@@ -2868,6 +2866,9 @@ Action()
 		"LAST");
 
 	web_concurrent_start(0);
+	
+ 
+ 
 
 	web_custom_request("nav.pl_2", 
 		"URL=http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home", 

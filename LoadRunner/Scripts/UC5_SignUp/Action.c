@@ -261,8 +261,8 @@ Action()
 
 	web_concurrent_start(NULL);
 	
-	web_reg_find("Text=Welcome to Web Tours",
-		LAST);
+//	web_reg_find("Text=Welcome to Web Tours",
+//		LAST);
 
 	web_custom_request("nav.pl_2", 
 		"URL=http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home", 

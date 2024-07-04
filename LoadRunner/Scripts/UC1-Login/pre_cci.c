@@ -2888,6 +2888,69 @@ Action()
 
 	lr_think_time(81);
 	
+	lr_start_transaction("click_flight");
+
+	web_reg_find("Text=User has returned to the search page",
+		"LAST");
+
+	web_custom_request("Search Flights Button", 
+		"URL=http://localhost:1080/cgi-bin/welcome.pl?page=search", 
+		"Method=GET", 
+		"Resource=0", 
+		"RecContentType=text/html", 
+		"Referer=http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home", 
+		"Snapshot=t16.inf", 
+		"Mode=HTTP", 
+		"LAST");
+
+	web_concurrent_start(0);
+
+	web_custom_request("nav.pl_3", 
+		"URL=http://localhost:1080/cgi-bin/nav.pl?page=menu&in=flights", 
+		"Method=GET", 
+		"Resource=0", 
+		"RecContentType=text/html", 
+		"Referer=http://localhost:1080/cgi-bin/welcome.pl?page=search", 
+		"Snapshot=t17.inf", 
+		"Mode=HTTP", 
+		"LAST");
+
+	web_custom_request("reservations.pl", 
+		"URL=http://localhost:1080/cgi-bin/reservations.pl?page=welcome", 
+		"Method=GET", 
+		"Resource=0", 
+		"RecContentType=text/html", 
+		"Referer=http://localhost:1080/cgi-bin/welcome.pl?page=search", 
+		"Snapshot=t19.inf", 
+		"Mode=HTTP", 
+		"LAST");
+
+	web_concurrent_end(0);
+
+	web_concurrent_start(0);
+
+	web_custom_request("in_flights.gif", 
+		"URL=http://localhost:1080/WebTours/images/in_flights.gif", 
+		"Method=GET", 
+		"Resource=1", 
+		"RecContentType=image/gif", 
+		"Referer=http://localhost:1080/cgi-bin/nav.pl?page=menu&in=flights", 
+		"Snapshot=t18.inf", 
+		"LAST");
+
+	web_custom_request("home.gif", 
+		"URL=http://localhost:1080/WebTours/images/home.gif", 
+		"Method=GET", 
+		"Resource=1", 
+		"RecContentType=image/gif", 
+		"Referer=http://localhost:1080/cgi-bin/nav.pl?page=menu&in=flights", 
+		"Snapshot=t20.inf", 
+		"LAST");
+
+	web_concurrent_end(0);
+
+	lr_end_transaction("click_flight",2);
+	
 	lr_start_transaction("itinerary");
 	
 	web_reg_find("Text=User wants the intineraries",
@@ -2972,76 +3035,6 @@ Action()
 	web_concurrent_end(0);
 
 	lr_end_transaction("itinerary",2);
-	
-	lr_start_transaction("find_flight");
-
-	web_custom_request("Search Flights Button", 
-		"URL=http://localhost:1080/cgi-bin/welcome.pl?page=search", 
-		"Method=GET", 
-		"Resource=0", 
-		"RecContentType=text/html", 
-		"Referer=http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home", 
-		"Snapshot=t16.inf", 
-		"Mode=HTTP", 
-		"LAST");
-
-	web_concurrent_start(0);
-
-	web_custom_request("nav.pl_3", 
-		"URL=http://localhost:1080/cgi-bin/nav.pl?page=menu&in=flights", 
-		"Method=GET", 
-		"Resource=0", 
-		"RecContentType=text/html", 
-		"Referer=http://localhost:1080/cgi-bin/welcome.pl?page=search", 
-		"Snapshot=t17.inf", 
-		"Mode=HTTP", 
-		"LAST");
-
-	web_custom_request("reservations.pl", 
-		"URL=http://localhost:1080/cgi-bin/reservations.pl?page=welcome", 
-		"Method=GET", 
-		"Resource=0", 
-		"RecContentType=text/html", 
-		"Referer=http://localhost:1080/cgi-bin/welcome.pl?page=search", 
-		"Snapshot=t20.inf", 
-		"Mode=HTTP", 
-		"LAST");
-
-	web_concurrent_end(0);
-
-	web_concurrent_start(0);
-
-	web_custom_request("in_flights.gif", 
-		"URL=http://localhost:1080/WebTours/images/in_flights.gif", 
-		"Method=GET", 
-		"Resource=1", 
-		"RecContentType=image/gif", 
-		"Referer=http://localhost:1080/cgi-bin/nav.pl?page=menu&in=flights", 
-		"Snapshot=t18.inf", 
-		"LAST");
-
-	web_custom_request("home.gif", 
-		"URL=http://localhost:1080/WebTours/images/home.gif", 
-		"Method=GET", 
-		"Resource=1", 
-		"RecContentType=image/gif", 
-		"Referer=http://localhost:1080/cgi-bin/nav.pl?page=menu&in=flights", 
-		"Snapshot=t19.inf", 
-		"LAST");
-
-	web_concurrent_end(0);
-
-
-	web_custom_request("button_next.gif", 
-		"URL=http://localhost:1080/WebTours/images/button_next.gif", 
-		"Method=GET", 
-		"Resource=1", 
-		"RecContentType=image/gif", 
-		"Referer=http://localhost:1080/cgi-bin/reservations.pl?page=welcome", 
-		"Snapshot=t21.inf", 
-		"LAST");
-
-	lr_end_transaction("find_flight",2);
 	
 	lr_think_time(19);
 

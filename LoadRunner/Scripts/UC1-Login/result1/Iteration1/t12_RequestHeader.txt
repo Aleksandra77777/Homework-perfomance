@@ -1,5 +1,5 @@
-GET /cgi-bin/itinerary.pl HTTP/1.1
-Referer: http://localhost:1080/cgi-bin/welcome.pl?page=itinerary
+GET /cgi-bin/reservations.pl?page=welcome HTTP/1.1
+Referer: http://localhost:1080/cgi-bin/welcome.pl?page=search
 sec-ch-ua: "Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"
 sec-ch-ua-mobile: ?0
 sec-ch-ua-platform: "Windows"
@@ -14,5 +14,5 @@ Accept-Language: ru-RU,ru;q=0.9
 Accept: */*
 Connection: Keep-Alive
 Host: localhost:1080
-Cookie: MSO=SID&1719062455; MTUserInfo=firstName&%7BfirstName%7D&address2&12345&username&marty&hash&121&lastName&%7BlastName%7D%0A&address1&1234%20Savanna%20Lane&creditCard&&expDate&%0A
+Cookie: MSO=SID&1720107936; MTUserInfo=firstName&Marty&address2&Savanna&username&marty&hash&121&lastName&Zebra%0A&address1&1234%20Savanna%20Lane&creditCard&&expDate&%0A
 

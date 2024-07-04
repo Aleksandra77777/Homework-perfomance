@@ -52,7 +52,7 @@ vuser_init=cci
 Action=cci
 vuser_end=cci
 [TransactionsOrder]
-Order="UC1-Login__*delimiter*__home_page__*delimiter*__login__*delimiter*__find_flights__*delimiter*__logout__*delimiter*__click_flight"
+Order="UC1-Login__*delimiter*__home_page__*delimiter*__login__*delimiter*__click_flight__*delimiter*__find_flights__*delimiter*__logout"
 [StateManagement]
 LastReplayStatus=1
 [ActiveReplay]
@@ -62,6 +62,6 @@ ActiveRunName=result1
 UC1-Login=
 home_page=
 login=
+click_flight=
 find_flights=
 logout=
-click_flight=

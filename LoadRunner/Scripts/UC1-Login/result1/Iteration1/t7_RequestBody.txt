@@ -1,2 +1,2 @@
-"userSession=139251.717699473HVzcHzApccQVzzzHtcQHzpfzVDHf&username=marty&password=zebrastripes&"
-"login.x=31&login.y=6&JSFormSubmit=off"
+"userSession=139336.406318348HVzHVVzpttDAAcpzQit&username=marty&password=zebrastripes&login.x=3"
+"1&login.y=6&JSFormSubmit=off"

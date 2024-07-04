@@ -66,8 +66,10 @@
     <FileEntry Name="logfile.log" Filter="1" />
     <FileEntry Name="login.dat" Filter="1" />
     <FileEntry Name="mdrv.log" Filter="1" />
+    <FileEntry Name="mdrv8I8.445.log" Filter="1" />
     <FileEntry Name="mdrv8IY.159.log" Filter="1" />
     <FileEntry Name="mdrvaY1.679.log" Filter="1" />
+    <FileEntry Name="mdrvbdx.55.log" Filter="1" />
     <FileEntry Name="mdrvbTz.5.log" Filter="1" />
     <FileEntry Name="mdrvBzH.137.log" Filter="1" />
     <FileEntry Name="mdrvdBN.847.log" Filter="1" />

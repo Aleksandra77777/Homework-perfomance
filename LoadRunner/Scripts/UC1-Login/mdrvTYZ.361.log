@@ -1,0 +1,15 @@
+Start auto log messages stack - Iteration 16.	[MsgId: MMSG-10545]
+Action.c(335): web_custom_request("home.gif") started  	[MsgId: MMSG-26355]
+Action.c(335): Registering web_custom_request("home.gif") was successful  	[MsgId: MMSG-26390]
+Action.c(344): web_concurrent_end started  	[MsgId: MMSG-26355]
+Action.c(344): web_concurrent_end was successful, 1414 body bytes, 594 header bytes  	[MsgId: MMSG-26386]
+Action.c(346): Notify: Transaction "click_flight" ended with a "Pass" status (Duration: 0,2679 Wasted Time: 0,0000).	[MsgId: MMSG-16871]
+Action.c(348): Notify: Transaction "itinerary" started.	[MsgId: MMSG-16999]
+Action.c(350): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(350): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(353): web_custom_request("Itinerary Button") started  	[MsgId: MMSG-26355]
+Action.c(353): Error -26612: HTTP Status-Code=500 (Internal Server Error) for "http://localhost:1080/cgi-bin/welcome.pl?page=itinerary"  	[MsgId: MERR-26612]
+Action.c(353): Error -26366: "Text=User wants the intineraries" not found for web_reg_find  	[MsgId: MERR-26366]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+
