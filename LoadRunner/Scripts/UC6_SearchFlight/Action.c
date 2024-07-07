@@ -69,6 +69,10 @@ Action()
 	web_add_header("Sec-Fetch-Dest", 
 		"frame");
 
+	web_reg_find("Text=A Session ID has been created and loaded into a cookie called MSO",
+		LAST);
+
+	
 	web_custom_request("welcome.pl", 
 		"URL=http://localhost:1080/cgi-bin/welcome.pl?signOff=true", 
 		"Method=GET", 
@@ -137,6 +141,9 @@ Action()
 		"LB=userSession\" value=\"",
 		"RB=\"/>",
 		LAST);
+	
+	web_reg_find("Text=Web Tours Navigation Bar",
+		LAST);
 
 	web_custom_request("nav.pl", 
 		"URL=http://localhost:1080/cgi-bin/nav.pl?in=home", 
@@ -184,7 +191,8 @@ Action()
 
 	lr_think_time(114);
 
-	web_reg_find("Text=User password was incorrect",
+	web_reg_find("Fail=Found",
+		"Text=User password was incorrect",
 		LAST);
 	
 	web_custom_request("login.pl", 
@@ -200,7 +208,7 @@ Action()
 
 	web_concurrent_start(NULL);
 	
-//	web_reg_find("Text=Welcome to Web Tours",
+//	web_reg_find("Text=Welcome, <b>{login}</b>, to the Web Tours reservation pages",
 //	LAST);
 
 	web_custom_request("nav.pl_2", 
@@ -212,7 +220,7 @@ Action()
 		"Snapshot=t10.inf", 
 		"Mode=HTTP", 
 		LAST);
-
+	
 	web_custom_request("login.pl_2", 
 		"URL=http://localhost:1080/cgi-bin/login.pl?intro=true", 
 		"Method=GET", 
@@ -514,6 +522,9 @@ Action()
 		"Referer=http://localhost:1080/cgi-bin/welcome.pl?signOff=1", 
 		"Snapshot=t44.inf", 
 		"Mode=HTTP", 
+		LAST);
+	
+	web_reg_find("Text=Web Tours Navigation Bar",
 		LAST);
 
 	web_custom_request("nav.pl_3", 

@@ -1,8 +1,8 @@
 HTTP/1.1 200 OK
-Date: Mon, 24 Jun 2024 19:01:28 GMT
+Date: Sun, 07 Jul 2024 13:05:01 GMT
 Server: Apache/2.2.21 (Win32)
 Expires: 5s
-Set-Cookie: MTUserInfo=firstName&Jojo&address2&&username&Jojo&hash&47&lastName&Bean%0A&address1&&creditCard&123456789&expDate&08%2F27%0A; path=/
+Set-Cookie: MTUserInfo=firstName&Alex&address2&New%20York%20City&username&alex&hash&88&lastName&Lion%0A&address1&326%20Central%20Park%20West&creditCard&&expDate&%0A; path=/
 Keep-Alive: timeout=5, max=92
 Connection: Keep-Alive
 Transfer-Encoding: chunked

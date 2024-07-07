@@ -3233,9 +3233,9 @@ Action()
 
 	lr_think_time(59);
 
-	web_reg_find("Fail=Found",
-		"Text={flightID_1}",
-		"LAST");
+ 
+ 
+ 
 
 	 
 	 

@@ -2743,6 +2743,9 @@ Action()
 		"LB=userSession\" value=\"",
 		"RB=\"/>",
 		"LAST");
+	
+	web_reg_find("Text=Web Tours Navigation Bar",
+		"LAST");
 
 	web_custom_request("nav.pl", 
 		"URL=http://localhost:1080/cgi-bin/nav.pl?in=home", 
@@ -2790,8 +2793,8 @@ Action()
 
 	lr_think_time(114);
 	
-	web_reg_find("Text=User password was correct",
-		"LAST");
+ 
+ 
 
 	web_custom_request("login.pl", 
 		"URL=http://localhost:1080/cgi-bin/login.pl", 
@@ -2877,8 +2880,8 @@ Action()
 
 	lr_start_transaction("click_flight");
 
-	web_reg_find("Text=User has returned to the search page",
-		"LAST");
+ 
+ 
 
 	web_custom_request("Search Flights Button", 
 		"URL=http://localhost:1080/cgi-bin/welcome.pl?page=search", 

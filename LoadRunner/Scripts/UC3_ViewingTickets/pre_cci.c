@@ -2674,6 +2674,9 @@ Action()
 
 	web_add_header("Sec-Fetch-Dest", 
 		"frame");
+	
+	web_reg_find("Text=A Session ID has been created and loaded into a cookie called MSO",
+		"LAST");
 
 	web_custom_request("welcome.pl", 
 		"URL=http://localhost:1080/cgi-bin/welcome.pl?signOff=true", 
@@ -2996,6 +2999,9 @@ Action()
 		"Referer=http://localhost:1080/cgi-bin/login.pl", 
 		"Snapshot=t10.inf", 
 		"Mode=HTTP", 
+		"LAST");
+	
+	web_reg_find("Text=Welcome to Web Tours",
 		"LAST");
 
 	web_custom_request("login.pl_2", 

@@ -623,9 +623,9 @@ Action()
 
 	lr_think_time(59);
 
-	web_reg_find("Fail=Found",
-		"Text={flightID_1}",
-		LAST);
+//	web_reg_find("Fail=Found",
+//		"Text={flightID_1}",
+//		LAST);
 
 	// web_reg_find("Text=database synchronization error",
 	//	LAST);

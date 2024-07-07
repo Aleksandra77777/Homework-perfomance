@@ -2782,6 +2782,9 @@ Action()
 		"frame");
 
 	lr_think_time(48);
+	
+	web_reg_find("Text=Please choose a username and password combination for your account",
+		"LAST");
 
 	web_custom_request("sign up now", 
 		"URL=http://localhost:1080/cgi-bin/login.pl?username=&password=&getInfo=true", 
@@ -2835,6 +2838,14 @@ Action()
 	
 	 
  
+	
+	web_reg_find("Fail=Found",
+		"Text=The username/password combination you've entered is invalid",
+		"LAST");
+
+	
+	web_reg_find("Text=Thank you, <b>{login}{rnd}</b>, for registering and welcome to the Web Tours family",
+		"LAST");
 
 	web_custom_request("login.pl_2", 
 		"URL=http://localhost:1080/cgi-bin/login.pl", 
@@ -2844,7 +2855,7 @@ Action()
 		"Referer=http://localhost:1080/cgi-bin/login.pl", 
 		"Snapshot=t35.inf", 
 		"Mode=HTTP", 
-		"Body=username={login}&password={password}&passwordConfirm={password}&firstName={firstName}&lastName={lastName}&address1={address1}&address2={address2}&register.x=39&register.y=12", 
+		"Body=username={login}{rnd}&password={password}&passwordConfirm={password}&firstName={firstName}&lastName={lastName}&address1={address1}&address2={address2}&register.x=39&register.y=12", 
 		"LAST");
 
 	lr_end_transaction("registration_fields",2);
@@ -2867,8 +2878,8 @@ Action()
 
 	web_concurrent_start(0);
 	
- 
- 
+	web_reg_find("Text=Web Tours Navigation Bar",
+		"LAST");
 
 	web_custom_request("nav.pl_2", 
 		"URL=http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home", 
@@ -2878,6 +2889,9 @@ Action()
 		"Referer=http://localhost:1080/cgi-bin/welcome.pl?page=menus", 
 		"Snapshot=t37.inf", 
 		"Mode=HTTP", 
+		"LAST");
+	
+	web_reg_find("Text=Welcome to Web Tours",
 		"LAST");
 
 	web_custom_request("login.pl_3", 
@@ -2957,6 +2971,9 @@ Action()
 		"Referer=http://localhost:1080/cgi-bin/welcome.pl?signOff=1", 
 		"Snapshot=t44.inf", 
 		"Mode=HTTP", 
+		"LAST");
+	
+	web_reg_find("Text=Web Tours Navigation Bar",
 		"LAST");
 
 	web_custom_request("nav.pl_3", 
