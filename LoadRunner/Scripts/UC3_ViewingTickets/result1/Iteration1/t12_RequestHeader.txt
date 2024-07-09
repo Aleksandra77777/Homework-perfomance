@@ -16,6 +16,6 @@ Accept-Language: ru-RU,ru;q=0.9
 Accept: */*
 Connection: Keep-Alive
 Host: localhost:1080
-Cookie: MSO=SID&1720357498
-Content-Length: 126
+Cookie: MSO=SID&1720474953
+Content-Length: 123
 

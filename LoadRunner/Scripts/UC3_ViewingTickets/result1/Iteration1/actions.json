@@ -6,55 +6,55 @@
                 "stepId": "STEP1",
                 "stepName": "Custom Request: WebTours",
                 "infFile": "t1.inf",
-                "time": 1720357497273
+                "time": 1720474952584
             },
             {
                 "stepId": "STEP2",
                 "stepName": "Custom Request: WebTours",
                 "infFile": "t7.inf",
-                "time": 1720357498211
+                "time": 1720474953651
             },
             {
                 "stepId": "STEP3",
                 "stepName": "Custom Request: login.pl",
                 "infFile": "t12.inf",
-                "time": 1720357502060
+                "time": 1720474957722
             },
             {
                 "stepId": "STEP4",
                 "stepName": "Custom Request: Itinerary Button",
                 "infFile": "t15.inf",
-                "time": 1720357508548
+                "time": 1720474964336
             }
         ],
         "transactions": [
             {
                 "transactionName": "home_page",
-                "rawStartTime": 1720357496935,
-                "rawEndTime": 1720357497998,
+                "rawStartTime": 1720474952089,
+                "rawEndTime": 1720474954469,
                 "thinkTime": 0.0,
-                "wastedTime": 0.1816699504852295
+                "wastedTime": 0.24545550346374513
             },
             {
                 "transactionName": "login",
-                "rawStartTime": 1720357501881,
-                "rawEndTime": 1720357505391,
-                "thinkTime": 3.008252,
-                "wastedTime": 0.017899751663208009
+                "rawStartTime": 1720474957522,
+                "rawEndTime": 1720474961137,
+                "thinkTime": 3.009277,
+                "wastedTime": 0.018071413040161134
             },
             {
                 "transactionName": "itinerary",
-                "rawStartTime": 1720357508424,
-                "rawEndTime": 1720357508907,
+                "rawStartTime": 1720474964191,
+                "rawEndTime": 1720474964822,
                 "thinkTime": 0.0,
-                "wastedTime": 0.02292776107788086
+                "wastedTime": 0.027569293975830079
             },
             {
                 "transactionName": "UC3_ViewingTickets",
-                "rawStartTime": 1720357496920,
-                "rawEndTime": 1720357511941,
-                "thinkTime": 12.015989999999999,
-                "wastedTime": 0.24037551879882813
+                "rawStartTime": 1720474952073,
+                "rawEndTime": 1720474967869,
+                "thinkTime": 12.045152999999999,
+                "wastedTime": 0.29109621047973635
             }
         ]
     }

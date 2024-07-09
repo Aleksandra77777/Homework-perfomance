@@ -1,4 +1,4 @@
-Virtual User Script started at: 05.07.2024 0:08:47
+Virtual User Script started at: 09.07.2024 0:26:30
 Starting action vuser_init.
 Web Turbo Replay of LoadRunner 2021.0.0 for Windows 10; build 430 (џэт 05 2021 19:27:22)  	[MsgId: MMSG-26983]
 Run mode: HTML  	[MsgId: MMSG-26993]
@@ -87,16 +87,16 @@ Action.c(148): web_custom_request("nav.pl") started  	[MsgId: MMSG-26355]
 Action.c(148): Registering web_custom_request("nav.pl") was successful  	[MsgId: MMSG-26390]
 Action.c(158): web_concurrent_end started  	[MsgId: MMSG-26355]
 Action.c(158): Registered web_reg_find successful for "Text=Web Tours Navigation Bar" (count=1)  	[MsgId: MMSG-26364]
-Action.c(158): web_concurrent_end was successful, 2842 body bytes, 553 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(158): web_concurrent_end was successful, 2851 body bytes, 553 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
 Action.c(160): web_add_header("Sec-Fetch-Site") started  	[MsgId: MMSG-26355]
 Action.c(160): web_add_header("Sec-Fetch-Site") was successful  	[MsgId: MMSG-26392]
 Action.c(163): web_add_header("Sec-Fetch-Dest") started  	[MsgId: MMSG-26355]
 Action.c(163): web_add_header("Sec-Fetch-Dest") was successful  	[MsgId: MMSG-26392]
 Action.c(168): web_custom_request("mer_login.gif") started  	[MsgId: MMSG-26355]
 Action.c(168): web_custom_request("mer_login.gif") was successful, 679 body bytes, 297 header bytes  	[MsgId: MMSG-26386]
-Action.c(177): Notify: Transaction "home_page" ended with a "Pass" status (Duration: 1,1997 Wasted Time: 0,2197).
-Action.c(179): Think time - Waiting 5,00 seconds (according to limit).
-Action.c(179): lr_think_time: 5,00 seconds (recorded think time was 33,00 seconds).
+Action.c(177): Notify: Transaction "home_page" ended with a "Pass" status (Duration: 1.2707 Wasted Time: 0.2434).
+Action.c(179): Think time - Waiting 5.00 seconds (according to limit).
+Action.c(179): lr_think_time: 5.00 seconds (recorded think time was 33.00 seconds).
 Action.c(181): Notify: Transaction "login" started.
 Action.c(183): web_add_auto_header("Sec-Fetch-Site") started  	[MsgId: MMSG-26355]
 Action.c(183): web_add_auto_header("Sec-Fetch-Site") was successful  	[MsgId: MMSG-26392]
@@ -104,8 +104,8 @@ Action.c(186): web_add_auto_header("Sec-Fetch-Dest") started  	[MsgId: MMSG-2635
 Action.c(186): web_add_auto_header("Sec-Fetch-Dest") was successful  	[MsgId: MMSG-26392]
 Action.c(189): web_add_header("Origin") started  	[MsgId: MMSG-26355]
 Action.c(189): web_add_header("Origin") was successful  	[MsgId: MMSG-26392]
-Action.c(192): Think time - Waiting 5,00 seconds (according to limit).
-Action.c(192): lr_think_time: 5,00 seconds (recorded think time was 114,00 seconds).
+Action.c(192): Think time - Waiting 5.00 seconds (according to limit).
+Action.c(192): lr_think_time: 5.00 seconds (recorded think time was 114.00 seconds).
 Action.c(194): web_reg_find started  	[MsgId: MMSG-26355]
 Action.c(194): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
 Action.c(198): web_custom_request("login.pl") started  	[MsgId: MMSG-26355]
@@ -131,7 +131,7 @@ Action.c(265): web_custom_request("signoff.gif") started  	[MsgId: MMSG-26355]
 Action.c(265): Registering web_custom_request("signoff.gif") was successful  	[MsgId: MMSG-26390]
 Action.c(274): web_concurrent_end started  	[MsgId: MMSG-26355]
 Action.c(274): web_concurrent_end was successful, 2898 body bytes, 1190 header bytes  	[MsgId: MMSG-26386]
-Action.c(276): Notify: Transaction "login" ended with a "Pass" status (Duration: 5,5697 Think Time: 5,0183 Wasted Time: 0,0229).
+Action.c(276): Notify: Transaction "login" ended with a "Pass" status (Duration: 5,5808 Think Time: 5,0068 Wasted Time: 0,0268).
 Action.c(278): Think time - Waiting 5,00 seconds (according to limit).
 Action.c(278): lr_think_time: 5,00 seconds (recorded think time was 67,00 seconds).
 Action.c(280): Notify: Transaction "click_flight" started.
@@ -154,13 +154,13 @@ Action.c(321): web_custom_request("in_flights.gif") started  	[MsgId: MMSG-26355
 Action.c(321): Registering web_custom_request("in_flights.gif") was successful  	[MsgId: MMSG-26390]
 Action.c(330): web_custom_request("home.gif") started  	[MsgId: MMSG-26355]
 Action.c(330): Registering web_custom_request("home.gif") was successful  	[MsgId: MMSG-26390]
-Action.c(339): web_concurrent_end started  	[MsgId: MMSG-26355]
-Action.c(339): web_concurrent_end was successful, 1414 body bytes, 594 header bytes  	[MsgId: MMSG-26386]
-Action.c(341): Notify: Transaction "click_flight" ended with a "Pass" status (Duration: 0.4645 Wasted Time: 0.0205).
-Action.c(343): Think time - Waiting 5.00 seconds (according to limit).
-Action.c(343): lr_think_time: 5.00 seconds (recorded think time was 13.00 seconds).
-Action.c(345): web_custom_request("button_next.gif") started  	[MsgId: MMSG-26355]
-Action.c(345): web_custom_request("button_next.gif") was successful, 758 body bytes, 298 header bytes  	[MsgId: MMSG-26386]
+Action.c(339): web_custom_request("button_next.gif") started  	[MsgId: MMSG-26355]
+Action.c(339): Registering web_custom_request("button_next.gif") was successful  	[MsgId: MMSG-26390]
+Action.c(348): web_concurrent_end started  	[MsgId: MMSG-26355]
+Action.c(348): web_concurrent_end was successful, 2172 body bytes, 892 header bytes  	[MsgId: MMSG-26386]
+Action.c(350): Notify: Transaction "click_flight" ended with a "Pass" status (Duration: 0.4858 Wasted Time: 0.0181).
+Action.c(352): Think time - Waiting 5.00 seconds (according to limit).
+Action.c(352): lr_think_time: 5.00 seconds (recorded think time was 13.00 seconds).
 Action.c(354): Notify: Transaction "find_flight" started.
 Action.c(356): web_add_auto_header("Origin") started  	[MsgId: MMSG-26355]
 Action.c(356): web_add_auto_header("Origin") was successful  	[MsgId: MMSG-26392]
@@ -170,16 +170,16 @@ Action.c(363): web_reg_save_param_attrib started  	[MsgId: MMSG-26355]
 Action.c(363): Registering web_reg_save_param_attrib was successful  	[MsgId: MMSG-26390]
 Action.c(378): web_custom_request("reservations.pl_2") started  	[MsgId: MMSG-26355]
 Action.c(378): Registered web_reg_find successful for "Text=from <B>Denver</B> to <B>Denver</B>" (count=1)  	[MsgId: MMSG-26364]
-Action.c(378): web_custom_request("reservations.pl_2") was successful, 2421 body bytes, 255 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(378): web_custom_request("reservations.pl_2") was successful, 2421 body bytes, 256 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
 Action.c(389): web_convert_param started  	[MsgId: MMSG-26355]
 Action.c(389): web_convert_param was successful  	[MsgId: MMSG-26392]
-Action.c(395): Notify: Transaction "find_flight" ended with a "Pass" status (Duration: 0.2327 Wasted Time: 0.0163).
-Action.c(397): Think time - Waiting 5.00 seconds (according to limit).
-Action.c(397): lr_think_time: 5.00 seconds (recorded think time was 25.00 seconds).
+Action.c(395): Notify: Transaction "find_flight" ended with a "Pass" status (Duration: 0,2541 Wasted Time: 0,0143).
+Action.c(397): Think time - Waiting 5,00 seconds (according to limit).
+Action.c(397): lr_think_time: 5,00 seconds (recorded think time was 25,00 seconds).
 Action.c(399): Notify: Transaction "choose_flight" started.
 Action.c(401): web_custom_request("reservations.pl_3") started  	[MsgId: MMSG-26355]
 Action.c(401): web_custom_request("reservations.pl_3") was successful, 2745 body bytes, 256 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(412): Notify: Transaction "choose_flight" ended with a "Pass" status (Duration: 0,1654 Wasted Time: 0,0068).
+Action.c(412): Notify: Transaction "choose_flight" ended with a "Pass" status (Duration: 0,1739 Wasted Time: 0,0054).
 Action.c(414): Think time - Waiting 5,00 seconds (according to limit).
 Action.c(414): lr_think_time: 5,00 seconds (recorded think time was 86,00 seconds).
 Action.c(416): Notify: Transaction "itinerary" started.
@@ -198,7 +198,7 @@ Action.c(446): web_custom_request("itinerary.pl") started  	[MsgId: MMSG-26355]
 Action.c(446): Registering web_custom_request("itinerary.pl") was successful  	[MsgId: MMSG-26390]
 Action.c(456): web_concurrent_end started  	[MsgId: MMSG-26355]
 Action.c(456): Registered web_reg_find successful for "Text=Flights List" (count=1)  	[MsgId: MMSG-26364]
-Action.c(456): web_concurrent_end was successful, 24703 body bytes, 511 header bytes, 63 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(456): web_concurrent_end was successful, 24696 body bytes, 511 header bytes, 63 chunking overhead bytes  	[MsgId: MMSG-26385]
 Action.c(458): web_concurrent_start started  	[MsgId: MMSG-26355]
 Action.c(458): web_concurrent_start was successful  	[MsgId: MMSG-26392]
 Action.c(460): web_custom_request("in_itinerary.gif") started  	[MsgId: MMSG-26355]
@@ -215,7 +215,7 @@ Action.c(491): web_custom_request("cancelallreservations.gif") started  	[MsgId:
 Action.c(491): Registering web_custom_request("cancelallreservations.gif") was successful  	[MsgId: MMSG-26390]
 Action.c(500): web_concurrent_end started  	[MsgId: MMSG-26355]
 Action.c(500): web_concurrent_end was successful, 1573 body bytes, 594 header bytes  	[MsgId: MMSG-26386]
-Action.c(502): Notify: Transaction "itinerary" ended with a "Pass" status (Duration: 0,5650 Wasted Time: 0,0229).
+Action.c(502): Notify: Transaction "itinerary" ended with a "Pass" status (Duration: 0,5706 Wasted Time: 0,0224).
 Action.c(504): Notify: Transaction "sign_off" started.
 Action.c(506): web_custom_request("SignOff Button") started  	[MsgId: MMSG-26355]
 Action.c(506): web_custom_request("SignOff Button") was successful, 686 body bytes, 327 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
@@ -224,12 +224,15 @@ Action.c(516): web_concurrent_start was successful  	[MsgId: MMSG-26392]
 Action.c(518): web_custom_request("home.html_2") started  	[MsgId: MMSG-26355]
 Action.c(518): Retrieving data from cache for "http://localhost:1080/WebTours/home.html"  	[MsgId: MMSG-26558]
 Action.c(518): Registering web_custom_request("home.html_2") was successful  	[MsgId: MMSG-26390]
-Action.c(527): web_custom_request("nav.pl_3") started  	[MsgId: MMSG-26355]
-Action.c(527): Registering web_custom_request("nav.pl_3") was successful  	[MsgId: MMSG-26390]
-Action.c(537): web_concurrent_end started  	[MsgId: MMSG-26355]
-Action.c(537): web_concurrent_end was successful, 1486 body bytes, 255 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(539): Notify: Transaction "sign_off" ended with a "Pass" status (Duration: 0,3001 Wasted Time: 0,0120).
-Action.c(541): Notify: Transaction "UC6_SearchFlight" ended with a "Pass" status (Duration: 33,7992 Think Time: 30,0503 Wasted Time: 0,3279).
+Action.c(527): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(527): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(530): web_custom_request("nav.pl_3") started  	[MsgId: MMSG-26355]
+Action.c(530): Registering web_custom_request("nav.pl_3") was successful  	[MsgId: MMSG-26390]
+Action.c(540): web_concurrent_end started  	[MsgId: MMSG-26355]
+Action.c(540): Registered web_reg_find successful for "Text=Web Tours Navigation Bar" (count=1)  	[MsgId: MMSG-26364]
+Action.c(540): web_concurrent_end was successful, 1486 body bytes, 255 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(542): Notify: Transaction "sign_off" ended with a "Pass" status (Duration: 0.3250 Wasted Time: 0.0107).
+Action.c(544): Notify: Transaction "UC6_SearchFlight" ended with a "Pass" status (Duration: 33.9458 Think Time: 30.0362 Wasted Time: 0.3410).
 Ending action Action.
 Ending iteration 1.
 Ending Vuser...

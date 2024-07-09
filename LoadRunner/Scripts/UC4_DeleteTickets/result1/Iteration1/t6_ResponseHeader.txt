@@ -1,5 +1,5 @@
 HTTP/1.1 301 Moved Permanently
-Date: Sun, 07 Jul 2024 12:20:58 GMT
+Date: Mon, 08 Jul 2024 21:54:11 GMT
 Server: Apache/2.2.21 (Win32)
 Location: http://localhost:1080/WebTours/
 Content-Length: 239
